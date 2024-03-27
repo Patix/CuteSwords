@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
@@ -10,16 +11,22 @@ namespace InventoryAndEquipment
     [Serializable]
     public partial class EquipmentItem
     {
-        [SerializeField]                private string                   name;
-        [SerializeField, AssetSelector] private List <EquipmentItemData> items;
-        [ShowInInspector]               public  GearslotType             Gearslot => GetGearSlot();
-        public                                  string                   Name     => name;
+        [SerializeField] private string                   name;
+        [SerializeField] private List <EquipmentItemData> items;
+        [SerializeField] private int                      price;
+       
+        public                   GearslotType             Gearslot => GetGearSlot();
+        public                   string                   Name     => name;
+        public                   int                      Price    => price;
 
+        public IEnumerable <Sprite> UIIcons =>items.SelectMany(x => x.GetUIIcons());
+        
+        
         public void Equip(Transform rootTransform)
         {
             foreach (var equipmentItemData in items)
             {
-                equipmentItemData.Equip(rootTransform);
+                equipmentItemData.Attach(rootTransform);
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Sirenix.OdinInspector;
@@ -12,10 +13,24 @@ namespace InventoryAndEquipment
         [SerializeField] private BodyPartType bodyPart;
         [SerializeField] private Sprite       sprite;
         [SerializeField] private Sprite       spriteRightPair;
-        
-        public BodyPartType BodyPart => bodyPart;
 
-        public void Equip(Transform root)
+
+        [SerializeField] private Sprite       customSpriteForUI;
+        
+        public                   BodyPartType BodyPart => bodyPart;
+
+       
+        public IEnumerable <Sprite> GetUIIcons()
+        {
+            if (customSpriteForUI != null) yield return customSpriteForUI;
+            else
+            {
+                yield return sprite;
+                if (spriteRightPair != null) yield return spriteRightPair;
+            }
+        }
+        
+        public void Attach(Transform root)
         {
             var spriteRenderers = root.GetComponentsInChildren <SpriteRenderer>();
             var targetSlotName  = GetTargetSlotName();

@@ -1,49 +1,26 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using InventoryAndEquipment;
+using Patik.CodeArchitecture.Patterns;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
+using Character = InventoryAndEquipment.Character;
 
-public class CharacterController : MonoBehaviour
+public class CharacterController : SingletonMonoBehaviour <CharacterController>
 {
-    [SerializeField] private float       MaxMovementSpeed=1;
-    [SerializeField] private Rigidbody2D rigidbody2D;
-    [SerializeField] private Animator    animator;
-    
-    private CharacterControls input;
+    public                   Character                        Character { get; private set; }
+    [SerializeField] private CharacterMovementModule          movementModule;
+    [SerializeField] private CharacterAnimationAndAudioModule animationModule;
+    [SerializeField] private Rigidbody2D                      rigidbody2D;
 
-    public Vector2 MovementVector2;
-    
-    private void OnEnable()
+    protected override void Awake()
     {
-        input = new CharacterControls();
-        input.Enable();
-        RegisterEvents();
-
+        base.Awake();
+        Character       = new Character();
+        movementModule.Initialize(Character , rigidbody2D);
+        animationModule.Initialize(Character, movementModule);
     }
 
-    private void FixedUpdate()
-    {
-       
-        rigidbody2D.position+=(MaxMovementSpeed*MovementVector2*Time.fixedDeltaTime);
-    }
-
-    private void RegisterEvents()
-    {
-        input.Character.Movement.performed += OnInputEvent;
-        input.Character.Movement.canceled += OnInputCanceled;
-        
-    }
-
-    private void OnInputCanceled(InputAction.CallbackContext obj)
-    {
-        MovementVector2 = obj.ReadValue <Vector2>();
-        Debug.Log("Canceled");
-    }
-
-    private void OnInputEvent(InputAction.CallbackContext inputContext)
-    {
-        MovementVector2 = inputContext.ReadValue <Vector2>();
-        Debug.Log("Read");
-    }
+    private void Update()      { animationModule.Update(); }
+    private void FixedUpdate() { movementModule.FixedUpdate(); }
 }
