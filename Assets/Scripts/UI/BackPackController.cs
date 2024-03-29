@@ -68,6 +68,7 @@ namespace UI
 
             if (oldItem      == null && newItem != null) animator.SetTrigger("Add");
             else if (oldItem != null && newItem == null) animator.SetTrigger("Remove");
+            else if (oldItem != newItem) animator.SetTrigger("Swap");
             
             //Do Nothing on Swap
         }
