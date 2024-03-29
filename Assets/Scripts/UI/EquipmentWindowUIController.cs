@@ -1,5 +1,6 @@
 using System;
 using System.Linq;
+using EventManagement;
 using InventoryAndEquipment;
 using Sirenix.OdinInspector;
 using UnityEngine;
@@ -9,51 +10,29 @@ namespace UI
 {
     public class EquipmentWindowUIController : MonoBehaviour
     {
-        [SerializeField] private Transform m_Character;
-        [SerializeField] private Image[]   Images;
-        [SerializeField] private Image     prefab;
+        [SerializeField] private EquipmentItemIcon[] equipmentItemIcons;
 
-        [SerializeField] private EquipmentItemIcon Hood, Head, Weapon, Set, Torso, Pelvis;
-
+        private EventListeners eventListeners;
 
 
         void OnEnable()
         {
-            DisplayAll();
+            eventListeners ??= new((GameEvents.Equipment_Updated, UpdateView));
+            eventListeners.SubscribeAll();
+            UpdateView();
         }
-        [Button]
-        void DisplayAll()
+
+        void OnDisable()
         {
-            
+            eventListeners.UnsubscribeAll();
         }
-    
-    
-        [ContextMenu("Fill")]
-        void Fill()
+        
+        void UpdateView()
         {
-            var allSprites = m_Character.GetComponentsInChildren <SpriteRenderer>().Select(x => x.sprite).Distinct().ToList();
-            for (var i = 0; i < allSprites.Count; i++)
+            foreach (var equipmentItemIcon in equipmentItemIcons)
             {
-                Images[i].sprite = allSprites[i];
+                equipmentItemIcon.Display(Character.Instance.Equipment.First(x=> x.Gearslot==equipmentItemIcon.SlotType));
             }
-        }
-
-   
-
-        private void DoOnPrefab()
-        {
-            var allrenderers = m_Character.GetComponentsInChildren <SpriteRenderer>();
-
-            Array.Sort(allrenderers, (spriteRenderer, renderer1) => spriteRenderer.sortingOrder.CompareTo(renderer1.sortingOrder));
-
-            for (var i = 0; i < allrenderers.Length; i++)
-            {
-                var clone = Instantiate(prefab, prefab.transform.parent, true);
-                clone.name   = allrenderers[i].name;
-                clone.sprite = allrenderers[i].sprite;
-            }
-
-            prefab.enabled = false;
         }
     }
 }

@@ -57,12 +57,11 @@ namespace InventoryAndEquipment
         
         public static void RemoveItem(EquipmentItem item)      => RemoveItem(Array.IndexOf(_ItemsInBackPack, item));
 
-        public static EquipmentItem SwapItemAtIndex(EquipmentItem itemToPutInInventory, int index)
+        public static void SwapItems(EquipmentItem itemToPutInInventory , EquipmentItem itemToGetFromInventory)
         {
-            var itemToReturnFromInventory = ItemAtIndex(index);
-            _ItemsInBackPack[index] = itemToPutInInventory;
+            var swapOnIndex=Array.IndexOf(_ItemsInBackPack, itemToGetFromInventory);   
+           _ItemsInBackPack[swapOnIndex] = itemToPutInInventory;
             GameEvents.Inventory_Update_Items.Invoke();
-            return itemToReturnFromInventory;
         }
 
         public static bool Contains(EquipmentItem item)

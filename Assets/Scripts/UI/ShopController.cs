@@ -27,6 +27,7 @@ namespace UI
 
         private EventListeners eventListeners;
     
+        
     
         private void Awake()
         {
@@ -54,6 +55,16 @@ namespace UI
             WindowIsActive = false;
         }
 
+        public void Show()
+        {
+            gameObject.SetActive(true);
+        }
+        
+        public void Close()
+        {
+            gameObject.SetActive(false);
+        }
+        
 
         private void RefreshItems()
         {

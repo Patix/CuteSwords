@@ -43,6 +43,11 @@ namespace UI
             {
                 ShopController.Sell(button.DisplayedItem);
             }
+
+            else
+            {
+                Character.Instance.Equip(button.DisplayedItem);
+            }
         }
         
         void OnEnable()

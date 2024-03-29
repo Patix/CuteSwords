@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using DefaultNamespace;
+using EventManagement;
 using Patik.CodeArchitecture.Patterns;
 using UnityEngine;
 
@@ -9,33 +11,38 @@ namespace InventoryAndEquipment
 {
     public class Character : Singleton <Character>
     {
-        private static readonly string[] DefaultGear = { "Orange Hood", "Green Eyes Mask", "Cloth Orange", "Dagger One", "Torso Orange", "Set Neutral" };
-        private Dictionary <EquipmentItem.GearslotType, EquipmentItem> equipedItems;
+        private static readonly string[]                                               DefaultGear = { "Orange Hood", "Green Eyes Mask", "Cloth Orange", "Dagger One", "Torso Orange", "Set Neutral" };
+        private                 Dictionary <EquipmentItem.GearslotType, EquipmentItem> equipedItems;
+        public                  IEnumerable <EquipmentItem>                            Equipment => equipedItems.Values;
+        public                  StateTypes                                             State     { get; set; }
 
-        public StateTypes State { get; set; }
         public Character()
         {
             equipedItems = new Dictionary <EquipmentItem.GearslotType, EquipmentItem>();
-            Equip(DefaultGear);
+            EquipStartingGearWithoutNotifyingObservers();
             State = StateTypes.Idle;
         }
 
+        public bool HasEquipped(EquipmentItem item) => equipedItems.Values.Contains(item);
 
-        public bool HasEquipped(EquipmentItem item)     => equipedItems.Values.Contains(item);
-        public bool HasEquipped(string        itemName) => HasEquipped(EquipmentDatabase.GetItemByName(itemName));
-        public void Equip(string        itemName) => Equip(EquipmentDatabase.GetItemByName(itemName));
+        public void Equip(EquipmentItem newItem, bool notifyObservers = true)
+        {
+            if (equipedItems.TryGetValue(newItem.Gearslot, out var equipmentToUneEquip)) //if something is already eqquiped
+            {
+                var currentlyEquippedItem = equipedItems[newItem.Gearslot];
+                Inventory.SwapItems(currentlyEquippedItem, newItem);
+            }
 
-        public void Equip(EquipmentItem item)
-        {
-            equipedItems[item.Gearslot] = item;
+            equipedItems[newItem.Gearslot] = newItem;
+            if (notifyObservers)
+                GameEvents.Equipment_Updated.Invoke();
         }
-        
-        public void Equip(params string[] items)
+
+        private void EquipStartingGearWithoutNotifyingObservers()
         {
-            foreach (var item in items) Equip(item);
+            foreach (var itemName in DefaultGear) Equip(EquipmentDatabase.GetItemByName(itemName), false);
         }
-        
-        
+
         public enum StateTypes
         {
             Idle,

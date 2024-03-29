@@ -7,6 +7,7 @@
         Shop_FailedToBuy_NotEnoughSlotsInInventory,
         Shop_FailedToBuy_NotEnoughGold,
         Inventory_Update_Items,
-        Inventory_Update_Gold
+        Inventory_Update_Gold,
+        Equipment_Updated
     }
 }
