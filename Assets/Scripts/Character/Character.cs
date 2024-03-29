@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace InventoryAndEquipment
 {
-    public class Character
+    public class Character : Singleton <Character>
     {
         private static readonly string[] DefaultGear = { "Orange Hood", "Green Eyes Mask", "Cloth Orange", "Dagger One", "Torso Orange", "Set Neutral" };
         private Dictionary <EquipmentItem.GearslotType, EquipmentItem> equipedItems;

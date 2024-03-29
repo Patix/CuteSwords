@@ -16,115 +16,115 @@ MonoBehaviour:
   - name: Orange Hood
     items:
     - {fileID: 11400000, guid: 6534e00d5e82085409fc9fa10e7b22e3, type: 2}
-    price: 0
+    price: 87
   - name: Green Hood
     items:
     - {fileID: 11400000, guid: a2be69057d8df1f45a91da337248e687, type: 2}
-    price: 0
+    price: 65
   - name: Blue Hood
     items:
     - {fileID: 11400000, guid: cd0e87228f8f1754c87ea10f7a13e10b, type: 2}
-    price: 0
+    price: 40
   - name: Grey Hood
     items:
     - {fileID: 11400000, guid: d5dea938c2e6aaf4ea1b52595ef8b1f6, type: 2}
-    price: 0
+    price: 45
   - name: Red Hood
     items:
     - {fileID: 11400000, guid: 583b4139af5f3bf4b9490785918217b1, type: 2}
-    price: 0
+    price: 90
   - name: Green Eyes Mask
     items:
     - {fileID: 11400000, guid: 637461051bfc2ea4a98332ee7e82576f, type: 2}
-    price: 0
+    price: 80
   - name: Red Eyes Mask
     items:
     - {fileID: 11400000, guid: f4d9ce8d412c172448e72ab8473778be, type: 2}
-    price: 0
+    price: 85
   - name: Red Eyes Mask Damaged
     items:
     - {fileID: 11400000, guid: bc2736b2c70c1864b9c48afd3260d679, type: 2}
-    price: 0
+    price: 100
   - name: Pirate Mask
     items:
     - {fileID: 11400000, guid: ec8ab2272bd6786418ac37a8637d3b8b, type: 2}
-    price: 0
+    price: 95
   - name: Avatar Mask
     items:
     - {fileID: 11400000, guid: efe386033ca65bf4fb85ae34919d4c4b, type: 2}
-    price: 0
+    price: 60
   - name: Cloth Orange
     items:
     - {fileID: 11400000, guid: 3e3e3c0015ce930409d74812660f567d, type: 2}
-    price: 0
+    price: 160
   - name: Cloth Green
     items:
     - {fileID: 11400000, guid: 4df9480daa438984ba1aea55813f2c15, type: 2}
-    price: 0
+    price: 145
   - name: Cloth Blue
     items:
     - {fileID: 11400000, guid: 99aaffa25cb55d54882a2e28074f52f8, type: 2}
-    price: 0
+    price: 140
   - name: Cloth Neutral
     items:
     - {fileID: 11400000, guid: 644c4aab4bc38c04c9d2b2941a969215, type: 2}
-    price: 0
+    price: 115
   - name: Cloth Purple
     items:
     - {fileID: 11400000, guid: d655d1d6fce6f2646bd81554f89d8eda, type: 2}
-    price: 0
+    price: 150
   - name: Cloth Metal
     items:
     - {fileID: 11400000, guid: 624605203cc3d7b4eac7dd978b47964c, type: 2}
-    price: 0
+    price: 170
   - name: Dagger One
     items:
     - {fileID: 11400000, guid: f0aeeac3b0ba0404cb00d0c7779209ef, type: 2}
-    price: 0
+    price: 350
   - name: Dagger Two
     items:
     - {fileID: 11400000, guid: 579273a6beec70f4b90db10b9034b52b, type: 2}
-    price: 0
+    price: 350
   - name: Dagger Three
     items:
     - {fileID: 11400000, guid: 8584f3b5eaaaa774c974eda82af445a4, type: 2}
-    price: 0
+    price: 375
   - name: Dagger Four
     items:
     - {fileID: 11400000, guid: f559eee9bf607b843bae7371e2a163ab, type: 2}
-    price: 0
+    price: 340
   - name: Dagger Five
     items:
     - {fileID: 11400000, guid: d3dd52592be05594ba46fc995f96fe6f, type: 2}
-    price: 0
+    price: 360
   - name: Dagger Six
     items:
     - {fileID: 11400000, guid: 2605ac3e62db62843a79b84bf29b1813, type: 2}
-    price: 0
+    price: 320
   - name: Torso Orange
     items:
     - {fileID: 11400000, guid: a60a26bb6a2c2414090ee7356fe66084, type: 2}
-    price: 0
+    price: 200
   - name: Torso Green
     items:
     - {fileID: 11400000, guid: b4453cdfcf7b48d4597e1a522134a91d, type: 2}
-    price: 0
+    price: 300
   - name: Torso Blue
     items:
     - {fileID: 11400000, guid: 9a20c45230bb8b949b86149d13d30e27, type: 2}
-    price: 0
+    price: 250
   - name: Torso Neutral
     items:
     - {fileID: 11400000, guid: d5a6015c1f285c14faf32d84704a3194, type: 2}
-    price: 0
+    price: 200
   - name: Torso Purple
     items:
     - {fileID: 11400000, guid: 9cf081477d896a343852d59b9739effa, type: 2}
-    price: 0
+    price: 200
   - name: Torso Metal
     items:
     - {fileID: 11400000, guid: 36bd0652183819a48a9a0404c91d2c0c, type: 2}
-    price: 0
+    price: 400
   - name: Set Silver
     items:
     - {fileID: 11400000, guid: 95d988e07b024444d98de712aea7e0c1, type: 2}
@@ -132,7 +132,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9bd68b8b63462b74eb61ad373cb6e0fe, type: 2}
     - {fileID: 11400000, guid: 2902010f5c6c5ca469d9c74242b22593, type: 2}
     - {fileID: 11400000, guid: 63aa178420f79024087fd4e6122915d9, type: 2}
-    price: 0
+    price: 80
   - name: Set Traveller
     items:
     - {fileID: 11400000, guid: 95d988e07b024444d98de712aea7e0c1, type: 2}
@@ -140,7 +140,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e23de5d307dd6a6449ceb836032004a4, type: 2}
     - {fileID: 11400000, guid: d73c135c19bc8664cac6a3911ca02080, type: 2}
     - {fileID: 11400000, guid: 74a663236e1c1234cbb34c744e923ad1, type: 2}
-    price: 0
+    price: 85
   - name: Set Neutral
     items:
     - {fileID: 11400000, guid: 1332ad77e60343846b7b8b1f104ac282, type: 2}
@@ -148,7 +148,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 01596570404e2a74689f6d17ab92729d, type: 2}
     - {fileID: 11400000, guid: 61047d126d8ee4d458d571a9d68a3e90, type: 2}
     - {fileID: 11400000, guid: 073f17f554911b8409b4052f6b2cc958, type: 2}
-    price: 0
+    price: 90
   - name: Set Assasin
     items:
     - {fileID: 11400000, guid: 63aa178420f79024087fd4e6122915d9, type: 2}
@@ -156,7 +156,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b829d0aca67ec89448e17446b8776ef3, type: 2}
     - {fileID: 11400000, guid: 9bd68b8b63462b74eb61ad373cb6e0fe, type: 2}
     - {fileID: 11400000, guid: 8576f0197989e5741bc8e0e83d7a3102, type: 2}
-    price: 0
+    price: 85
   - name: Set Heavy Armor
     items:
     - {fileID: 11400000, guid: a843d7a1a7f24994d8e5a8055537be65, type: 2}
@@ -164,7 +164,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 005ec3f187de2b44b8ad378e72e7ac5f, type: 2}
     - {fileID: 11400000, guid: 9bd68b8b63462b74eb61ad373cb6e0fe, type: 2}
     - {fileID: 11400000, guid: 82db5950a2574aa4fb4d44b262b5a005, type: 2}
-    price: 0
+    price: 80
   - name: Set Metal
     items:
     - {fileID: 11400000, guid: fe4d1b6bcb78a7841ac5c1b00a9afaed, type: 2}
@@ -172,5 +172,11 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 9bd68b8b63462b74eb61ad373cb6e0fe, type: 2}
     - {fileID: 11400000, guid: 13e13599cb3787e47b019a98b949c058, type: 2}
     - {fileID: 11400000, guid: dd60bef4bd857a8419eaf3dcc20780c0, type: 2}
-    price: 0
-  EquipmentItemUIIconRendererPrefabs: []
+    price: 95
+  EquipmentItemUIIconRendererPrefabs:
+  - {fileID: 964820677236584540, guid: 610595593a1c27548a50846048117fdc, type: 3}
+  - {fileID: 6548555245828364253, guid: a931754d4c7779e489bfa01f2c7dc5ef, type: 3}
+  - {fileID: 3354038698413700166, guid: 32686520927d69c439e15ea51104529e, type: 3}
+  - {fileID: 5223637228916690564, guid: 7ac0736e43f633d4388ac0e10a6fbdf6, type: 3}
+  - {fileID: 846863492164401450, guid: cfe712d109e8d034fac576845e946b95, type: 3}
+  - {fileID: 1482005417080628600, guid: 3364e5d8ad01dcd41a477d94248e1ed1, type: 3}

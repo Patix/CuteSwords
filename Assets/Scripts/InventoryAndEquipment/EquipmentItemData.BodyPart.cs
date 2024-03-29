@@ -4,17 +4,17 @@
     {
         public enum BodyPartType
         {
-            HOOD,
-            HEAD,
-            FACE,
-            SHOULDER,
-            ELBOW,
-            PELVIS,
-            TORSO,
-            BOOT,
-            LEG,
-            WRIST,
-            WEAPON
+            Hood,
+            Head,
+            Face,
+            Shoulder,
+            Elbow,
+            Pelvis,
+            Torso,
+            Boot,
+            Leg,
+            Wrist,
+            Weapon
         }
     }
 }

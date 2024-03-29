@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f753e0ef04d4d17a49a9c52244c8b2f, type: 3}
   m_Name: Weapon6
   m_EditorClassIdentifier: 
-  name: 
-  description: 
   bodyPart: 10
   sprite: {fileID: 21300000, guid: 37e05d8dcd5e386498e75d924efbc7c1, type: 3}
   spriteRightPair: {fileID: 0}
+  customSpriteForUI: {fileID: 21300000, guid: 5d7ff4b982784f843b12c8448e652a36, type: 3}

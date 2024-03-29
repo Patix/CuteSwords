@@ -35,7 +35,7 @@ namespace InventoryAndEquipment
             var spriteRenderers = root.GetComponentsInChildren <SpriteRenderer>();
             var targetSlotName  = GetTargetSlotName();
 
-            if (bodyPart == BodyPartType.WEAPON)
+            if (bodyPart == BodyPartType.Weapon)
             {
                 var bothWeaponRenderers = spriteRenderers.Where(spriteRender => spriteRender.name == targetSlotName);
 
@@ -70,11 +70,11 @@ namespace InventoryAndEquipment
         {
             switch (bodyPart)
             {
-                case BodyPartType.LEG:
-                case BodyPartType.ELBOW:
-                case BodyPartType.BOOT:
-                case BodyPartType.SHOULDER:
-                case BodyPartType.WRIST: return true;
+                case BodyPartType.Leg:
+                case BodyPartType.Elbow:
+                case BodyPartType.Boot:
+                case BodyPartType.Shoulder:
+                case BodyPartType.Wrist: return true;
                 default: return false;
             }
         }

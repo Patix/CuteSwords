@@ -41,15 +41,15 @@ namespace InventoryAndEquipment
 
                 switch (equipmentPart.BodyPart)
                 {
-                    case EquipmentItemData.BodyPartType.HOOD:   return GearslotType.HOOD;
-                    case EquipmentItemData.BodyPartType.FACE:   return GearslotType.FACE;
-                    case EquipmentItemData.BodyPartType.TORSO:  return GearslotType.TORSO;
-                    case EquipmentItemData.BodyPartType.PELVIS: return GearslotType.Lower;
-                    case EquipmentItemData.BodyPartType.WEAPON: return GearslotType.Weapon;
+                    case EquipmentItemData.BodyPartType.Hood:   return GearslotType.Hood;
+                    case EquipmentItemData.BodyPartType.Face:   return GearslotType.Face;
+                    case EquipmentItemData.BodyPartType.Torso:  return GearslotType.Torso;
+                    case EquipmentItemData.BodyPartType.Pelvis: return GearslotType.Pelvis;
+                    case EquipmentItemData.BodyPartType.Weapon: return GearslotType.Weapon;
                 }
             }
 
-            if (items.Count > 0) return GearslotType.Base;
+            if (items.Count > 0) return GearslotType.ShouldersAndBase;
 
             return GearslotType.Undefined;
         }

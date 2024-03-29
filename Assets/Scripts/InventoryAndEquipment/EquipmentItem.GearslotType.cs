@@ -5,11 +5,11 @@
         public enum GearslotType
         {
             Undefined,
-            HOOD,
-            FACE,
-            TORSO,
-            Lower,
-            Base,
+            Hood,
+            Face,
+            Torso,
+            Pelvis,
+            ShouldersAndBase,
             Weapon
         }
     }
