@@ -6,6 +6,7 @@ using EventManagement;
 using InventoryAndEquipment;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace UI
@@ -13,21 +14,19 @@ namespace UI
     public class ShopController : MonoBehaviour
     {
         public static bool WindowIsActive { get; private set; }
-    
-        [SerializeField] private Vector3   m_gearTypeSwitcherButtonClickedSize;
-        [SerializeField] private ShopItem  m_ShopItemPrefab;
-        [SerializeField] private Transform m_ShopItemGrid;
-        [SerializeField] private TMP_Text  m_PlayerGoldText;
-        [SerializeField] private Animator  m_GoldAnimator;
-        [SerializeField] private Button[]  m_GearslotTypeSwitchButtons;
+      
+        [SerializeField] private Vector3    m_gearTypeSwitcherButtonClickedSize;
+        [SerializeField] private ShopItem   m_ShopItemPrefab;
+        [SerializeField] private Transform  m_ShopItemGrid;
+        [SerializeField] private TMP_Text   m_PlayerGoldText;
+        [SerializeField] private Animator   m_GoldAnimator;
+        [SerializeField] private Button[]   m_GearslotTypeSwitchButtons;
    
         private InteractionMode            intentionTypeChosen;
         private EquipmentItem.GearslotType buyPanelChosenType;
         private List <ShopItem>            instantiatedShopItems;
 
         private EventListeners eventListeners;
-    
-        
     
         private void Awake()
         {
