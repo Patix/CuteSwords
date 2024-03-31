@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31a2f50570d846079181795c9ac40579, type: 3}
   m_Name: GameConfiguration
   m_EditorClassIdentifier: Assembly-CSharp:Data:GameConfiguration
-  m_characterMovementSpeed: 10
+  m_characterMovementSpeed: 12
   m_Cursors:
     m_Keys: 0000000002000000050000000400000003000000
     m_Values:
