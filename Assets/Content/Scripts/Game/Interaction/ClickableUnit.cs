@@ -1,8 +1,5 @@
-﻿using InventoryAndEquipment;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.U2D;
-using BezierUtility = UnityEditor.U2D.Path.BezierUtility;
 
 namespace Interaction
 {

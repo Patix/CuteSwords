@@ -8192,7 +8192,7 @@ MonoBehaviour:
   m_Name: TimelineTextMeshProPlayableAsset(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)(Clone)
   m_EditorClassIdentifier: 
   template:
-    m_Text: Move closer and click house
+    m_Text: Move closer and click on house
 --- !u!114 &3895611734500540705
 MonoBehaviour:
   m_ObjectHideFlags: 1

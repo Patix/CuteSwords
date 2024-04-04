@@ -29,7 +29,7 @@ namespace InventoryAndEquipment
             if(movementModule.Velocity.x  > 0) LookRight(); //Rotate Right
             if (movementModule.Velocity.x < 0) LookLeft(); // Rotate Left
             
-            m_FootstepAudio.mute = character.State != Character.StateTypes.Moving;
+            m_FootstepAudio.mute = movementModule.Velocity.magnitude < float.Epsilon;
             if(!m_FootstepAudio.isPlaying) m_FootstepAudio.Play();
         
             m_Animator.SetFloat("MovementSpeed", Mathf.Max(movementModule.Velocity.magnitude));

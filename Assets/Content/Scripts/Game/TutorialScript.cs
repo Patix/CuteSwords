@@ -88,7 +88,7 @@ public class TutorialScript : MonoBehaviour
         {
             yield return null;
         }
-
+        
         doneCheckPoints++;
        
         if (m_TimeLine.state == PlayState.Paused)
