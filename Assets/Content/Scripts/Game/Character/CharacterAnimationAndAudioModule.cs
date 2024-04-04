@@ -26,8 +26,8 @@ namespace InventoryAndEquipment
         public void Update()
         {
             
-            if(movementModule.Velocity.x  > 0) m_Animator.transform.localEulerAngles = Vector3.zero; //Rotate Left
-            if (movementModule.Velocity.x < 0) m_Animator.transform.localEulerAngles = 180 * Vector3.up; // Rotate Right
+            if(movementModule.Velocity.x  > 0) LookRight(); //Rotate Right
+            if (movementModule.Velocity.x < 0) LookLeft(); // Rotate Left
             
             m_FootstepAudio.mute = character.State != Character.StateTypes.Moving;
             if(!m_FootstepAudio.isPlaying) m_FootstepAudio.Play();
@@ -47,6 +47,15 @@ namespace InventoryAndEquipment
                 character.State = Character.StateTypes.Idle;
                 
             }
+        }
+
+        private void LookRight() { m_Animator.transform.localEulerAngles = Vector3.zero; }
+        private void LookLeft()  { m_Animator.transform.localEulerAngles = 180 * Vector3.up; }
+        public void LookAt(Transform target)
+        {
+            if (target.transform.position.x > m_Animator.transform.position.x) LookRight(); 
+            else if (target.transform.position.x < m_Animator.transform.position.x) LookLeft();
+            // if same position -do nothing
         }
     }
 }

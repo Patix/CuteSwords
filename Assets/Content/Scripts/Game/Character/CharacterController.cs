@@ -41,6 +41,7 @@ public class CharacterController : SingletonMonoBehaviour <CharacterController>
     public void Interact(ClickableInteractiveBehaviourBase clickableUnit)
     {
         Character.State = Character.StateTypes.Interacting;
+        animationModule.LookAt(clickableUnit.transform);
         
         if (clickableUnit.InteractionType == InteractionType.Kill)
         {

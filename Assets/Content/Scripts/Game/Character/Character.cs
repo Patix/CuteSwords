@@ -17,7 +17,7 @@ namespace InventoryAndEquipment
         private                 Dictionary <EquipmentItem.GearslotType, EquipmentItem> equipedItems;
         public                  IEnumerable <EquipmentItem>                            Equipment => equipedItems.Values;
         public                  StateTypes                                             State     { get; set; }
-
+        
         public Character()
         {
             equipedItems = new Dictionary <EquipmentItem.GearslotType, EquipmentItem>();
