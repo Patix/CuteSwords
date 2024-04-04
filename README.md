@@ -1,4 +1,3 @@
-# BGS__Patik
 This is Topdown RPG prototype for BGS
 - Footstep sounds change depending on surface
 - Foliage is Interactive
