@@ -3,7 +3,7 @@ guid: ea4a3862609c71646960083fd7cf4a2d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -20,11 +20,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +64,8 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -74,6 +77,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -86,6 +90,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -98,6 +103,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -110,6 +116,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -1134,57 +1141,56 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Warrior_Purple_8: 1802497912
-      Warrior_Purple_22: -787399362
-      Warrior_Purple_44: 1511110237
-      Warrior_Purple_4: -381942393
-      Warrior_Purple_32: 1333969646
-      Warrior_Purple_42: -1865273950
-      Warrior_Purple_10: 865440930
-      Warrior_Purple_12: -622711919
-      Warrior_Purple_47: -1517598350
-      Warrior_Purple_19: -46471099
-      Warrior_Purple_6: 58020811
-      Warrior_Purple_33: 495539882
-      Warrior_Purple_9: -942671176
-      Warrior_Purple_41: 2124633397
-      Warrior_Purple_35: 1321442210
-      Warrior_Purple_21: 1773428968
-      Warrior_Purple_31: 644854204
-      Warrior_Purple_40: -836345571
-      Warrior_Purple_29: -3057573
       Warrior_Purple_0: 1796060838
-      Warrior_Purple_27: 289718966
-      Warrior_Purple_43: 482550981
-      Warrior_Purple_2: -1057579927
-      Warrior_Purple_24: 944422714
-      Warrior_Purple_13: -867098098
-      Warrior_Purple_34: 1423124224
-      Warrior_Purple_18: -1884533521
-      Warrior_Purple_15: -1668317171
-      Warrior_Purple_5: -351988678
-      Warrior_Purple_39: -352162487
-      Warrior_Purple_30: -209618643
       Warrior_Purple_1: -878016018
-      Warrior_Purple_45: -1150332513
-      Warrior_Purple_20: -174836425
-      Warrior_Purple_37: -1455676654
-      Warrior_Purple_16: 1776616670
-      Warrior_Purple_7: 1889129302
-      Warrior_Purple_3: -1648995534
+      Warrior_Purple_10: 865440930
       Warrior_Purple_11: 205691811
-      Warrior_Purple_23: -1929120403
-      Warrior_Purple_26: 907196603
-      Warrior_Purple_17: 59875584
-      Warrior_Purple_25: 1691581046
-      Warrior_Purple_38: 633365926
-      Warrior_Purple_36: -968254508
-      Warrior_Purple_28: -769390610
+      Warrior_Purple_12: -622711919
+      Warrior_Purple_13: -867098098
       Warrior_Purple_14: 1957950455
+      Warrior_Purple_15: -1668317171
+      Warrior_Purple_16: 1776616670
+      Warrior_Purple_17: 59875584
+      Warrior_Purple_18: -1884533521
+      Warrior_Purple_19: -46471099
+      Warrior_Purple_2: -1057579927
+      Warrior_Purple_20: -174836425
+      Warrior_Purple_21: 1773428968
+      Warrior_Purple_22: -787399362
+      Warrior_Purple_23: -1929120403
+      Warrior_Purple_24: 944422714
+      Warrior_Purple_25: 1691581046
+      Warrior_Purple_26: 907196603
+      Warrior_Purple_27: 289718966
+      Warrior_Purple_28: -769390610
+      Warrior_Purple_29: -3057573
+      Warrior_Purple_3: -1648995534
+      Warrior_Purple_30: -209618643
+      Warrior_Purple_31: 644854204
+      Warrior_Purple_32: 1333969646
+      Warrior_Purple_33: 495539882
+      Warrior_Purple_34: 1423124224
+      Warrior_Purple_35: 1321442210
+      Warrior_Purple_36: -968254508
+      Warrior_Purple_37: -1455676654
+      Warrior_Purple_38: 633365926
+      Warrior_Purple_39: -352162487
+      Warrior_Purple_4: -381942393
+      Warrior_Purple_40: -836345571
+      Warrior_Purple_41: 2124633397
+      Warrior_Purple_42: -1865273950
+      Warrior_Purple_43: 482550981
+      Warrior_Purple_44: 1511110237
+      Warrior_Purple_45: -1150332513
       Warrior_Purple_46: 39179538
-  spritePackingTag: 
+      Warrior_Purple_47: -1517598350
+      Warrior_Purple_5: -351988678
+      Warrior_Purple_6: 58020811
+      Warrior_Purple_7: 1889129302
+      Warrior_Purple_8: 1802497912
+      Warrior_Purple_9: -942671176
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
