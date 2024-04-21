@@ -10,19 +10,34 @@ namespace Content.Scripts.Game.Animation
 
     public class SyncTransformPhysicsInfoToAnimationControllerBehaviour : MonoBehaviourContainerFor <SyncTransformPhysicsInfoToAnimationController>
     {
-        private void Awake()                      => InternalComponent.Initialize();
-        private void FixedUpdate()                => InternalComponent.Update();
-//        private void OnAnimatorMove()             => InternalComponent.OnAnimatorMove();
+        private void Awake()       => InternalComponent.Initialize();
+        private void FixedUpdate() => InternalComponent.Update();
 
-        private void OnAnimatorIK(int layerIndex)
+        private void Update()
         {
-            var x = Animator.StringToHash("S");
+            AnimationClip clip;
+
+       
+            
+    
+        }
+
+        private void OnAnimatorMoves()
+        {
+            InternalComponent.MAnimator.applyRootMotion = true;
+            InternalComponent.MAnimator.SetLookAtPosition(Vector3.left * 100);
+            
+            Debug.Log((InternalComponent.MAnimator.deltaRotation.eulerAngles));
+            //InternalComponent.MAnimator.rootRotation = InternalComponent.MAnimator.deltaRotation;
+            transform.rotation = InternalComponent.MAnimator.rootRotation;
+            Debug.Log($"Delta {(InternalComponent.MAnimator.deltaRotation.eulerAngles)} : Root {InternalComponent.MAnimator.rootRotation.eulerAngles}");
+            // Debug.Log(InternalComponent.MAnimator.rootRotation.eulerAngles += InternalComponent.MAnimator.deltaRotation.eulerAngles);
+            
         }
 
         private void OnDidApplyAnimationProperties()
         {
-            InternalComponent.OnApply();
-            object r = null;
+            Debug.Log("Param Appy");
         }
     }
    
@@ -37,8 +52,9 @@ namespace Content.Scripts.Game.Animation
         [SerializeField] private SyncOptions          m_SyncOptions;
         private                  TransformPhysicsInfo m_TransformPhysicsInfo;
 
-        private int currentFrame;
-        
+        private int      currentFrame;
+        public  Animator MAnimator => m_Animator;
+
         public void Initialize()
         {
             m_TransformPhysicsInfo       = new TransformPhysicsInfo(m_Transform);
@@ -47,14 +63,14 @@ namespace Content.Scripts.Game.Animation
 
         public void OnAnimatorMove()
         {
-            m_Animator.applyRootMotion          = false;
-            m_Animator.ApplyBuiltinRootMotion();
-            Debug.Log($"{m_Animator.rootRotation.eulerAngles} - {m_Animator.rootRotation.eulerAngles==m_Transform.eulerAngles}" ,m_Transform);
+            MAnimator.applyRootMotion          = false;
+            MAnimator.ApplyBuiltinRootMotion();
+            Debug.Log($"{MAnimator.rootRotation.eulerAngles} - {MAnimator.rootRotation.eulerAngles==m_Transform.eulerAngles}" ,m_Transform);
         }
 
         public void OnApply()
         {
-            var x = m_Animator.rootRotation;
+            var x = MAnimator.rootRotation;
         }
         
         public void Update()
@@ -70,8 +86,8 @@ namespace Content.Scripts.Game.Animation
 
         protected void Sync()
         {
-            if(m_SyncOptions.HasFlag(SyncOptions.VelocityX)) m_Animator.SetFloat("VelocityX", m_TransformPhysicsInfo.Velocity.x);
-            if(m_SyncOptions.HasFlag(SyncOptions.VelocityY)) m_Animator.SetFloat("VelocityY", m_TransformPhysicsInfo.Velocity.y);
+            if(m_SyncOptions.HasFlag(SyncOptions.VelocityX)) MAnimator.SetFloat("VelocityX", m_TransformPhysicsInfo.Velocity.x);
+            if(m_SyncOptions.HasFlag(SyncOptions.VelocityY)) MAnimator.SetFloat("VelocityY", m_TransformPhysicsInfo.Velocity.y);
         }
         
         

@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Paata
   productName: BGSTask_Paata
-  defaultCursor: {fileID: 2800000, guid: 331da513dd3294c419b9bdcd6f743f11, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 133930c9e5a03464da00460a28114c70, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

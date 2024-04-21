@@ -16,7 +16,7 @@ MonoBehaviour:
     m_Keys: 000000000200000005000000040000000300000001000000
     m_Values:
     - interactionType: 0
-      m_Allowed_Texture: {fileID: 2800000, guid: 331da513dd3294c419b9bdcd6f743f11, type: 3}
+      m_Allowed_Texture: {fileID: 2800000, guid: 133930c9e5a03464da00460a28114c70, type: 3}
       m_NotAllowed_Texture: {fileID: 0}
     - interactionType: 2
       m_Allowed_Texture: {fileID: 2800000, guid: 331da513dd3294c419b9bdcd6f743f11, type: 3}
