@@ -12,33 +12,6 @@ namespace Content.Scripts.Game.Animation
     {
         private void Awake()       => InternalComponent.Initialize();
         private void FixedUpdate() => InternalComponent.Update();
-
-        private void Update()
-        {
-            AnimationClip clip;
-
-       
-            
-    
-        }
-
-        private void OnAnimatorMoves()
-        {
-            InternalComponent.MAnimator.applyRootMotion = true;
-            InternalComponent.MAnimator.SetLookAtPosition(Vector3.left * 100);
-            
-            Debug.Log((InternalComponent.MAnimator.deltaRotation.eulerAngles));
-            //InternalComponent.MAnimator.rootRotation = InternalComponent.MAnimator.deltaRotation;
-            transform.rotation = InternalComponent.MAnimator.rootRotation;
-            Debug.Log($"Delta {(InternalComponent.MAnimator.deltaRotation.eulerAngles)} : Root {InternalComponent.MAnimator.rootRotation.eulerAngles}");
-            // Debug.Log(InternalComponent.MAnimator.rootRotation.eulerAngles += InternalComponent.MAnimator.deltaRotation.eulerAngles);
-            
-        }
-
-        private void OnDidApplyAnimationProperties()
-        {
-            Debug.Log("Param Appy");
-        }
     }
    
     [Serializable]
@@ -67,12 +40,7 @@ namespace Content.Scripts.Game.Animation
             MAnimator.ApplyBuiltinRootMotion();
             Debug.Log($"{MAnimator.rootRotation.eulerAngles} - {MAnimator.rootRotation.eulerAngles==m_Transform.eulerAngles}" ,m_Transform);
         }
-
-        public void OnApply()
-        {
-            var x = MAnimator.rootRotation;
-        }
-        
+       
         public void Update()
         {
             if (++currentFrame>=FixedUpdateSamplingInterval)
@@ -89,8 +57,7 @@ namespace Content.Scripts.Game.Animation
             if(m_SyncOptions.HasFlag(SyncOptions.VelocityX)) MAnimator.SetFloat("VelocityX", m_TransformPhysicsInfo.Velocity.x);
             if(m_SyncOptions.HasFlag(SyncOptions.VelocityY)) MAnimator.SetFloat("VelocityY", m_TransformPhysicsInfo.Velocity.y);
         }
-        
-        
+
         [Flags]
         public enum SyncOptions
         {

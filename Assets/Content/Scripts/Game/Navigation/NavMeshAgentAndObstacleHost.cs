@@ -5,14 +5,18 @@ namespace Content.Scripts.Game.Navigation
 {
     public class NavMeshAgentAndObstacleHost : MonoBehaviour
     {
+        private static int Priority;
+        
         [SerializeField] private NavMeshAgent    m_NavmeshAgent;
         [SerializeField] private NavMeshObstacle m_NavMeshObstacle;
         [SerializeField] private Vector2         Offset;
         
         private float   lastSwitch = float.MinValue;
+
+        [SerializeField] private bool    SwitchToObstacleOnStop;
         
-        public Vector2 Position        { get => (Vector2)transform.position + Offset; set => transform.position = value - Offset; }
-        public bool    IsOnOffMeshLink => m_NavmeshAgent.isOnOffMeshLink;
+        public                   Vector2 Position        { get => (Vector2)transform.position + Offset; set => transform.position = value - Offset; }
+        public                   bool    IsOnOffMeshLink => m_NavmeshAgent.isOnOffMeshLink;
         
         private void FixedUpdate()
         {
@@ -21,6 +25,7 @@ namespace Content.Scripts.Game.Navigation
 
         private void ChangeAgentToObstacleIfStationary()
         {
+            if(!SwitchToObstacleOnStop) return;
             if (Time.realtimeSinceStartup - lastSwitch > m_NavMeshObstacle.carvingTimeToStationary)
             {
                 lastSwitch                = Time.realtimeSinceStartup;
@@ -31,7 +36,8 @@ namespace Content.Scripts.Game.Navigation
 
         private void Awake()
         {
-            m_NavmeshAgent.updateUpAxis = false;
+            m_NavmeshAgent.updateUpAxis      = false;
+            m_NavmeshAgent.avoidancePriority = 99 -(++Priority % 99);
             ChangeAgentToObstacleIfStationary();
         }
 
@@ -41,11 +47,18 @@ namespace Content.Scripts.Game.Navigation
             m_NavmeshAgent.enabled     = true;
             m_NavmeshAgent.destination = destination;
         }
-        
 
 
-        public void WriteTo(Rigidbody2D rigidbody2D) => rigidbody2D.MovePosition(Position);
-        public void WriteTo(Transform transform) => transform.position = Position;
 
+        public void Sync(Rigidbody2D  rigidbody2D) => rigidbody2D.MovePosition(m_NavmeshAgent.transform.position);
+        public void WriteTo(Transform transform)   => transform.position = Position;
+
+        public void ControlRigidbody(Rigidbody2D mSelfTransform, RigidbodyType2D originalTypeForRigidbody)
+        {
+            
+            if (m_NavmeshAgent.enabled && m_NavmeshAgent.hasPath)mSelfTransform.bodyType = RigidbodyType2D.Kinematic;
+            else mSelfTransform.bodyType = originalTypeForRigidbody;
+
+        }
     }
 }

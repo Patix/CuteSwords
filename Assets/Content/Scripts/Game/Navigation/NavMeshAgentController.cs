@@ -1,5 +1,6 @@
 using Content.Scripts.Game.Navigation;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
 
 public class NavMeshAgentController : MonoBehaviour
@@ -10,14 +11,18 @@ public class NavMeshAgentController : MonoBehaviour
     [SerializeField]                  private Animator                    m_animator;
     [SerializeField]                  private string                      m_OffMeshLinkAnimationParameter;
 
+    private RigidbodyType2D originalTypeForRigidbody;
+    
     private void Awake()
     {
+        originalTypeForRigidbody = m_SelfTransform.bodyType;
         UpdateMirror();
     }
 
     private void FixedUpdate()
     {
-        m_NavMeshAgentAndObstacleHost.WriteTo(m_SelfTransform);
+        m_NavMeshAgentAndObstacleHost.ControlRigidbody(m_SelfTransform, originalTypeForRigidbody);
+        m_NavMeshAgentAndObstacleHost.Sync(m_SelfTransform);
         if (m_animator      && m_animator.enabled) m_animator.SetBool(m_OffMeshLinkAnimationParameter, m_NavMeshAgentAndObstacleHost.IsOnOffMeshLink);
     }
 
@@ -29,7 +34,8 @@ public class NavMeshAgentController : MonoBehaviour
         if (!m_NavMeshAgentAndObstacleHost)
         {
             var navigationAgentsContainer = GameObject.FindGameObjectWithTag("NavigationAgents").transform;
-            m_NavMeshAgentAndObstacleHost = Instantiate(m_NavmeshAgentPrefab.gameObject, navigationAgentsContainer).GetComponent <NavMeshAgentAndObstacleHost>();
+            m_NavMeshAgentAndObstacleHost      = Instantiate(m_NavmeshAgentPrefab.gameObject, navigationAgentsContainer).GetComponent <NavMeshAgentAndObstacleHost>();
+            m_NavMeshAgentAndObstacleHost.name = "Agent For " + transform.name;
         }
 
         m_NavMeshAgentAndObstacleHost.Position = m_SelfTransform.position;
