@@ -87,3 +87,5 @@ MonoBehaviour:
   m_NavmeshAgent: {fileID: 6159054947854512663}
   m_NavMeshObstacle: {fileID: 581335686217292326}
   Offset: {x: 0, y: 0}
+  SwitchToObstacleOnStop: 0
+  MakeKinematicOnMove: 1

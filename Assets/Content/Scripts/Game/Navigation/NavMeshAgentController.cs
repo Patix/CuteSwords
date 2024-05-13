@@ -1,3 +1,4 @@
+using System;
 using Content.Scripts.Game.Navigation;
 using Sirenix.OdinInspector;
 using TMPro;
@@ -39,5 +40,10 @@ public class NavMeshAgentController : MonoBehaviour
         }
 
         m_NavMeshAgentAndObstacleHost.Position = m_SelfTransform.position;
+    }
+
+    private void OnDestroy()
+    {
+        if(m_NavMeshAgentAndObstacleHost) Destroy(m_NavMeshAgentAndObstacleHost.gameObject);
     }
 }

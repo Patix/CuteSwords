@@ -14,6 +14,7 @@ namespace Content.Scripts.Game.Navigation
         private float   lastSwitch = float.MinValue;
 
         [SerializeField] private bool    SwitchToObstacleOnStop;
+        [SerializeField] private bool    MakeKinematicOnMove;
         
         public                   Vector2 Position        { get => (Vector2)transform.position + Offset; set => transform.position = value - Offset; }
         public                   bool    IsOnOffMeshLink => m_NavmeshAgent.isOnOffMeshLink;
@@ -55,6 +56,7 @@ namespace Content.Scripts.Game.Navigation
 
         public void ControlRigidbody(Rigidbody2D mSelfTransform, RigidbodyType2D originalTypeForRigidbody)
         {
+            if(!MakeKinematicOnMove) return;
             
             if (m_NavmeshAgent.enabled && m_NavmeshAgent.hasPath)mSelfTransform.bodyType = RigidbodyType2D.Kinematic;
             else mSelfTransform.bodyType = originalTypeForRigidbody;
