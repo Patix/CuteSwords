@@ -1234,7 +1234,7 @@ Tilemap:
       - {fileID: -798722270, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
       - {fileID: -1464198598, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
       - {fileID: -2033847330, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
-      m_AnimationSpeed: 6.2326517
+      m_AnimationSpeed: 5.254593
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -4787,6 +4787,7 @@ GameObject:
   - component: {fileID: 436144257}
   - component: {fileID: 436144256}
   - component: {fileID: 436144258}
+  - component: {fileID: 436144259}
   m_Layer: 12
   m_Name: Knight
   m_TagString: Untagged
@@ -5024,6 +5025,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &436144259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436144252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe4191897184038b601646af27cccc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InternalComponent:
+    rid: 1114615738576404481
+  references:
+    version: 2
+    RefIds:
+    - rid: 1114615738576404481
+      type: {class: SyncTransformPhysicsInfoToAnimationController, ns: Content.Scripts.Game.Animation, asm: Assembly-CSharp}
+      data:
+        m_Transform: {fileID: 436144253}
+        m_Animator: {fileID: 436144254}
+        FixedUpdateSamplingInterval: 4
+        m_SyncOptions: 31
 --- !u!1001 &453880531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5807,6 +5832,7 @@ GameObject:
   - component: {fileID: 605816845}
   - component: {fileID: 605816844}
   - component: {fileID: 605816843}
+  - component: {fileID: 605816848}
   - component: {fileID: 605816847}
   m_Layer: 12
   m_Name: Goblin
@@ -6085,6 +6111,30 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &605816848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605816839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe4191897184038b601646af27cccc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InternalComponent:
+    rid: 1114615738576404481
+  references:
+    version: 2
+    RefIds:
+    - rid: 1114615738576404481
+      type: {class: SyncTransformPhysicsInfoToAnimationController, ns: Content.Scripts.Game.Animation, asm: Assembly-CSharp}
+      data:
+        m_Transform: {fileID: 605816840}
+        m_Animator: {fileID: 605816841}
+        FixedUpdateSamplingInterval: 4
+        m_SyncOptions: 31
 --- !u!1001 &608055402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6877,7 +6927,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 8.555104
+      m_AnimationSpeed: 11.016857
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: -1, z: 0}
@@ -6892,7 +6942,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 14.103722
+      m_AnimationSpeed: 8.68966
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 1, z: 0}
@@ -6907,7 +6957,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 8.926773
+      m_AnimationSpeed: 8.021871
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 1, z: 0}
@@ -6922,7 +6972,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.738407
+      m_AnimationSpeed: 12.434697
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 2, z: 0}
@@ -6937,7 +6987,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 11.254463
+      m_AnimationSpeed: 8.661651
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 2, z: 0}
@@ -6952,7 +7002,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 7.5446625
+      m_AnimationSpeed: 9.630861
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 3, z: 0}
@@ -6967,7 +7017,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.582201
+      m_AnimationSpeed: 13.791936
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 3, z: 0}
@@ -6982,7 +7032,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 13.594275
+      m_AnimationSpeed: 12.347777
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
