@@ -292,6 +292,7 @@ ScriptedImporter:
     cells:
     - name: Tree_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 43
         y: 14
@@ -300,6 +301,7 @@ ScriptedImporter:
       spriteId: 8510dc0c52db6824fb444b34b9bfd869
     - name: Tree_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 43
         y: 14
@@ -308,6 +310,7 @@ ScriptedImporter:
       spriteId: 0a8e9c341dfa2e64a876ba7c0d338282
     - name: Tree_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 44
         y: 14
@@ -316,6 +319,7 @@ ScriptedImporter:
       spriteId: b5050ebb9e0c11a40b282cb8c58cb59a
     - name: Tree_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 43
         y: 14
@@ -324,6 +328,7 @@ ScriptedImporter:
       spriteId: 36faf0617ce41cf41b9fd767ab82916e
     - name: Tree_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 42
         y: 14
@@ -332,6 +337,7 @@ ScriptedImporter:
       spriteId: a46f24187d9472b4c9dc382df96a98bb
     - name: Tree_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 39
         y: 14
@@ -340,6 +346,7 @@ ScriptedImporter:
       spriteId: a2915d94f0de9914eb661a68c5cce308
     - name: Tree_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 43
         y: 14
@@ -348,6 +355,7 @@ ScriptedImporter:
       spriteId: abc178c0357e2be4caddc7f19678a1d6
     - name: Tree_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 79
         y: 16

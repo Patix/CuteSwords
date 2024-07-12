@@ -312,6 +312,7 @@ ScriptedImporter:
     cells:
     - name: Explosions_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 64
         y: 56
@@ -320,6 +321,7 @@ ScriptedImporter:
       spriteId: e41d4ba789b40dd4e8c582caec605e3a
     - name: Explosions_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 60
         y: 60
@@ -328,6 +330,7 @@ ScriptedImporter:
       spriteId: ac5419c182633bf4c895d7a0117fef93
     - name: Explosions_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -336,6 +339,7 @@ ScriptedImporter:
       spriteId: 930cb204343c3b044bcaf4d9bbf14e9b
     - name: Explosions_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 47
         y: 51
@@ -344,6 +348,7 @@ ScriptedImporter:
       spriteId: 49016d3f55b7cc746bd8253eb3e46932
     - name: Explosions_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 44
         y: 47
@@ -352,6 +357,7 @@ ScriptedImporter:
       spriteId: 1f0b0596be9f2d1489a3b6e20193b1aa
     - name: Explosions_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 44
         y: 43
@@ -360,6 +366,7 @@ ScriptedImporter:
       spriteId: 943e82a373721744faba0be85b3be9b9
     - name: Explosions_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 45
         y: 45
@@ -368,6 +375,7 @@ ScriptedImporter:
       spriteId: 2884383fa8778b343808f91c95ada427
     - name: Explosions_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 73
         y: 78
@@ -376,6 +384,7 @@ ScriptedImporter:
       spriteId: 1d6946ee40e869146963d1c466156d57
     - name: Explosions_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 79
         y: 92

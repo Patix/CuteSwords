@@ -812,6 +812,7 @@ ScriptedImporter:
     cells:
     - name: Torch_Yellow_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 59
@@ -820,6 +821,7 @@ ScriptedImporter:
       spriteId: f960df4df264cff4fa0b16f91588ffd7
     - name: Torch_Yellow_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 48
         y: 59
@@ -828,6 +830,7 @@ ScriptedImporter:
       spriteId: 465d16405c961cb48a6d0079429c6f9d
     - name: Torch_Yellow_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 69
         y: 59
@@ -836,6 +839,7 @@ ScriptedImporter:
       spriteId: 523258cca1147d1478c0105a2fb77ad8
     - name: Torch_Yellow_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 53
         y: 59
@@ -844,6 +848,7 @@ ScriptedImporter:
       spriteId: 9c4d10069387efe4cba57d7bfbd9b002
     - name: Torch_Yellow_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 51
         y: 59
@@ -852,6 +857,7 @@ ScriptedImporter:
       spriteId: 130c5f1643a715a4bb74b353f40f6f3a
     - name: Torch_Yellow_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 52
         y: 59
@@ -860,6 +866,7 @@ ScriptedImporter:
       spriteId: dbfd7057880af8c43b5340e0c04333ab
     - name: Torch_Yellow_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 54
         y: 59
@@ -868,6 +875,7 @@ ScriptedImporter:
       spriteId: 146f43b7afb4b0547b8d4ea6533f1003
     - name: Torch_Yellow_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 55
         y: 59
@@ -876,6 +884,7 @@ ScriptedImporter:
       spriteId: c1a84770abad8c94dbc90a5beb4b4186
     - name: Torch_Yellow_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 55
         y: 59
@@ -884,6 +893,7 @@ ScriptedImporter:
       spriteId: f59887bc2aad1f54d8476c8d7eca5084
     - name: Torch_Yellow_Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 59
@@ -892,6 +902,7 @@ ScriptedImporter:
       spriteId: cd16145ef2bc7b74f84cce8d81593260
     - name: Torch_Yellow_Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 59
@@ -900,6 +911,7 @@ ScriptedImporter:
       spriteId: 1fc60d49fee5c5241849d993c83816de
     - name: Torch_Yellow_Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 28
         y: 59
@@ -908,6 +920,7 @@ ScriptedImporter:
       spriteId: 73790ff128118da42af896698abed531
     - name: Torch_Yellow_Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 59
@@ -916,6 +929,7 @@ ScriptedImporter:
       spriteId: c383c0e2a33c1b0408402793a9aa200b
     - name: Torch_Yellow_Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 19
         y: 59
@@ -924,6 +938,7 @@ ScriptedImporter:
       spriteId: 2e1b691201bb610478cb5de505897d0c
     - name: Torch_Yellow_Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 28
         y: 59
@@ -932,6 +947,7 @@ ScriptedImporter:
       spriteId: 22556a63b5804ee428f497179ecfaca2
     - name: Torch_Yellow_Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 20
         y: 59
@@ -940,6 +956,7 @@ ScriptedImporter:
       spriteId: d1d3317f6d540164aae5348317490b90
     - name: Torch_Yellow_Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 44
         y: 59
@@ -948,6 +965,7 @@ ScriptedImporter:
       spriteId: b906788454a03da49a1f0217a80ce903
     - name: Torch_Yellow_Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 39
         y: 59
@@ -956,6 +974,7 @@ ScriptedImporter:
       spriteId: 1c5888874513a2a47b4934ed7afbb646
     - name: Torch_Yellow_Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 35
         y: 59
@@ -964,6 +983,7 @@ ScriptedImporter:
       spriteId: 0a490f1ee245fbe4f886fbbeb22a90fa
     - name: Torch_Yellow_Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 39
         y: 58
@@ -972,6 +992,7 @@ ScriptedImporter:
       spriteId: 64faf7f53449ddd4db35efea18a4cb85
     - name: Torch_Yellow_Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 40
         y: 57
@@ -980,6 +1001,7 @@ ScriptedImporter:
       spriteId: 8657f11fb7ee7884db43b34c0b08322d
     - name: Torch_Yellow_Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 43
         y: 59
@@ -988,6 +1010,7 @@ ScriptedImporter:
       spriteId: 6c001b3b268426148891ba672a3a1169
     - name: Torch_Yellow_Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 47
         y: 59
@@ -996,6 +1019,7 @@ ScriptedImporter:
       spriteId: 658cfd0f790e8ca41a929011da251920
     - name: Torch_Yellow_Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 41
         y: 59
@@ -1004,6 +1028,7 @@ ScriptedImporter:
       spriteId: 46a386ddab8415d42a904fdc2b233eae
     - name: Torch_Yellow_Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 38
         y: 59
@@ -1012,6 +1037,7 @@ ScriptedImporter:
       spriteId: bc895d5d207f96341bc1d5fe31029772
     - name: Torch_Yellow_Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 37
         y: 29
@@ -1020,6 +1046,7 @@ ScriptedImporter:
       spriteId: 0c0f1f2b2110537469d20488fbfbdf8a
     - name: Torch_Yellow_Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 38
         y: 23
@@ -1028,6 +1055,7 @@ ScriptedImporter:
       spriteId: e7e6e64d9efca5f4f9c0e25e16923b00
     - name: Torch_Yellow_Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 27
@@ -1036,6 +1064,7 @@ ScriptedImporter:
       spriteId: 63cefe6c2a2db914c889c41c71579722
     - name: Torch_Yellow_Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 59
@@ -1044,6 +1073,7 @@ ScriptedImporter:
       spriteId: 03bdc51965c3d984498799fb9c3816f4
     - name: Torch_Yellow_Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 44
@@ -1052,6 +1082,7 @@ ScriptedImporter:
       spriteId: 7cdda6381cf2f464b8b06774087e7509
     - name: Torch_Yellow_Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 41
@@ -1060,6 +1091,7 @@ ScriptedImporter:
       spriteId: 170f466ee1f13824fa9e153b757e6d52
     - name: Torch_Yellow_Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 47
@@ -1068,6 +1100,7 @@ ScriptedImporter:
       spriteId: c4e40519716d1a545bd2f8b35648df66
     - name: Torch_Yellow_Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 51
@@ -1076,6 +1109,7 @@ ScriptedImporter:
       spriteId: aa5f242ddfafa254e878fd940f9aca3c
     - name: Torch_Yellow_Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 59

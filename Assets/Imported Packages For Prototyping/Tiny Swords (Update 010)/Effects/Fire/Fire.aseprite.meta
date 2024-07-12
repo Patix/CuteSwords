@@ -272,6 +272,7 @@ ScriptedImporter:
     cells:
     - name: Fire_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 34
         y: 23
@@ -280,6 +281,7 @@ ScriptedImporter:
       spriteId: e30a7e37b9eeb81479dded5be78a36fd
     - name: Fire_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 32
         y: 24
@@ -288,6 +290,7 @@ ScriptedImporter:
       spriteId: 60e567bee3299264a8f91d33cf5bcb6b
     - name: Fire_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 28
         y: 23
@@ -296,6 +299,7 @@ ScriptedImporter:
       spriteId: 25b2040cd271d8445b08b7db7ae21b19
     - name: Fire_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 27
         y: 23
@@ -304,6 +308,7 @@ ScriptedImporter:
       spriteId: 11138c4de2e66794c9494931e2d70296
     - name: Fire_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 36
         y: 17
@@ -312,6 +317,7 @@ ScriptedImporter:
       spriteId: c169f79e3ab2a934db6fae0dc8311a1f
     - name: Fire_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 41
         y: 14
@@ -320,6 +326,7 @@ ScriptedImporter:
       spriteId: 8454d80e7096aaa4cb7f44f81e5a9451
     - name: Fire_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 41
         y: 17

@@ -1232,6 +1232,7 @@ ScriptedImporter:
     cells:
     - name: Archer_Yellow_Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1240,6 +1241,7 @@ ScriptedImporter:
       spriteId: f9164517db475e9438af0d47cc472143
     - name: Archer_Yellow_Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1248,6 +1250,7 @@ ScriptedImporter:
       spriteId: 3ffa936a854c2814d9ef9ce4161cb609
     - name: Archer_Yellow_Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1256,6 +1259,7 @@ ScriptedImporter:
       spriteId: ceb9297e68faa5e419e5c28c7dad7d22
     - name: Archer_Yellow_Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1264,6 +1268,7 @@ ScriptedImporter:
       spriteId: 2138f08a83566604385bb8099a3f76c0
     - name: Archer_Yellow_Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 66
         y: 58
@@ -1272,6 +1277,7 @@ ScriptedImporter:
       spriteId: 1ed3754b6696f774f8e74b8bea248410
     - name: Archer_Yellow_Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 66
         y: 58
@@ -1280,6 +1286,7 @@ ScriptedImporter:
       spriteId: a09c66396d4110a44b12157b0da172c6
     - name: Archer_Yellow_Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1288,6 +1295,7 @@ ScriptedImporter:
       spriteId: b76c9508d59f1d741aa48e0da5c647ec
     - name: Archer_Yellow_Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 66
         y: 58
@@ -1296,6 +1304,7 @@ ScriptedImporter:
       spriteId: a58c580e3da455146bbd6163f04a5e0d
     - name: Archer_Yellow_Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1304,6 +1313,7 @@ ScriptedImporter:
       spriteId: 944ed32f9d472a34e86191c2a94a25d4
     - name: Archer_Yellow_Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1312,6 +1322,7 @@ ScriptedImporter:
       spriteId: 159f41f9828c8e74ba74d77ceb899d9f
     - name: Archer_Yellow_Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 61
         y: 58
@@ -1320,6 +1331,7 @@ ScriptedImporter:
       spriteId: 976a85f42e9fc2e4a810ee5c7da54995
     - name: Archer_Yellow_Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 63
         y: 58
@@ -1328,6 +1340,7 @@ ScriptedImporter:
       spriteId: 1c71d8bd9f07ab14c88c0670d3c0ecc5
     - name: Archer_Yellow_Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 68
         y: 58
@@ -1336,6 +1349,7 @@ ScriptedImporter:
       spriteId: c108990e52b959844966bd52682ba161
     - name: Archer_Yellow_Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1344,6 +1358,7 @@ ScriptedImporter:
       spriteId: 3a45c823b6295454d9032ea93d4775f2
     - name: Archer_Yellow_Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1352,6 +1367,7 @@ ScriptedImporter:
       spriteId: defade4d538662942bfa023147e40694
     - name: Archer_Yellow_Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1360,6 +1376,7 @@ ScriptedImporter:
       spriteId: 1e067d5c9b653b040849f8b159f762f5
     - name: Archer_Yellow_Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 61
         y: 58
@@ -1368,6 +1385,7 @@ ScriptedImporter:
       spriteId: b177520048d3e11449bf6d546dc95a15
     - name: Archer_Yellow_Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 61
         y: 58
@@ -1376,6 +1394,7 @@ ScriptedImporter:
       spriteId: defdae76cdc818543b20acc8008407d3
     - name: Archer_Yellow_Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 61
         y: 58
@@ -1384,6 +1403,7 @@ ScriptedImporter:
       spriteId: 7f7186e4853f49b40a2860b102dee7a5
     - name: Archer_Yellow_Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1392,6 +1412,7 @@ ScriptedImporter:
       spriteId: 1a0c107078f3e4a4cbf4b1ad4ccd8bf7
     - name: Archer_Yellow_Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 67
         y: 58
@@ -1400,6 +1421,7 @@ ScriptedImporter:
       spriteId: 760d46f6b590eb74b9ee63e51e66ace4
     - name: Archer_Yellow_Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -1408,6 +1430,7 @@ ScriptedImporter:
       spriteId: bab607b04ad1d6649bde5c6ced3bb359
     - name: Archer_Yellow_Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1416,6 +1439,7 @@ ScriptedImporter:
       spriteId: 56fc50cfc841ee84d97250e3f3b47655
     - name: Archer_Yellow_Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1424,6 +1448,7 @@ ScriptedImporter:
       spriteId: 7f438b76f7b91d74aaec16956c32dd2a
     - name: Archer_Yellow_Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1432,6 +1457,7 @@ ScriptedImporter:
       spriteId: 05c63f71f10f7fc4aa41a12035d0f526
     - name: Archer_Yellow_Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1440,6 +1466,7 @@ ScriptedImporter:
       spriteId: a7da73da5b8bac9429884e37ba100a27
     - name: Archer_Yellow_Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1448,6 +1475,7 @@ ScriptedImporter:
       spriteId: 87f6b28e88c41254bb1e23d7f9ef4512
     - name: Archer_Yellow_Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -1456,6 +1484,7 @@ ScriptedImporter:
       spriteId: 1515d4eeeb691bf45a2d065d355e7ef3
     - name: Archer_Yellow_Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1464,6 +1493,7 @@ ScriptedImporter:
       spriteId: d7354a7d0a48a9941aa1940044325a3d
     - name: Archer_Yellow_Frame_29
       frameIndex: 29
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -1472,6 +1502,7 @@ ScriptedImporter:
       spriteId: 5e7871fccf3a0f2448e51d265ed6250f
     - name: Archer_Yellow_Frame_30
       frameIndex: 30
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1480,6 +1511,7 @@ ScriptedImporter:
       spriteId: db80a049fe6267542b59cdef7865b344
     - name: Archer_Yellow_Frame_31
       frameIndex: 31
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1488,6 +1520,7 @@ ScriptedImporter:
       spriteId: 1d993aa724cf0ff4895401381057b0ad
     - name: Archer_Yellow_Frame_32
       frameIndex: 32
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1496,6 +1529,7 @@ ScriptedImporter:
       spriteId: f48d88e7f6c01184fafcefeb7b9179c3
     - name: Archer_Yellow_Frame_33
       frameIndex: 33
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1504,6 +1538,7 @@ ScriptedImporter:
       spriteId: f678e9835b5888247b3fec4ae5305c79
     - name: Archer_Yellow_Frame_34
       frameIndex: 34
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 58
@@ -1512,6 +1547,7 @@ ScriptedImporter:
       spriteId: b2c7fa7fc77bddb4c9633c2cb68386f5
     - name: Archer_Yellow_Frame_35
       frameIndex: 35
+      additiveSortOrder: 0
       cellRect:
         x: 51
         y: 58
@@ -1520,6 +1556,7 @@ ScriptedImporter:
       spriteId: 37a55de8c30e44c409cfd0bbcf07a1d4
     - name: Archer_Yellow_Frame_36
       frameIndex: 36
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1528,6 +1565,7 @@ ScriptedImporter:
       spriteId: 08d8f4e86f1c40549a1f8a60f63064c5
     - name: Archer_Yellow_Frame_37
       frameIndex: 37
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -1536,6 +1574,7 @@ ScriptedImporter:
       spriteId: b9ca2dd55075cd844b05a5a63c579c4b
     - name: Archer_Yellow_Frame_38
       frameIndex: 38
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1544,6 +1583,7 @@ ScriptedImporter:
       spriteId: 179d7c3571804aa42b6202820f884b9f
     - name: Archer_Yellow_Frame_39
       frameIndex: 39
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1552,6 +1592,7 @@ ScriptedImporter:
       spriteId: 65b233799d61dce4ea2e61918fdc7e33
     - name: Archer_Yellow_Frame_40
       frameIndex: 40
+      additiveSortOrder: 0
       cellRect:
         x: 64
         y: 51
@@ -1560,6 +1601,7 @@ ScriptedImporter:
       spriteId: e410db46268a84a48b1ce1495e784fd6
     - name: Archer_Yellow_Frame_41
       frameIndex: 41
+      additiveSortOrder: 0
       cellRect:
         x: 60
         y: 49
@@ -1568,6 +1610,7 @@ ScriptedImporter:
       spriteId: 3d0eecdca8bb50844b417aa4691deee3
     - name: Archer_Yellow_Frame_42
       frameIndex: 42
+      additiveSortOrder: 0
       cellRect:
         x: 60
         y: 49
@@ -1576,6 +1619,7 @@ ScriptedImporter:
       spriteId: ce588da9372dc1d4390cc6ffc7211177
     - name: Archer_Yellow_Frame_43
       frameIndex: 43
+      additiveSortOrder: 0
       cellRect:
         x: 54
         y: 48
@@ -1584,6 +1628,7 @@ ScriptedImporter:
       spriteId: 561a4e908b356c14095a96c5551a7c71
     - name: Archer_Yellow_Frame_44
       frameIndex: 44
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 52
@@ -1592,6 +1637,7 @@ ScriptedImporter:
       spriteId: 813722d5c086fa04288ec0b9b24a3edd
     - name: Archer_Yellow_Frame_45
       frameIndex: 45
+      additiveSortOrder: 0
       cellRect:
         x: 56
         y: 58
@@ -1600,6 +1646,7 @@ ScriptedImporter:
       spriteId: 25df658c60e1b6f478f829964d67ada1
     - name: Archer_Yellow_Frame_46
       frameIndex: 46
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 58
@@ -1608,6 +1655,7 @@ ScriptedImporter:
       spriteId: 4fc4c9e5604733345a38343474674f53
     - name: Archer_Yellow_Frame_47
       frameIndex: 47
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 55
@@ -1616,6 +1664,7 @@ ScriptedImporter:
       spriteId: e42552eafa71de345b4e2c85297ed8a3
     - name: Archer_Yellow_Frame_48
       frameIndex: 48
+      additiveSortOrder: 0
       cellRect:
         x: 64
         y: 43
@@ -1624,6 +1673,7 @@ ScriptedImporter:
       spriteId: d740e29bd0a6f644f9a4d6aeedf57869
     - name: Archer_Yellow_Frame_49
       frameIndex: 49
+      additiveSortOrder: 0
       cellRect:
         x: 64
         y: 48
@@ -1632,6 +1682,7 @@ ScriptedImporter:
       spriteId: d130445213281784ab72224f035f42c9
     - name: Archer_Yellow_Frame_50
       frameIndex: 50
+      additiveSortOrder: 0
       cellRect:
         x: 64
         y: 48
@@ -1640,6 +1691,7 @@ ScriptedImporter:
       spriteId: 0ac8874066c484d47a9af456471cecb9
     - name: Archer_Yellow_Frame_51
       frameIndex: 51
+      additiveSortOrder: 0
       cellRect:
         x: 61
         y: 48
@@ -1648,6 +1700,7 @@ ScriptedImporter:
       spriteId: f0f3cf3879f1b564b875b14ab7b71093
     - name: Archer_Yellow_Frame_52
       frameIndex: 52
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 52
@@ -1656,6 +1709,7 @@ ScriptedImporter:
       spriteId: a54b528c5eadc644f9b9ca267712a472
     - name: Archer_Yellow_Frame_53
       frameIndex: 53
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 86
@@ -1664,6 +1718,7 @@ ScriptedImporter:
       spriteId: 2bfc6d52315e9194ca290f4309839d38
     - name: Archer_Yellow_Frame_54
       frameIndex: 54
+      additiveSortOrder: 0
       cellRect:
         x: 65
         y: 86
