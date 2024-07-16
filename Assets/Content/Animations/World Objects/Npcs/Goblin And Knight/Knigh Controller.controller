@@ -374,7 +374,7 @@ AnimatorController:
     m_Motions:
     - serializedVersion: 2
       m_State: {fileID: 8690425616187184838}
-      m_Motion: {fileID: -6108441406275955455, guid: 90e97d294cd0c364f99c5d923370c73d, type: 3}
+      m_Motion: {fileID: 0}
     m_Behaviours: []
     m_BlendingMode: 1
     m_SyncedLayerIndex: -1
@@ -403,9 +403,9 @@ AnimatorController:
       m_State: {fileID: 3772661432027174708}
       m_Motion: {fileID: 7400000, guid: 1f6c1a8a14240754e816b6edb2b41901, type: 2}
     m_Behaviours: []
-    m_BlendingMode: 0
+    m_BlendingMode: 1
     m_SyncedLayerIndex: -1
-    m_DefaultWeight: 1
+    m_DefaultWeight: 0
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
@@ -424,7 +424,7 @@ AnimatorState:
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
+  m_WriteDefaultValues: 0
   m_Mirror: 0
   m_SpeedParameterActive: 0
   m_MirrorParameterActive: 0
