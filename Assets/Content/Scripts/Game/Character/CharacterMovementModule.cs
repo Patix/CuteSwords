@@ -10,19 +10,19 @@ namespace InventoryAndEquipment
     public class CharacterMovementModule
     {
         [SerializeField] private float       m_MovementSpeed=12;
-        [SerializeField] private Rigidbody2D m_RigidBody2D;
+        [SerializeField] private Rigidbody   m_RigidBody;
         
         private                  Character         character;
         private                  float             currentSpeed;
         private                  CharacterControls input;
-        private                  Vector2           MovementVector { get; set; }
+        private                  Vector3           MovementVector { get; set; }
 
-        public Vector2 Velocity=>m_RigidBody2D.velocity;
+        public Vector3 Velocity=>m_RigidBody.velocity;
         
-        public void Initialize(Character character, Rigidbody2D rigidbody2D)
+        public void Initialize(Character character, Rigidbody rigidbody)
         {
-            this.m_RigidBody2D = rigidbody2D;
-            input            = new CharacterControls();
+            this.m_RigidBody = rigidbody;
+            input              = new CharacterControls();
             input.Enable();
             input.Character.Movement.performed += OnInputEvent;
             input.Character.Movement.canceled  += OnInputCanceled;
@@ -30,8 +30,16 @@ namespace InventoryAndEquipment
             this.character = character;
         }
 
-        private void OnInputCanceled(InputAction.CallbackContext obj)          { MovementVector = obj.ReadValue <Vector2>(); }
-        private void OnInputEvent(InputAction.CallbackContext    inputContext) { MovementVector = inputContext.ReadValue <Vector2>(); }
+        private void OnInputCanceled(InputAction.CallbackContext obj)
+        {
+            MovementVector = Vector3.zero;
+        }
+
+        private void OnInputEvent(InputAction.CallbackContext inputContext)
+        {
+            var inputVector = inputContext.ReadValue <Vector2>();
+            MovementVector = new Vector3(inputVector.x,0,inputVector.y);
+        }
 
         public void FixedUpdate()
         {
@@ -46,7 +54,9 @@ namespace InventoryAndEquipment
                     character.State = Character.StateTypes.Idle;
                 }
 
-                m_RigidBody2D.velocity = m_MovementSpeed * MovementVector;
+                var newVelocity = m_RigidBody.velocity;
+                (newVelocity.x, newVelocity.z) = (m_MovementSpeed*MovementVector.x, m_MovementSpeed* MovementVector.z);
+                m_RigidBody.velocity           = newVelocity;
             }
         }
     }

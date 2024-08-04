@@ -1,7 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
+
 
 public class MyNavmeshStuff : MonoBehaviour
 {
@@ -10,7 +9,7 @@ public class MyNavmeshStuff : MonoBehaviour
 
    
     
-    public void SetDestination (Vector2 destionation)
+    public void SetDestination (Vector3 destionation)
     {
         if (Input.GetKey(KeyCode.LeftControl))
         {
