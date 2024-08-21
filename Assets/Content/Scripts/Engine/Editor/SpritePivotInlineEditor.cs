@@ -7,6 +7,7 @@ using Sirenix.Utilities;
 using UnityEditor;
 using UnityEditor.AssetImporters;
 using UnityEditor.U2D;
+using UnityEditor.U2D.Aseprite;
 using UnityEditor.U2D.Sprites;
 using UnityEngine;
 using Object = UnityEngine.Object;
@@ -33,59 +34,78 @@ public class SpritePivotInlineEditor : Editor
             m_customPivot = EditorGUILayout.Vector2Field("Custom Normalized Pivot",m_customPivot);
         }
 
-        if (GUILayout.Button("Apply Custom Settings "))
+        if (GUILayout.Button("Set Pivot In Current Sprite"))
         {
             ApplyCustomSettings();
         }
       
+        if (GUILayout.Button("Clone Pivots From Current To Others in Sheet"))
+        {
+            CopySpritePivotToOthersInSameSheet((Sprite)target);
+        }
+        
         MakeSureDefaultEditorExists();
         defaultEditor.OnInspectorGUI();
     }
 
     private void ApplyCustomSettings()
     {
-       
         foreach (Sprite sprite in targets)
         {
-            var importer   = (TextureImporter) AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(sprite));
-            ApplyNewSettings(sprite);
-            importer.SaveAndReimport();
+            SetSpriteSettings(sprite);
         }
     }
     
-   
-    
-   void ApplyNewSettings(Sprite sprite)
+   void SetSpriteSettings(Sprite sprite)
    {
-       var importer           = (TextureImporter)AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(sprite.texture));
-       var spriteDataProvider = new SpriteDataProviderFactories().GetSpriteEditorDataProviderFromObject(sprite);
-       spriteDataProvider.InitSpriteEditorDataProvider();
-       var spriteRect = spriteDataProvider.GetSpriteRects().First(x => x.name == sprite.name).rect;
-       
-       Undo.RegisterImporterUndo(importer.assetPath,"Change Pivot To Sprite"+sprite.name);
-       
-       var bounds = spriteRect;
+       Manipulate(sprite, (selectedSprite, allSpriteRects) =>
+       {
+           //Do Calculations and Update Information
+           var spriteRect = selectedSprite.rect;
+           var bounds     = spriteRect;
      
-       if (m_TrimTransparentPixelsWhenSettingPivot)
-       {
-           bounds = CalculateNonTransparentBounds(sprite,spriteRect);
-       }
+           if (m_TrimTransparentPixelsWhenSettingPivot)
+           {
+               bounds= CalculateNonTransparentBounds(sprite,spriteRect);
+           }
        
-       if (spriteRect.max != bounds.max)
-       {
-           bounds.max += Vector2.one; // Pad Bounds by 1 pixel
-       }
+           if (spriteRect.max != bounds.max)
+           {
+               bounds.max               += Vector2.one; // Pad Bounds by 1 pixel
+               selectedSprite.alignment =  SpriteAlignment.Custom;
+           }
+
+           else
+           {
+               selectedSprite.alignment = m_PivotAlignment;
+           }
            
-       if (m_SetBorders)
-       {
-           var leftMargin  = bounds.min;
-           var rightMargin = spriteRect.max - bounds.max;
-           importer.spriteBorder = new Vector4(leftMargin.x, leftMargin.y, rightMargin.x, rightMargin.y);
-       }
+           if (m_SetBorders)
+           {
+               var leftMargin  = bounds.min;
+               var rightMargin = spriteRect.max - bounds.max;
+               selectedSprite.border = new Vector4(leftMargin.x, leftMargin.y, rightMargin.x, rightMargin.y);
+           }
        
-       SetPivot(m_PivotAlignment,bounds, spriteRect,importer);
-      
+           SetPivot(selectedSprite,m_PivotAlignment,bounds, spriteRect);
+       } );
    }
+   
+   private void CopySpritePivotToOthersInSameSheet(Sprite selectedSprite)
+   {
+      Manipulate(selectedSprite, (selectedSpriteRect, allSpriteRects) => 
+      {
+          foreach (SpriteRect otherSpriteRect in allSpriteRects.Where(x=>x!=selectedSpriteRect))
+          {
+              otherSpriteRect.alignment = selectedSpriteRect.alignment;
+              otherSpriteRect.pivot     = selectedSpriteRect.pivot;
+          }
+      });
+   }
+
+ 
+
+  
 
    private Rect CalculateNonTransparentBounds(Sprite sprite, Rect spriteRect)
    {
@@ -97,8 +117,8 @@ public class SpritePivotInlineEditor : Editor
            Graphics.CopyTexture(sprite.texture,texture);
        }
            
-       Vector2 Min = new(int.MaxValue, int.MaxValue);
-       Vector2 Max = new(int.MinValue, int.MinValue);
+       Vector2 min = new(int.MaxValue, int.MaxValue);
+       Vector2 max = new(int.MinValue, int.MinValue);
     
        for (int x = 0; x < spriteRect.width; x++)
        {
@@ -108,20 +128,19 @@ public class SpritePivotInlineEditor : Editor
                    
                if (texture.GetPixel((int)textureCoordX, (int)textureCoordY).a > 0)
                {
-                   Min.x = Mathf.Min(x, Min.x);
-                   Max.x = Mathf.Max(x, Max.x);
-                   Min.y = Mathf.Min(y, Min.y);
-                   Max.y = Mathf.Max(y, Max.y);
+                   min.x = Mathf.Min(textureCoordX, min.x);
+                   max.x = Mathf.Max(textureCoordX, max.x);
+                   min.y = Mathf.Min(textureCoordY, min.y);
+                   max.y = Mathf.Max(textureCoordY, max.y);
                }
            }
        }
-           
-       if(texture!=sprite.texture) DestroyImmediate(texture); //If it's copied tempTexture
-       return new Rect { min = Min, max =Max};
+
+       return new Rect { min = min, max = max };
    }
-    private void SetPivot(SpriteAlignment mPivotAlignment, Rect newBounds , Rect originalBounds, TextureImporter textureImporter)
+    private void SetPivot(SpriteRect selectedSpriteRectData,SpriteAlignment mPivotAlignment, Rect newBounds , Rect originalBounds)
     {
-        Vector2 pixelCoordinates = newBounds.min + newBounds.size * mPivotAlignment switch
+        var standardNormalizedPivotPosition = mPivotAlignment switch
         {
             SpriteAlignment.Center       => new Vector2(0.5f, 0.5f),
             SpriteAlignment.TopLeft      => new Vector2(0,    1),
@@ -134,8 +153,11 @@ public class SpritePivotInlineEditor : Editor
             SpriteAlignment.BottomRight  => new Vector2(1,    0),
             SpriteAlignment.Custom       => m_customPivot
         };
-
-        textureImporter.spritePivot = new Vector2(pixelCoordinates.x / originalBounds.width, pixelCoordinates.y / originalBounds.height);
+     
+        var pivotPixelCoordinatesInClippedBounds          = Rect.NormalizedToPoint(newBounds,standardNormalizedPivotPosition);
+        var pivotNormalizedCoordinatesRelativeToOldBounds = Rect.PointToNormalized(originalBounds,pivotPixelCoordinatesInClippedBounds);
+        
+        selectedSpriteRectData.pivot = pivotNormalizedCoordinatesRelativeToOldBounds;
     }
 
     private  void MakeSureDefaultEditorExists()
@@ -146,6 +168,29 @@ public class SpritePivotInlineEditor : Editor
         defaultEditor = CreateEditor(targets, defaultInspectorType);
     }
 
+    private static void Manipulate(Sprite sprite, Action <SpriteRect,SpriteRect[]> action)
+    {
+        
+        //Read Sprite Settings From Importer
+        var importer           = (TextureImporter)AssetImporter.GetAtPath(AssetDatabase.GetAssetPath(sprite.texture));
+        var spriteDataProvider = new SpriteDataProviderFactories().GetSpriteEditorDataProviderFromObject(sprite);
+        spriteDataProvider.InitSpriteEditorDataProvider();
+        var allSpriteRects = spriteDataProvider.GetSpriteRects();
+        var spriteData     = allSpriteRects.First(x => x.name == sprite.name);
+        
+        //Get Ready To Change 
+        Undo.RegisterImporterUndo(importer.assetPath,"Copy Pivot to other sprites");
+        
+        //Do Desired Action
+        action.Invoke(spriteData,allSpriteRects);
+        
+        //Apply And Save
+        spriteDataProvider.SetSpriteRects(allSpriteRects);
+        spriteDataProvider.Apply();
+        importer.SaveAndReimport();
+        
+    }
+    
     private  void OnDisable()
     {  
         if (defaultEditor!=null)
@@ -154,6 +199,7 @@ public class SpritePivotInlineEditor : Editor
             defaultEditor = null;
         }
     }
+    
     private IEnumerable <Type> AllInspectorsForTarget(object target)
     {
         Type targetType = target.GetType();
