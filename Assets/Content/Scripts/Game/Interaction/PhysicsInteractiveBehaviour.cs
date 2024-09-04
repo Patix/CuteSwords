@@ -13,17 +13,17 @@ namespace Interaction
 
         public  bool IsBeingInteracted                     { get; private set; }
         
-        private void OnCollisionEnter2D(Collision2D other) => OnTriggerEnter2D(other.otherCollider);
-        private void OnCollisionExit2D(Collision2D  other) => OnTriggerExit2D(other.otherCollider);
+        private void OnCollisionEnter(Collision other) => OnTriggerEnter(other.collider);
+        private void OnCollisionExit(Collision  other) => OnTriggerExit(other.collider);
      
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void OnTriggerEnter(Collider other)
         {
             IsBeingInteracted = true;
             OnInteractionStart?.Invoke();
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        private void OnTriggerExit(Collider other)
         {
             IsBeingInteracted = false;
             OnInteractionEnd?.Invoke();
