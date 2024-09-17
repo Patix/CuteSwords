@@ -135,6 +135,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -156,6 +157,7 @@ ScriptedImporter:
     pivot: {x: 0.5633803, y: 0.13402064}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -176,6 +178,7 @@ ScriptedImporter:
     pivot: {x: 0.6233766, y: 0.13402064}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -196,6 +199,7 @@ ScriptedImporter:
     pivot: {x: 0.35999998, y: 0.13265309}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -216,6 +220,7 @@ ScriptedImporter:
     pivot: {x: 0.5810811, y: 0.16455698}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 381
@@ -236,6 +241,7 @@ ScriptedImporter:
     pivot: {x: 0.59999996, y: 0.1585366}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -256,6 +262,7 @@ ScriptedImporter:
     pivot: {x: 0.59459454, y: 0.15662652}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 381
@@ -276,6 +283,7 @@ ScriptedImporter:
     pivot: {x: 0.5833334, y: 0.15476194}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 381
@@ -296,6 +304,7 @@ ScriptedImporter:
     pivot: {x: 0.57746476, y: 0.15116282}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 381
@@ -316,6 +325,7 @@ ScriptedImporter:
     pivot: {x: 0.57746476, y: 0.1477273}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -336,6 +346,7 @@ ScriptedImporter:
     pivot: {x: 0.5633803, y: 0.14606744}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -356,6 +367,7 @@ ScriptedImporter:
     pivot: {x: 0.7129629, y: 0.17808221}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -376,6 +388,7 @@ ScriptedImporter:
     pivot: {x: 0.6868687, y: 0.17105265}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -396,6 +409,7 @@ ScriptedImporter:
     pivot: {x: 0.72380954, y: 0.17808221}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -416,6 +430,7 @@ ScriptedImporter:
     pivot: {x: 0.6936937, y: 0.17808221}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -436,6 +451,7 @@ ScriptedImporter:
     pivot: {x: 0.68, y: 0.17105265}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -456,6 +472,7 @@ ScriptedImporter:
     pivot: {x: 0.72380954, y: 0.17808221}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -476,6 +493,7 @@ ScriptedImporter:
     pivot: {x: 0.65, y: 0.13541669}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -496,6 +514,7 @@ ScriptedImporter:
     pivot: {x: 0.6627907, y: 0.127451}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -516,6 +535,7 @@ ScriptedImporter:
     pivot: {x: 0.67777777, y: 0.11926608}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -536,6 +556,7 @@ ScriptedImporter:
     pivot: {x: 0.4160584, y: 0.13207546}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -556,6 +577,7 @@ ScriptedImporter:
     pivot: {x: 0.41481486, y: 0.1401869}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -576,6 +598,7 @@ ScriptedImporter:
     pivot: {x: 0.43089432, y: 0.12037039}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -596,6 +619,7 @@ ScriptedImporter:
     pivot: {x: 0.6202531, y: 0.16250002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -616,6 +640,7 @@ ScriptedImporter:
     pivot: {x: 0.6395349, y: 0.15476194}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -636,6 +661,7 @@ ScriptedImporter:
     pivot: {x: 0.65168536, y: 0.1477273}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -656,6 +682,7 @@ ScriptedImporter:
     pivot: {x: 0.50862074, y: 0.38053095}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -676,6 +703,7 @@ ScriptedImporter:
     pivot: {x: 0.48739493, y: 0.41880345}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -696,6 +724,7 @@ ScriptedImporter:
     pivot: {x: 0.39215687, y: 0.45}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -716,6 +745,7 @@ ScriptedImporter:
     pivot: {x: 0.30769235, y: 0.17333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 262
@@ -736,6 +766,7 @@ ScriptedImporter:
     pivot: {x: 0.32978725, y: 0.30769232}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -756,6 +787,7 @@ ScriptedImporter:
     pivot: {x: 0.34065938, y: 0.32978722}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 152
@@ -776,6 +808,7 @@ ScriptedImporter:
     pivot: {x: 0.5928571, y: 0.23584905}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -796,6 +829,7 @@ ScriptedImporter:
     pivot: {x: 0.6058394, y: 0.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -816,6 +850,7 @@ ScriptedImporter:
     pivot: {x: 0.69827586, y: 0.13978496}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -840,7 +875,7 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: Torch_Red_Frame_0
+    - name: Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -849,7 +884,7 @@ ScriptedImporter:
         width: 71
         height: 97
       spriteId: 05ce9c1ade576854f8d05999ccb2d87b
-    - name: Torch_Red_Frame_1
+    - name: Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -858,7 +893,7 @@ ScriptedImporter:
         width: 77
         height: 97
       spriteId: 8a738ddb8012ed14ea5f7ebd3b23807c
-    - name: Torch_Red_Frame_2
+    - name: Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
@@ -867,7 +902,7 @@ ScriptedImporter:
         width: 75
         height: 98
       spriteId: 6ab286ff631ec8d4d982b6ac9ba5183a
-    - name: Torch_Red_Frame_3
+    - name: Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
@@ -876,7 +911,7 @@ ScriptedImporter:
         width: 74
         height: 79
       spriteId: cd11186c8707c0b4ca76542adcd4f775
-    - name: Torch_Red_Frame_4
+    - name: Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
@@ -885,7 +920,7 @@ ScriptedImporter:
         width: 75
         height: 82
       spriteId: d8a93973490990c4995d42a3853c7ccd
-    - name: Torch_Red_Frame_5
+    - name: Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
@@ -894,7 +929,7 @@ ScriptedImporter:
         width: 74
         height: 83
       spriteId: 094d4be19478dba42b17ef0d93843385
-    - name: Torch_Red_Frame_6
+    - name: Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
@@ -903,7 +938,7 @@ ScriptedImporter:
         width: 72
         height: 84
       spriteId: 61b0ab71410207f4f95647e2a0c4453e
-    - name: Torch_Red_Frame_7
+    - name: Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
@@ -912,7 +947,7 @@ ScriptedImporter:
         width: 71
         height: 86
       spriteId: d75e662bcd111cf4fb62059eff0c878e
-    - name: Torch_Red_Frame_8
+    - name: Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
@@ -921,7 +956,7 @@ ScriptedImporter:
         width: 71
         height: 88
       spriteId: 558cc4bf7336bdb40bb6fa325e12b5e5
-    - name: Torch_Red_Frame_9
+    - name: Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
@@ -930,7 +965,7 @@ ScriptedImporter:
         width: 71
         height: 89
       spriteId: e98680a87cca29a4cabb1e558fe2d0e6
-    - name: Torch_Red_Frame_10
+    - name: Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
@@ -939,7 +974,7 @@ ScriptedImporter:
         width: 108
         height: 73
       spriteId: a132f765fb8e1b04bb64c11756367044
-    - name: Torch_Red_Frame_11
+    - name: Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
@@ -948,7 +983,7 @@ ScriptedImporter:
         width: 99
         height: 76
       spriteId: 9b914846d2eeef1409583d444e4cb7c0
-    - name: Torch_Red_Frame_12
+    - name: Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
@@ -957,7 +992,7 @@ ScriptedImporter:
         width: 105
         height: 73
       spriteId: a754930eba89cb644807ccd4a31a9ac7
-    - name: Torch_Red_Frame_13
+    - name: Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
@@ -966,7 +1001,7 @@ ScriptedImporter:
         width: 111
         height: 73
       spriteId: 00f42b7084a064b479ec892198dc69dd
-    - name: Torch_Red_Frame_14
+    - name: Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
@@ -975,7 +1010,7 @@ ScriptedImporter:
         width: 100
         height: 76
       spriteId: 9d5f3bc05f8562b48829bc6a8945a4cf
-    - name: Torch_Red_Frame_15
+    - name: Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
@@ -984,7 +1019,7 @@ ScriptedImporter:
         width: 105
         height: 73
       spriteId: 9c210d5003d34a24b9c8995a7f904cb7
-    - name: Torch_Red_Frame_16
+    - name: Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
@@ -993,7 +1028,7 @@ ScriptedImporter:
         width: 80
         height: 96
       spriteId: 05feb179f7271f541b7ce6a8fb17d999
-    - name: Torch_Red_Frame_17
+    - name: Frame_17
       frameIndex: 17
       additiveSortOrder: 0
       cellRect:
@@ -1002,7 +1037,7 @@ ScriptedImporter:
         width: 86
         height: 102
       spriteId: d79ddf59b0d913347887cb8229347a11
-    - name: Torch_Red_Frame_18
+    - name: Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
@@ -1011,7 +1046,7 @@ ScriptedImporter:
         width: 90
         height: 109
       spriteId: 4d609564f7ed1b34f90fa823ee23e66e
-    - name: Torch_Red_Frame_19
+    - name: Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
@@ -1020,7 +1055,7 @@ ScriptedImporter:
         width: 137
         height: 106
       spriteId: 7ef7e462fbc53e34a9160c70883ab70a
-    - name: Torch_Red_Frame_20
+    - name: Frame_20
       frameIndex: 20
       additiveSortOrder: 0
       cellRect:
@@ -1029,7 +1064,7 @@ ScriptedImporter:
         width: 135
         height: 107
       spriteId: eb3448028e7baa54abe3cec1ce109537
-    - name: Torch_Red_Frame_21
+    - name: Frame_21
       frameIndex: 21
       additiveSortOrder: 0
       cellRect:
@@ -1038,7 +1073,7 @@ ScriptedImporter:
         width: 123
         height: 108
       spriteId: 919dea753b3da7c49b5f5d8b29790016
-    - name: Torch_Red_Frame_22
+    - name: Frame_22
       frameIndex: 22
       additiveSortOrder: 0
       cellRect:
@@ -1047,7 +1082,7 @@ ScriptedImporter:
         width: 79
         height: 80
       spriteId: a1dc3d8cdfb019945b21f38e6f95e2e0
-    - name: Torch_Red_Frame_23
+    - name: Frame_23
       frameIndex: 23
       additiveSortOrder: 0
       cellRect:
@@ -1056,7 +1091,7 @@ ScriptedImporter:
         width: 86
         height: 84
       spriteId: 80593ece58611ab40bd206e91bb3f618
-    - name: Torch_Red_Frame_24
+    - name: Frame_24
       frameIndex: 24
       additiveSortOrder: 0
       cellRect:
@@ -1065,7 +1100,7 @@ ScriptedImporter:
         width: 89
         height: 88
       spriteId: 2f3fc47bc90bea84fb4afdea0881c9d3
-    - name: Torch_Red_Frame_25
+    - name: Frame_25
       frameIndex: 25
       additiveSortOrder: 0
       cellRect:
@@ -1074,7 +1109,7 @@ ScriptedImporter:
         width: 116
         height: 113
       spriteId: bc90897255f617b49baf9d883c3fcc80
-    - name: Torch_Red_Frame_26
+    - name: Frame_26
       frameIndex: 26
       additiveSortOrder: 0
       cellRect:
@@ -1083,7 +1118,7 @@ ScriptedImporter:
         width: 119
         height: 117
       spriteId: 23e2ca8ea7baa5648aea1422569f1464
-    - name: Torch_Red_Frame_27
+    - name: Frame_27
       frameIndex: 27
       additiveSortOrder: 0
       cellRect:
@@ -1092,7 +1127,7 @@ ScriptedImporter:
         width: 102
         height: 100
       spriteId: a5f4071a42f8adf418c04d6f6eb574b4
-    - name: Torch_Red_Frame_28
+    - name: Frame_28
       frameIndex: 28
       additiveSortOrder: 0
       cellRect:
@@ -1101,7 +1136,7 @@ ScriptedImporter:
         width: 91
         height: 75
       spriteId: e809b418ee6b09249a66010bc6e1d8be
-    - name: Torch_Red_Frame_29
+    - name: Frame_29
       frameIndex: 29
       additiveSortOrder: 0
       cellRect:
@@ -1110,7 +1145,7 @@ ScriptedImporter:
         width: 94
         height: 91
       spriteId: 00db312cc6f979d42a6491db6fad504d
-    - name: Torch_Red_Frame_30
+    - name: Frame_30
       frameIndex: 30
       additiveSortOrder: 0
       cellRect:
@@ -1119,7 +1154,7 @@ ScriptedImporter:
         width: 91
         height: 94
       spriteId: f685d7431460a2a47ba0eb64d87fdb86
-    - name: Torch_Red_Frame_31
+    - name: Frame_31
       frameIndex: 31
       additiveSortOrder: 0
       cellRect:
@@ -1128,7 +1163,7 @@ ScriptedImporter:
         width: 140
         height: 106
       spriteId: d0ee3e2b77d496a47b8a49651abb060c
-    - name: Torch_Red_Frame_32
+    - name: Frame_32
       frameIndex: 32
       additiveSortOrder: 0
       cellRect:
@@ -1137,7 +1172,7 @@ ScriptedImporter:
         width: 137
         height: 105
       spriteId: 5ee8e1ab1c4c49c41ac038f1d6fdf47b
-    - name: Torch_Red_Frame_33
+    - name: Frame_33
       frameIndex: 33
       additiveSortOrder: 0
       cellRect:

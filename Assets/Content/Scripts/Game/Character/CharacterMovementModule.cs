@@ -17,7 +17,7 @@ namespace InventoryAndEquipment
         private                  CharacterControls input;
         private                  Vector3           MovementVector { get; set; }
 
-        public Vector3 Velocity=>m_RigidBody.velocity;
+        public Vector3 Velocity=>m_RigidBody.linearVelocity;
         
         public void Initialize(Character character, Rigidbody rigidbody)
         {
@@ -54,9 +54,9 @@ namespace InventoryAndEquipment
                     character.State = Character.StateTypes.Idle;
                 }
 
-                var newVelocity = m_RigidBody.velocity;
+                var newVelocity = m_RigidBody.linearVelocity;
                 (newVelocity.x, newVelocity.z) = (m_MovementSpeed*MovementVector.x, m_MovementSpeed* MovementVector.z);
-                m_RigidBody.velocity           = newVelocity;
+                m_RigidBody.linearVelocity           = newVelocity;
             }
         }
     }

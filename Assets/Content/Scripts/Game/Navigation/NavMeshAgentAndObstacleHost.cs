@@ -99,7 +99,7 @@ namespace Content.Scripts.Game.Navigation
        
         private void ClearVelocity(Rigidbody rigidbody)
         {
-            rigidbody.velocity        = Vector3.zero;
+            rigidbody.linearVelocity        = Vector3.zero;
             rigidbody.angularVelocity = Vector3.zero;
         }
     }
