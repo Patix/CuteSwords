@@ -30,6 +30,8 @@ public class TerrainSampler : MonoBehaviour
         
         foreach (var tilemap in m_TileRenderersToSample.Where(gobject=>(gobject.gameObject.layer & m_MaskToSample.value)!=0))
         {
+            playerPosition.y = tilemap.transform.position.y;
+            
             var cellPosition = tilemap.WorldToCell(playerPosition);
             var tile         = tilemap.GetTile(cellPosition);
             
@@ -41,14 +43,15 @@ public class TerrainSampler : MonoBehaviour
                     TileData tileData = default;
                     
                     currentTile.GetTileData(cellPosition, tilemap, ref tileData);
-                    NotifyCurrentTileUpdated(tileData);
+                    NotifyCurrentTileUpdated(tile,tileData);
                 }
             }
         }
     }
 
-    void NotifyCurrentTileUpdated(TileData data)
+    void NotifyCurrentTileUpdated(TileBase tile, TileData data)
     {
         m_TileDataVisualizer.sprite = data.sprite;
+        var x=TileInfoDatabase.GetMetaData(tile);
     }
 }
