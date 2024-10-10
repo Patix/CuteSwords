@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor.PackageManager.UI;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 
@@ -17,6 +19,8 @@ public class TerrainSampler : MonoBehaviour
     private                  Vector3   Position => m_Character.position+m_CharacterGroundOffset;
     
     private                  TileBase            currentTile;
+
+    public event Action<Sprite> OnTileUpdated;
    
     // Update is called once per frame
     void Update()
@@ -45,6 +49,7 @@ public class TerrainSampler : MonoBehaviour
                     currentTile.GetTileData(cellPosition, tilemap, ref tileData);
                     NotifyCurrentTileUpdated(tile,tileData);
                 }
+                break;
             }
         }
     }
@@ -52,6 +57,6 @@ public class TerrainSampler : MonoBehaviour
     void NotifyCurrentTileUpdated(TileBase tile, TileData data)
     {
         m_TileDataVisualizer.sprite = data.sprite;
-        var x=TileInfoDatabase.GetMetaData(tile);
+        OnTileUpdated?.Invoke(data.sprite);
     }
 }

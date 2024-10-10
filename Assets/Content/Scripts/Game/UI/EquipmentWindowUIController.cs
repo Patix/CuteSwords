@@ -12,7 +12,7 @@ namespace UI
     {
         [SerializeField] private EquipmentItemIcon[] equipmentItemIcons;
 
-        private EventListeners eventListeners;
+        private GameEventListeners eventListeners;
 
 
         void OnEnable()

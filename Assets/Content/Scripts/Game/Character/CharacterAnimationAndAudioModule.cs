@@ -35,6 +35,11 @@ namespace InventoryAndEquipment
             m_Animator.SetFloat("MovementSpeed", Mathf.Max(movementModule.Velocity.magnitude));
         }
 
+        public void UpdateFootStepAudio(Sprite terrainSprite)
+        {
+            m_FootstepAudio.clip = TileInfoDatabase.GetFootAudio(terrainSprite); 
+        }
+
         public void PlayAttackAnimation()
         {
             m_Animator.SetTrigger("Attack");

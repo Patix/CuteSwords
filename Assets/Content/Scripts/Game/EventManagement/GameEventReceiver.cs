@@ -11,10 +11,10 @@ namespace EventManagement
     {
         [SerializeField] private List <Data> Triggers;
         
-        private                  EventListeners           eventListeners;
+        private                  GameEventListeners           eventListeners;
         private void OnEnable()
         {
-            eventListeners ??= new EventListeners(Triggers.Select(x => x.AsEventListener));
+            eventListeners ??= new GameEventListeners(Triggers.Select(x => x.AsEventListener));
             eventListeners.SubscribeAll();
         }
 

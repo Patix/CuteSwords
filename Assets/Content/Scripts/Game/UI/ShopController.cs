@@ -26,7 +26,7 @@ namespace UI
         private EquipmentItem.GearslotType buyPanelChosenType;
         private List <ShopItem>            instantiatedShopItems;
 
-        private EventListeners eventListeners;
+        private GameEventListeners eventListeners;
     
         private void Awake()
         {
@@ -36,7 +36,7 @@ namespace UI
 
         private void OnEnable()
         {
-            eventListeners ??= new EventListeners
+            eventListeners ??= new GameEventListeners
             (
                 (GameEvents.Inventory_Update_Gold, RefreshGoldText),
                 (GameEvents.Inventory_Update_Items, RefreshItems)

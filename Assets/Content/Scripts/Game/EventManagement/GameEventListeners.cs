@@ -5,14 +5,14 @@ using DefaultNamespace;
 
 namespace EventManagement
 {
-    public class EventListeners
+    public class GameEventListeners
     {
         private (GameEvents Event, Action Action) [] listeners;
 
 
-        public EventListeners(IEnumerable <(GameEvents, Action)> eventListeners) : this(eventListeners.ToArray()){}
+        public GameEventListeners(IEnumerable <(GameEvents, Action)> eventListeners) : this(eventListeners.ToArray()){}
         
-        public EventListeners(params (GameEvents,Action)[] eventListeners)
+        public GameEventListeners(params (GameEvents,Action)[] eventListeners)
         {
             listeners = eventListeners;
         }

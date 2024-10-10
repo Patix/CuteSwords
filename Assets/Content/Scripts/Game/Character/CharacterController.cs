@@ -1,4 +1,3 @@
-using System;
 using EventManagement;
 using Interaction;
 using InventoryAndEquipment;
@@ -16,15 +15,21 @@ public class CharacterController : SingletonMonoBehaviour <CharacterController>
     [SerializeField] private CharacterAnimationAndAudioModule animationModule;
     [SerializeField] private Rigidbody                        m_Rigidbody;
 
-    private EventListeners eventListeners;
-
+    private GameEventListeners gameEventListeners;
+ 
     private void OnEnable()
     {
-        eventListeners ??= new EventListeners((GameEvents.Equipment_Updated, OnEquipmentUpdate));
-        eventListeners.SubscribeAll();
+        gameEventListeners ??= new GameEventListeners((GameEvents.Equipment_Updated, OnEquipmentUpdate));
+        gameEventListeners.SubscribeAll();
+
+        FindAnyObjectByType <TerrainSampler>().OnTileUpdated += animationModule.UpdateFootStepAudio;
     }
 
-    private void OnDisable() { eventListeners.UnsubscribeAll(); }
+    private void OnDisable()
+    {
+        gameEventListeners.UnsubscribeAll();
+        FindAnyObjectByType <TerrainSampler>().OnTileUpdated -= animationModule.UpdateFootStepAudio;
+    }
 
     protected override void Awake()
     {

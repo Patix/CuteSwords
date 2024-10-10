@@ -4,7 +4,7 @@ using EventManagement;
 
 namespace DefaultNamespace
 {
-    public static class EventManager
+    public static class GameEventManager
     {
         private static Dictionary <GameEvents, HashSet<Action>> _regisredListeners = new Dictionary <GameEvents, HashSet<Action>>();
 

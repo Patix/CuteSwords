@@ -101,8 +101,7 @@ namespace Patik.CodeArchitecture.Patterns
 
         }
     }
-
-
+   
     /// <summary>
     /// This type of Singleton is Loaded from Scriptable Object . If ScriptableObject does not exist  , it will be created automatically in Resources Folder [When playing In Editor] .
     /// </summary>
@@ -160,7 +159,160 @@ namespace Patik.CodeArchitecture.Patterns
         protected virtual void OnCreationProcess() { }
 
     }
+    
+    
+     #if ODIN_INSPECTOR
+    /// <summary>
+    /// Extending Child Classes Automatically Acquire Singleton Functionality (Automatic Instance Management)
+    ///<para>by default "<see cref="DontDestroyFlag"/>" returns False, You can override (True) - to persist behaviour between scenes</para>
+    /// </summary>
+    /// <typeparam name="T">Type</typeparam>
+    public abstract class SingletonSerializedMonoBehaviour<T> : Sirenix.OdinInspector.SerializedMonoBehaviour where T : SingletonSerializedMonoBehaviour<T>
+    {
+        /// <summary>
+        /// [True] Singleton Persists Amongst Scenes and Must Be Root Object (OnCreationProcess Called Once)
+        /// <para>[False] Singleton Gets Destroyed and Recreated During Scene Loadings (OnCreationProcess Multiple Times)</para>
+        /// </summary>
+        protected virtual bool DontDestroyFlag=>false;
+        
+        private static T    instance;
+        
+        public static T Instance
+        {
+            get
+            {
+                if (instance != null) return instance;
+                
+                //In Case It's attached to any GameObject as Pre- created MonoBehaviour 
+                var sceneRootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+                for (var i = 0; i < sceneRootObjects.Length; i++) {
 
+                    var found = sceneRootObjects[i].GetComponentInChildren<T>(true);
+                    if (found != default(T))
+                    {
+                        instance = found;
+                        break;
+                    }
+                }
+
+                //In Case it's not attached anywhere and we need to Create GameObject Automatically
+                if (instance == null)
+                {
+                    var createdGameObject = new GameObject();
+                    instance               = createdGameObject.AddComponent<T>();
+                    createdGameObject.name = $"Singleton<{instance.GetType().Name}>";
+                }
+
+                if(instance.DontDestroyFlag) DontDestroyOnLoad(instance.gameObject);
+                instance?.OnCreationProcess();
+                return instance;
+            }
+
+            set => instance = value;
+        }
+        
+        /// <summary>
+        /// Constructor Like Method Called on "instance" field during creation. Called before 'instance' is assigned to Instance property , so use "this." instead of directly accessing "Instance" property
+        /// </summary>
+        protected virtual void OnCreationProcess() { }
+
+        //if instance is Enabled before it's Accessed , Look Up in scene Objects
+        protected virtual void Awake()
+        {
+            if (instance == this) return;
+            
+            //If 2 Instances Exist (Primarily During Scene Changes , or by mistake)
+            if (instance != null)
+            {
+                //IF Instances Have DontDestroyOnLoad => Disallow Second Instance to Exist 
+                if (DontDestroyFlag)
+                {
+                    //Instance already exists but this is not instance (instance!=this && instance!=null) , so delete this
+                    Destroy(this);
+                }
+                
+                //IF Instances Don't Have DontDestroyOnLoad -> second instance probably got created when we switched to new scene (means old get deleted) 
+                //so we assign new instance from new scene
+                else
+                {
+                    instance = this as T;
+                    instance?.OnCreationProcess();
+                }
+            }
+            
+            //If Instance Doesn't Exist at all , just assign it 
+            else
+            {
+                instance = this as T;
+                if(instance.DontDestroyFlag) DontDestroyOnLoad(instance);
+                instance?.OnCreationProcess();
+                
+                if(DontDestroyFlag)
+                    DontDestroyOnLoad(instance);
+            }
+
+        }
+    }
+    
+     /// <summary>
+    /// This type of Singleton is Loaded from Scriptable Object . If ScriptableObject does not exist  , it will be created automatically in Resources Folder [When playing In Editor] .
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public abstract class SingletonSerializedScriptableObject<T> : Sirenix.OdinInspector.SerializedScriptableObject where T : SingletonSerializedScriptableObject<T>
+    {
+        private static string assetAddress => "SingletonScriptableObjects/" + typeof(T).Name;
+
+        private static T instance;
+        public static T Instance
+        {
+            get
+            {
+                if (!instance)
+                {
+                    var originalAsset = Resources.Load<T>(assetAddress);
+#if UNITY_EDITOR
+                    if (originalAsset == null)
+                    {
+                        if (!UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources" + assetAddress))
+                        {
+                            UnityEditor.AssetDatabase.CreateFolder("Assets", "Resources");
+                        }
+
+                        if (!UnityEditor.AssetDatabase.IsValidFolder("Assets/Resources/SingletonScriptableObjects"))
+                        {
+                            UnityEditor.AssetDatabase.CreateFolder("Assets/Resources", "SingletonScriptableObjects");
+                        }
+
+                        UnityEditor.AssetDatabase.CreateAsset(CreateInstance<T>(), "Assets/Resources/" + assetAddress + ".asset");
+                        originalAsset = Resources.Load<T>(assetAddress);
+                    }
+#endif
+                    //Instantiate Clone while playing in editor to avoid Accidental Change of Data
+                    if (Application.isPlaying)
+                    {
+                        instance = Instantiate(originalAsset);
+                    }
+                    else
+                    {
+                        instance = originalAsset;
+                    }
+                    instance.OnCreationProcess();
+                }
+
+
+                return instance;
+            }
+
+            set => instance = value;
+        }
+        /// <summary>
+        /// Constructor Like Method Called on  "instance" field during creation. Called before 'instance' is assigned to Instance property , so use "this." instead of directly accessing "Instance" property
+        /// </summary>/
+        protected virtual void OnCreationProcess() { }
+
+    }
+     
+    #endif
     /// <summary>
     /// This type of Singleton is Loaded from File which is automatically created if missing .
     /// </summary>
