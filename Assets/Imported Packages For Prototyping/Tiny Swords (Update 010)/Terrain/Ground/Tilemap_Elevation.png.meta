@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilemap_Elevation_0
+      name: Tilemap_Elevation_0_TopLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_1
+      name: Tilemap_Elevation_0_TopCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -164,7 +164,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_2
+      name: Tilemap_Elevation_0_TopRight
       rect:
         serializedVersion: 2
         x: 128
@@ -198,7 +198,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_3
+      name: Tilemap_Elevation_0_VerticalTop
       rect:
         serializedVersion: 2
         x: 192
@@ -226,7 +226,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_4
+      name: Tilemap_Elevation_MidLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -252,7 +252,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_5
+      name: Tilemap_Elevation_MidCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -282,7 +282,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_6
+      name: Tilemap_Elevation_MidRight
       rect:
         serializedVersion: 2
         x: 128
@@ -312,11 +312,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_7
+      name: Tilemap_Elevation_VerticalCenter
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
+        y: 385
         width: 64
         height: 64
       alignment: 7
@@ -338,7 +338,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_8
+      name: Tilemap_Elevation_BottomLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -364,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_9
+      name: Tilemap_Elevation_BottomCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -390,7 +390,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_10
+      name: Tilemap_Elevation_BottomRight
       rect:
         serializedVersion: 2
         x: 128
@@ -420,7 +420,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_11
+      name: Tilemap_Elevation_VerticalBottom
       rect:
         serializedVersion: 2
         x: 192
@@ -446,7 +446,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_12
+      name: Tilemap_Elevation_0_RootLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -472,7 +472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_13
+      name: Tilemap_Elevation_0_RootCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -498,7 +498,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_14
+      name: Tilemap_Elevation_0_RootRight
       rect:
         serializedVersion: 2
         x: 128
@@ -524,7 +524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_15
+      name: Tilemap_Elevation_0_RootSingle
       rect:
         serializedVersion: 2
         x: 192
@@ -551,7 +551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_16
+      name: Tilemap_Elevation_1_TopLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -579,7 +579,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_17
+      name: Tilemap_Elevation_1_TopCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -605,7 +605,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_18
+      name: Tilemap_Elevation_1_TopRight
       rect:
         serializedVersion: 2
         x: 128
@@ -633,7 +633,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_19
+      name: Tilemap_Elevation_1_VerticalTop
       rect:
         serializedVersion: 2
         x: 192
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_20
+      name: Tilemap_Elevation_1_RootLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -688,7 +688,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_21
+      name: Tilemap_Elevation_1_RootCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -714,7 +714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_22
+      name: Tilemap_Elevation_1_RootRight
       rect:
         serializedVersion: 2
         x: 128
@@ -741,7 +741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_23
+      name: Tilemap_Elevation_1_RootSingle
       rect:
         serializedVersion: 2
         x: 192
@@ -768,7 +768,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_27
+      name: Tilemap_Elevation_LadderLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_28
+      name: Tilemap_Elevation_LadderCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -821,7 +821,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_29
+      name: Tilemap_Elevation_LadderRight
       rect:
         serializedVersion: 2
         x: 128
@@ -847,7 +847,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Elevation_30
+      name: Tilemap_Elevation_LadderSingle
       rect:
         serializedVersion: 2
         x: 192
@@ -888,37 +888,37 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tilemap_Elevation_0: 1492257849
-      Tilemap_Elevation_1: -280845163
-      Tilemap_Elevation_10: 1712549342
-      Tilemap_Elevation_11: 1340791092
-      Tilemap_Elevation_12: -1416913132
-      Tilemap_Elevation_13: 1512245577
-      Tilemap_Elevation_14: 1709163187
-      Tilemap_Elevation_15: -697270698
-      Tilemap_Elevation_16: 890845342
-      Tilemap_Elevation_17: 1269841189
-      Tilemap_Elevation_18: -802441979
-      Tilemap_Elevation_19: 3030956
-      Tilemap_Elevation_2: -1035391348
-      Tilemap_Elevation_20: 1510698965
-      Tilemap_Elevation_21: 1761133113
-      Tilemap_Elevation_22: -1625916582
-      Tilemap_Elevation_23: -1860013447
+      Tilemap_Elevation_0_RootCenter: 1512245577
+      Tilemap_Elevation_0_RootLeft: -1416913132
+      Tilemap_Elevation_0_RootRight: 1709163187
+      Tilemap_Elevation_0_RootSingle: -697270698
+      Tilemap_Elevation_0_TopCenter: -280845163
+      Tilemap_Elevation_0_TopLeft: 1492257849
+      Tilemap_Elevation_0_TopRight: -1035391348
+      Tilemap_Elevation_0_VerticalTop: -1854768148
+      Tilemap_Elevation_1_RootCenter: 1761133113
+      Tilemap_Elevation_1_RootLeft: 1510698965
+      Tilemap_Elevation_1_RootRight: -1625916582
+      Tilemap_Elevation_1_RootSingle: -1860013447
+      Tilemap_Elevation_1_TopCenter: 1269841189
+      Tilemap_Elevation_1_TopLeft: 890845342
+      Tilemap_Elevation_1_TopRight: -802441979
+      Tilemap_Elevation_1_VerticalTop: 3030956
       Tilemap_Elevation_24: 1390638173
       Tilemap_Elevation_25: 1922447126
       Tilemap_Elevation_26: -837471771
-      Tilemap_Elevation_27: 1112909849
-      Tilemap_Elevation_28: 1848539077
-      Tilemap_Elevation_29: 1993792174
-      Tilemap_Elevation_3: -1854768148
-      Tilemap_Elevation_30: -2012239277
-      Tilemap_Elevation_4: 353774063
-      Tilemap_Elevation_5: 1872718973
-      Tilemap_Elevation_6: 963164239
-      Tilemap_Elevation_7: 1287047320
-      Tilemap_Elevation_8: -255237342
-      Tilemap_Elevation_9: -1908682646
+      Tilemap_Elevation_BottomCenter: -1908682646
+      Tilemap_Elevation_BottomLeft: -255237342
+      Tilemap_Elevation_BottomRight: 1712549342
+      Tilemap_Elevation_LadderCenter: 1848539077
+      Tilemap_Elevation_LadderLeft: 1112909849
+      Tilemap_Elevation_LadderRight: 1993792174
+      Tilemap_Elevation_LadderSingle: -2012239277
+      Tilemap_Elevation_MidCenter: 1872718973
+      Tilemap_Elevation_MidLeft: 353774063
+      Tilemap_Elevation_MidRight: 963164239
+      Tilemap_Elevation_VerticalBottom: 1340791092
+      Tilemap_Elevation_VerticalCenter: 1287047320
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

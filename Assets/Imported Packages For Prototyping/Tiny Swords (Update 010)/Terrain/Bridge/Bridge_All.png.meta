@@ -67,7 +67,7 @@ TextureImporter:
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +80,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -93,7 +93,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
+  - serializedVersion: 4
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bridge_All_0
+      name: Bridge_HorizontalLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -120,6 +120,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape:
       - - {x: 9, y: 25}
@@ -137,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_1
+      name: Bridge_HorizontalCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -147,6 +148,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape:
       - - {x: -32, y: 28}
@@ -162,7 +164,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_2
+      name: Bridge_HorizontalRight
       rect:
         serializedVersion: 2
         x: 128
@@ -172,6 +174,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape:
       - - {x: 32, y: 32}
@@ -190,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_3
+      name: Bridge_VerticalTop
       rect:
         serializedVersion: 2
         x: 0
@@ -200,6 +203,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -221,6 +225,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -242,6 +247,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -253,7 +259,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_6
+      name: Bridge_VerticalCenter
       rect:
         serializedVersion: 2
         x: 0
@@ -263,6 +269,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -284,6 +291,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -295,7 +303,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_8
+      name: Bridge_VerticalBottom
       rect:
         serializedVersion: 2
         x: 0
@@ -305,6 +313,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -316,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bridge_All_9
+      name: Bridge_Shadow
       rect:
         serializedVersion: 2
         x: 128
@@ -326,6 +335,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -337,6 +347,7 @@ TextureImporter:
       edges: []
       weights: []
     outline: []
+    customData: 
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
@@ -346,17 +357,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
     nameFileIdTable:
-      Bridge_All_0: -34517183
-      Bridge_All_1: 1264750858
-      Bridge_All_2: 1862530788
-      Bridge_All_3: -2065529088
       Bridge_All_4: -661477013
       Bridge_All_5: -1836851791
-      Bridge_All_6: 1256658153
       Bridge_All_7: -584453084
-      Bridge_All_8: -900496028
-      Bridge_All_9: 589496660
+      Bridge_HorizontalCenter: 1264750858
+      Bridge_HorizontalLeft: -34517183
+      Bridge_HorizontalRight: 1862530788
+      Bridge_Shadow: 589496660
+      Bridge_VerticalBottom: -900496028
+      Bridge_VerticalCenter: 1256658153
+      Bridge_VerticalTop: -2065529088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

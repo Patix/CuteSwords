@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tilemap_Flat_0
+      name: Tilemap_Green_TopLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -141,7 +141,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_1
+      name: Tilemap_Green_TopCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -167,7 +167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_2
+      name: Tilemap_Green_TopRight
       rect:
         serializedVersion: 2
         x: 128
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_3
+      name: Tilemap_Green_VerticalTop
       rect:
         serializedVersion: 2
         x: 192
@@ -219,7 +219,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_4
+      name: Tilemap_Green_Deco
       rect:
         serializedVersion: 2
         x: 256
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_5
+      name: Tilemap_Yellow_TopLeft
       rect:
         serializedVersion: 2
         x: 320
@@ -267,10 +267,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_6
+      name: Tilemap_Yellow_TopCenter
       rect:
         serializedVersion: 2
-        x: 384
+        x: 383
         y: 192
         width: 64
         height: 64
@@ -293,10 +293,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_7
+      name: Tilemap_Yellow_TopRight
       rect:
         serializedVersion: 2
-        x: 448
+        x: 449
         y: 192
         width: 64
         height: 64
@@ -319,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_8
+      name: Tilemap_Yellow_VerticalTop
       rect:
         serializedVersion: 2
         x: 512
@@ -345,7 +345,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_9
+      name: Tilemap_Yellow_Deco
       rect:
         serializedVersion: 2
         x: 576
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_10
+      name: Tilemap_Green_MidLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -393,7 +393,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_11
+      name: Tilemap_Green_MidCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -419,7 +419,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_12
+      name: Tilemap_Green_MidRight
       rect:
         serializedVersion: 2
         x: 128
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_13
+      name: Tilemap_Green_VerticalCenter
       rect:
         serializedVersion: 2
         x: 192
@@ -471,7 +471,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_15
+      name: Tilemap_Yellow_MidLeft
       rect:
         serializedVersion: 2
         x: 320
@@ -497,7 +497,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_16
+      name: Tilemap_Yellow_MidCenter
       rect:
         serializedVersion: 2
         x: 384
@@ -523,7 +523,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_17
+      name: Tilemap_Yellow_MidRight
       rect:
         serializedVersion: 2
         x: 448
@@ -549,7 +549,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_18
+      name: Tilemap_Yellow_VerticalCenter
       rect:
         serializedVersion: 2
         x: 512
@@ -575,7 +575,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_19
+      name: Tilemap_Green_BottomLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -601,7 +601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_20
+      name: Tilemap_Green_BottomCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_21
+      name: Tilemap_Green_BottomRight
       rect:
         serializedVersion: 2
         x: 128
@@ -653,7 +653,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_22
+      name: Tilemap_Green_VerticalBottom
       rect:
         serializedVersion: 2
         x: 192
@@ -679,7 +679,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_23
+      name: Tilemap_Yellow_BottomLeft
       rect:
         serializedVersion: 2
         x: 320
@@ -705,7 +705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_24
+      name: Tilemap_Yellow_BottomCenter
       rect:
         serializedVersion: 2
         x: 384
@@ -731,7 +731,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_25
+      name: Tilemap_Yellow_BottomRight
       rect:
         serializedVersion: 2
         x: 448
@@ -757,7 +757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_26
+      name: Tilemap_Yellow_VerticalBottom
       rect:
         serializedVersion: 2
         x: 512
@@ -783,7 +783,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_28
+      name: Tilemap_Green_HorizontalLeft
       rect:
         serializedVersion: 2
         x: 0
@@ -811,7 +811,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_29
+      name: Tilemap_Green_HorizontalCenter
       rect:
         serializedVersion: 2
         x: 64
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_30
+      name: Tilemap_Green_HorizontalRight
       rect:
         serializedVersion: 2
         x: 128
@@ -864,7 +864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_31
+      name: Tilemap_Green_SingleLocked
       rect:
         serializedVersion: 2
         x: 192
@@ -892,7 +892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_32
+      name: Tilemap_Yellow_HorizontalLeft
       rect:
         serializedVersion: 2
         x: 320
@@ -920,7 +920,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_33
+      name: Tilemap_Yellow_HorizontalCenter
       rect:
         serializedVersion: 2
         x: 384
@@ -946,7 +946,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_34
+      name: Tilemap_Yellow_HorizontalRight
       rect:
         serializedVersion: 2
         x: 448
@@ -973,10 +973,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tilemap_Flat_35
+      name: Tilemap_Yellow_SingleLocked
       rect:
         serializedVersion: 2
-        x: 512
+        x: 513
         y: 0
         width: 64
         height: 64
@@ -1014,42 +1014,43 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tilemap_Flat_0: -313877690
-      Tilemap_Flat_1: -1029356223
-      Tilemap_Flat_10: 1497612297
-      Tilemap_Flat_11: -1108050666
-      Tilemap_Flat_12: 1582312529
-      Tilemap_Flat_13: 1428474963
       Tilemap_Flat_14: -465671726
-      Tilemap_Flat_15: -67095575
-      Tilemap_Flat_16: -710371349
-      Tilemap_Flat_17: 1138019947
-      Tilemap_Flat_18: 1965664299
-      Tilemap_Flat_19: -684859292
-      Tilemap_Flat_2: 1224965573
-      Tilemap_Flat_20: -2096699304
-      Tilemap_Flat_21: -1467519170
-      Tilemap_Flat_22: -1973123445
-      Tilemap_Flat_23: 947216636
-      Tilemap_Flat_24: 672681
-      Tilemap_Flat_25: -1027462538
-      Tilemap_Flat_26: 518181136
       Tilemap_Flat_27: 661558849
-      Tilemap_Flat_28: 144342233
-      Tilemap_Flat_29: -2141555128
-      Tilemap_Flat_3: 1278646587
-      Tilemap_Flat_30: 1000387642
-      Tilemap_Flat_31: 1978367740
-      Tilemap_Flat_32: 1288378566
-      Tilemap_Flat_33: -1206243108
-      Tilemap_Flat_34: -1817682385
-      Tilemap_Flat_35: 412543330
-      Tilemap_Flat_4: 64556831
-      Tilemap_Flat_5: -2039930035
-      Tilemap_Flat_6: -8832448
-      Tilemap_Flat_7: -316677571
-      Tilemap_Flat_8: 1436498863
-      Tilemap_Flat_9: 905582995
+      Tilemap_Green_BottomCenter: -2096699304
+      Tilemap_Green_BottomLeft: -684859292
+      Tilemap_Green_BottomRight: -1467519170
+      Tilemap_Green_BottomTilemap_Green_BottomLeft: -2096699304
+      Tilemap_Green_Deco: 64556831
+      Tilemap_Green_HorizontalCenter: -2141555128
+      Tilemap_Green_HorizontalLeft: 144342233
+      Tilemap_Green_HorizontalRight: 1000387642
+      Tilemap_Green_MidCenter: -1108050666
+      Tilemap_Green_MidLeft: 1497612297
+      Tilemap_Green_MidRight: 1582312529
+      Tilemap_Green_SingleLocked: 1978367740
+      Tilemap_Green_TopCenter: -1029356223
+      Tilemap_Green_TopLeft: -313877690
+      Tilemap_Green_TopRight: 1224965573
+      Tilemap_Green_VerticalBottom: -1973123445
+      Tilemap_Green_VerticalCenter: 1428474963
+      Tilemap_Green_VerticalTop: 1278646587
+      Tilemap_Yellow_BottomCenter: 672681
+      Tilemap_Yellow_BottomLeft: 947216636
+      Tilemap_Yellow_BottomRight: -1027462538
+      Tilemap_Yellow_Deco: 905582995
+      Tilemap_Yellow_HorizontalCenter: -1206243108
+      Tilemap_Yellow_HorizontalLeft: 1288378566
+      Tilemap_Yellow_HorizontalRight: -1817682385
+      Tilemap_Yellow_MidCenter: -710371349
+      Tilemap_Yellow_MidLeft: -67095575
+      Tilemap_Yellow_MidRight: 1138019947
+      Tilemap_Yellow_SingleLocked: 412543330
+      Tilemap_Yellow_TopCenter: -8832448
+      Tilemap_Yellow_TopLeft: -2039930035
+      Tilemap_Yellow_TopRight: -316677571
+      Tilemap_Yellow_VerticalBottom: 518181136
+      Tilemap_Yellow_VerticalCenter: 1965664299
+      Tilemap_Yellow_VerticalTop: 1436498863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
