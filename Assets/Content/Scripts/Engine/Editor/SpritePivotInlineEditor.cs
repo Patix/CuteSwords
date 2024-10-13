@@ -3,49 +3,72 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Sirenix.Utilities;
 using UnityEditor;
 using UnityEditor.AssetImporters;
 using UnityEditor.U2D;
 using UnityEditor.U2D.Aseprite;
 using UnityEditor.U2D.Sprites;
 using UnityEngine;
+using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
 
 [CustomEditor(typeof(Sprite))]
 [CanEditMultipleObjects]
 public class SpritePivotInlineEditor : Editor
 {
-    private Editor          defaultEditor;
-    private bool            m_SetBorders                            = false;
-    private SpriteAlignment m_PivotAlignment                        = SpriteAlignment.BottomCenter;
-    private bool            m_TrimTransparentPixelsWhenSettingPivot = true;
-    private Vector2         m_customPivot;
+    private Dictionary <string, VisualElement> m_UIElements;
     
-    public override void OnInspectorGUI()
+    private Editor                             defaultEditor;
+    private bool                               m_SetBorders                            = false;
+    private SpriteAlignment                    m_PivotAlignment                        = SpriteAlignment.BottomCenter;
+    private bool                               m_TrimTransparentPixelsWhenSettingPivot = true;
+    private Vector2                            m_customPivot;
+   
+    private void OnEnable()
     {
-     
-        m_TrimTransparentPixelsWhenSettingPivot = EditorGUILayout.Toggle("Trim Transparent Pixels when setting pivot", m_TrimTransparentPixelsWhenSettingPivot);
-        m_SetBorders                            = EditorGUILayout.Toggle("Set Borders" ,                               m_SetBorders);
-        m_PivotAlignment                        = (SpriteAlignment) EditorGUILayout.EnumPopup(m_PivotAlignment);
+        defaultEditor= CreateEditor(targets,Type.GetType("UnityEditor.SpriteInspector, UnityEditor"));
+    }
 
-        if (m_PivotAlignment == SpriteAlignment.Custom)
-        {
-            m_customPivot = EditorGUILayout.Vector2Field("Custom Normalized Pivot",m_customPivot);
-        }
+    public override VisualElement CreateInspectorGUI()
+    {
+        VisualElement root = new();
+        
+        root.Add(defaultEditor.CreateInspectorGUI());
+        
+        m_UIElements = new Dictionary <string, VisualElement> {
+            ["Trim Toggle"]                           = new Toggle("Trim Transparent Pixels when setting pivot") { value            = m_TrimTransparentPixelsWhenSettingPivot },
+            ["Border Toggle"]                         = new Toggle("Set Borders") { value                                           = m_SetBorders },
+            ["Pivot DropDown"]                        = new EnumField("Pivot Alignment", m_PivotAlignment) { value                  = m_PivotAlignment },
+            ["Custom Pivot"]                          = new Vector2Field("Custom Normalized Pivot") { value                         = m_customPivot },
+            ["Apply Settings Button"]                 = new Button(ApplyCustomSettings) { text                                      = "Set Pivot In Current Sprite" },
+            ["Copy Sprite Pivot To To Others Button"] = new Button(() => CopySpritePivotToOthersInSameSheet((Sprite)target)) { text = "Clone Pivots From Current To Others in Sheet" }
+        };
 
-        if (GUILayout.Button("Set Pivot In Current Sprite"))
+        (m_UIElements["Trim Toggle"] as Toggle).RegisterValueChangedCallback(ev => m_TrimTransparentPixelsWhenSettingPivot = ev.newValue);
+        (m_UIElements["Border Toggle"] as Toggle).RegisterValueChangedCallback(ev => m_SetBorders= ev.newValue);
+        (m_UIElements["Pivot DropDown"] as EnumField).RegisterValueChangedCallback(ev =>
         {
-            ApplyCustomSettings();
-        }
-      
-        if (GUILayout.Button("Clone Pivots From Current To Others in Sheet"))
+            m_PivotAlignment    = (SpriteAlignment)ev.newValue;
+            m_UIElements["Custom Pivot"].visible = m_PivotAlignment == SpriteAlignment.Custom;
+        });
+        
+        foreach (VisualElement visualElement in m_UIElements.Values)
         {
-            CopySpritePivotToOthersInSameSheet((Sprite)target);
+            root.Add(visualElement);
         }
         
-        MakeSureDefaultEditorExists();
-        defaultEditor.OnInspectorGUI();
+        return root;
+    }
+
+    public override Texture2D RenderStaticPreview(string assetPath, Object[] subAssets, int width, int height)
+    {
+        return defaultEditor?.RenderStaticPreview(assetPath, subAssets, width, height);
+    }
+
+    public override void DrawPreview(Rect previewArea)
+    {
+        defaultEditor?.DrawPreview(previewArea);
+        
     }
 
     private void ApplyCustomSettings()
@@ -159,15 +182,7 @@ public class SpritePivotInlineEditor : Editor
         
         selectedSpriteRectData.pivot = pivotNormalizedCoordinatesRelativeToOldBounds;
     }
-
-    private  void MakeSureDefaultEditorExists()
-    {
-        if(defaultEditor) return;
-        var thisType             = GetType();
-        var defaultInspectorType = AllInspectorsForTarget(target).First(x => x != thisType);
-        defaultEditor = CreateEditor(targets, defaultInspectorType);
-    }
-
+  
     private static void Manipulate(Sprite sprite, Action <SpriteRect,SpriteRect[]> action)
     {
         
@@ -195,36 +210,9 @@ public class SpritePivotInlineEditor : Editor
     {  
         if (defaultEditor!=null)
         {
+            defaultEditor.GetType().GetMethod("OnDisable", BindingFlags.Instance| BindingFlags.NonPublic)?.Invoke(defaultEditor, null);
             DestroyImmediate(defaultEditor);
             defaultEditor = null;
         }
     }
-    
-    private IEnumerable <Type> AllInspectorsForTarget(object target)
-    {
-        Type targetType = target.GetType();
-
-        var all=  AppDomain.CurrentDomain.GetAssemblies()
-                        .SelectMany(assembly => assembly.GetTypes())
-                        .Where(type => type.IsDefined(typeof(CustomEditor), false))
-                        .Where(type =>
-                        {
-                            var attr = type.GetCustomAttribute <CustomEditor>();
-                            if (attr != null)
-                            {
-                                // Using reflection to access the internal m_InspectedType field
-                                var field = typeof(CustomEditor).GetField("m_InspectedType", BindingFlags.NonPublic | BindingFlags.Instance);
-                                if (field != null)
-                                {
-                                    var inspectedType = field.GetValue(attr) as Type;
-                                    return inspectedType == targetType;
-                                }
-                            }
-
-                            return false;
-                        }).ToList();
-        return all;
-
-    }
-   
 }
