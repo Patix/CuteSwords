@@ -18,7 +18,6 @@ public class Create3DColliderFrom2D : MonoBehaviour
 
         foreach (Collider2D collider2D in roots.GetComponentsInChildren<Collider2D>())
         {
-            Debug.Log(collider2D.name + "Encapsulated");
             m_MeshCollider.bounds.Encapsulate(collider2D.bounds);
         }
         
