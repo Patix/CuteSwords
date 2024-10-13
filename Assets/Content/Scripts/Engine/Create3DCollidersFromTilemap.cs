@@ -18,12 +18,24 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
    
     [SerializeField] private Tilemap[] tilemaps;
     [SerializeField] private Vector3   BaseOffset;
-    [SerializeField] private SnapAxis  MergeAxis = SnapAxis.X | SnapAxis.Z;
-
+    [SerializeField] private SnapAxis  MergeAxis                             = SnapAxis.X | SnapAxis.Z;
+    [SerializeField] private bool      AutoUpdateCollidersWhenTilemapsChange = true;
+    
+    
     public  bool Merge;
 
     private Coroutine creationCoroutine;
-    
+
+    private void OnEnable()
+    {
+        Tilemap.tilemapTileChanged += OnTilemapChanged;
+    }
+
+    private void OnDisable()
+    {
+        Tilemap.tilemapTileChanged -= OnTilemapChanged;
+    }
+ 
     [Button]
     void Create()
     {
@@ -252,6 +264,14 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
                            (float)Math.Round(vector3.z, numberOfDigits));
     }
   
+    private void OnTilemapChanged(Tilemap changedTilemap, Tilemap.SyncTile[] _)
+    {
+        if (AutoUpdateCollidersWhenTilemapsChange && tilemaps.Contains(changedTilemap))
+        {
+            Create();
+        }
+    }
+    
     #if UNITY_EDITOR
    
     [BoxGroup("Debug")] [ShowInInspector, LabelText("Merging Colliders")] private bool e_DebugMerge = true;
