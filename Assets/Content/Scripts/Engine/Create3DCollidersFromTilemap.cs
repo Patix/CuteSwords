@@ -15,14 +15,18 @@ using UnityEngine.Tilemaps;
 public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
 {
     private const float MinimumDeltaToMerge=0.001f;
-   
+    
     [SerializeField] private Tilemap[] tilemaps;
-    [SerializeField] private Vector3   BaseOffset;
-    [SerializeField] private SnapAxis  MergeAxis                             = SnapAxis.X | SnapAxis.Z;
-    [SerializeField] private bool      AutoUpdateCollidersWhenTilemapsChange = true;
     
+    [SerializeField]                       private int      m_BaseElevation     =-1;
+    [SerializeField,BoxGroup("Colliders")] private bool     MergeOnCreation;
+    [SerializeField,BoxGroup("Colliders")] private SnapAxis MergeAxis           = SnapAxis.X | SnapAxis.Z;
+    [SerializeField,BoxGroup("Colliders")] private bool     CreateEdgeColliders =true;
+   
+    [SerializeField]                       private bool     AutoUpdateCollidersWhenTilemapsChange = true;
     
-    public  bool Merge;
+   
+   
 
     private Coroutine creationCoroutine;
 
@@ -47,6 +51,7 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     {
         ClearChildren();
         
+        
         List <(Sprite sprite, Vector3 position, int elevation)> ExtractedTiles = new List <(Sprite sprite, Vector3 position, int elevation)>();
         
         //Extract Tiles
@@ -56,7 +61,7 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
             {
                 var realPosition   = GetSpriteVisualCenter(tilemap, tileData, coordinates);
                 realPosition   =  Snapping.Snap(realPosition, Vector3.one * 0.1f);
-                ExtractedTiles.Add((tileData.sprite,realPosition,-1));
+                ExtractedTiles.Add((tileData.sprite,realPosition,m_BaseElevation));
             });
         }
         
@@ -103,14 +108,16 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
             {
                 var mainCollider      = newColliders[0];
                 var additiveColliders = newColliders.Skip(1).ToList();
+                
+                if(!CreateEdgeColliders)
                 foreach (BoxCollider additiveCollider in additiveColliders)
                 {
-                 //   DestroyImmediate(additiveCollider);
+                    DestroyImmediate(additiveCollider);
                 }
             }
         }
         
-        if(Merge)
+        if(MergeOnCreation)
             MergeColliders();
         
         
