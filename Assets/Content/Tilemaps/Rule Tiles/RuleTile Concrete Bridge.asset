@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Script: {fileID: 11500000, guid: be84fe13aad6d664ba891b72f384a594, type: 3}
   m_Name: RuleTile Concrete Bridge
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: -661477013, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
@@ -112,3 +112,5 @@ MonoBehaviour:
     - {x: -1, y: 0, z: 0}
     - {x: 1, y: 0, z: 0}
     m_RuleTransform: 0
+  isBillboard: 0
+  m_FriendTiles: []

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -28,7 +29,7 @@ public class CameraCustomProjection : MonoBehaviour
         Matrix4x4 projectionMatrix = cam.projectionMatrix;// Create a custom projection matrix
         
         // Add Z value to Y value in the projection matrix
-        projectionMatrix.m11 *= 1 + CalculateAdditionalStretch (cam.transform.eulerAngles.x); // m11 is the Y scale, m13 is the Z to Y component
+        projectionMatrix.m11 = 1/cam.orthographicSize * CalculateAdditionalStretch (cam.transform.eulerAngles.x); // m11 is the Y scale, m13 is the Z to Y component
         // Assign the custom projection matrix to the camera
         cam.projectionMatrix = projectionMatrix;
     }
@@ -41,6 +42,6 @@ public class CameraCustomProjection : MonoBehaviour
     
     private float CalculateAdditionalStretch(float rotation)
     {
-        return MathF.Tan(rotation *0.5f*Mathf.Deg2Rad);
+        return 1 + MathF.Tan(rotation *0.5f*Mathf.Deg2Rad);
     }
 }

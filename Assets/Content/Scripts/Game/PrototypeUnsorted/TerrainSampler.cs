@@ -44,19 +44,16 @@ public class TerrainSampler : MonoBehaviour
                 if (currentTile != tile)
                 {
                     currentTile = tile;
-                    TileData tileData = default;
-                    
-                    currentTile.GetTileData(cellPosition, tilemap, ref tileData);
-                    NotifyCurrentTileUpdated(tile,tileData);
+                    NotifyCurrentTileUpdated(tilemap.GetSprite(cellPosition));
                 }
                 break;
             }
         }
     }
 
-    void NotifyCurrentTileUpdated(TileBase tile, TileData data)
+    void NotifyCurrentTileUpdated(Sprite sprite)
     {
-        m_TileDataVisualizer.sprite = data.sprite;
-        OnTileUpdated?.Invoke(data.sprite);
+        m_TileDataVisualizer.sprite = sprite;
+        OnTileUpdated?.Invoke(sprite);
     }
 }

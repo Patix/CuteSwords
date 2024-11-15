@@ -87,6 +87,7 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
         //Assign Elevations and change positions
         for (var i = 0; i < ExtractedTiles.Count; i++)
         {
+            continue;
             var tile = ExtractedTiles[i];
             
             if (tile.elevation > 0)
@@ -106,8 +107,8 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
             
             if (newColliders is { Length: > 0 })
             {
-                var mainCollider      = newColliders[0];
-                var additiveColliders = newColliders.Skip(1).ToList();
+                var mainColliders     = newColliders.Where(x=>x.size==Vector3.one || x.size.y==0.05f);
+                var additiveColliders = newColliders.Except(mainColliders).Where(x=>!x.isTrigger);
                 
                 if(!CreateEdgeColliders)
                 foreach (BoxCollider additiveCollider in additiveColliders)
@@ -155,13 +156,15 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
         var child       = Instantiate(prefab, newPosition,prefab.transform.rotation);
         
         child.transform.parent   = transform;
-        return child.GetComponents<BoxCollider>();
+        return child.GetComponents<BoxCollider>().Concat(child.GetComponentsInChildren<BoxCollider>()).ToArray();
     }
    
     bool CanBeMerged(BoxCollider col1, BoxCollider col2, SnapAxis mergeAxis)
     {
         if (col1                   == col2) return false;
         if(col1.transform.rotation !=col2.transform.rotation) return false;
+        if (col1.isTrigger || col2.isTrigger) return false;
+        
         if (mergeAxis              == SnapAxis.None) return false;
        
         bool      result = Mathf.Approximately(col1.bounds.center.y, col2.bounds.center.y); // Same Height (MUST);

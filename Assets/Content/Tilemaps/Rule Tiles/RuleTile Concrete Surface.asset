@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Script: {fileID: 11500000, guid: be84fe13aad6d664ba891b72f384a594, type: 3}
   m_Name: RuleTile Concrete Surface
   m_EditorClassIdentifier: 
-  m_DefaultSprite: {fileID: 3030956, guid: af840afffedf39640846feca5817f264, type: 3}
+  m_DefaultSprite: {fileID: -1854768148, guid: af840afffedf39640846feca5817f264, type: 3}
   m_DefaultGameObject: {fileID: 0}
-  m_DefaultColliderType: 2
+  m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 3
     m_Sprites:
@@ -214,3 +214,36 @@ MonoBehaviour:
     - {x: -1, y: 0, z: 0}
     - {x: 0, y: 1, z: 0}
     m_RuleTransform: 0
+  m_FriendTiles:
+  - {fileID: 11400000, guid: 2fd4da053ec715e4e87bdd9b180393a9, type: 2}
+  - {fileID: 11400000, guid: b0251af170fb27341a0030cf0b5c2d63, type: 2}
+  - {fileID: 11400000, guid: 0189e0797be51f44a9f2145c16275a48, type: 2}
+  - {fileID: 11400000, guid: 9baa473fd6e9cec46bb4291db26e32e1, type: 2}
+  - {fileID: 11400000, guid: fda4a3c16eae2f94aacbbda326dfc9f4, type: 2}
+  - {fileID: 11400000, guid: 9b3e48cc6a1095541a8bc655fc5593c0, type: 2}
+  - {fileID: 11400000, guid: cbe606c0e2ae9224bba6d704e7f2b60b, type: 2}
+  - {fileID: 11400000, guid: 2ae1f56fe62ce7142a807fec09fdbe8e, type: 2}
+  - {fileID: 11400000, guid: 5ba9aa9797c2a3243a465a565490b1b1, type: 2}
+  - {fileID: 11400000, guid: 5551e78d260553146a366222867374b1, type: 2}
+  - {fileID: 11400000, guid: db1c3068e53f4f9429e076b096f2b232, type: 2}
+  - {fileID: 11400000, guid: 8f43f1d86e3f6d340bfbf4128117daab, type: 2}
+  - {fileID: 11400000, guid: 51bbff2fd16fd6c4fb0686eb7d4d450a, type: 2}
+  - {fileID: 11400000, guid: f9d9bce0010ebf2469ce9751bd77f90f, type: 2}
+  - {fileID: 11400000, guid: b1bf7b8272f790f41a123f22d4b147a1, type: 2}
+  - {fileID: 11400000, guid: eacbd9050d0a45d4d8d55bf10153a9d4, type: 2}
+  - {fileID: 11400000, guid: acc782bf9f46f144d8616771e4e4a806, type: 2}
+  - {fileID: 11400000, guid: 364015ddbb739ad42a9d6eeab70fe700, type: 2}
+  - {fileID: 11400000, guid: f8dc16f914a26524d845742fbff08595, type: 2}
+  - {fileID: 11400000, guid: 6b11befcf2f797e41b3953fc9ef6b910, type: 2}
+  - {fileID: 11400000, guid: ec08eb8ff0b91b044af340d368f0b0ed, type: 2}
+  - {fileID: 11400000, guid: 370a97fbf935797429ede3e623a60337, type: 2}
+  - {fileID: 11400000, guid: f16e9885448bb5b4397a77fcc4eb7cbb, type: 2}
+  - {fileID: 11400000, guid: 705e90a06b4f77b45aecb7d082c64a9e, type: 2}
+  - {fileID: 11400000, guid: 4a68ce08338eb2e40b12b821b05e63f5, type: 2}
+  - {fileID: 11400000, guid: b325dc032dd984d4a8fa0aef8b830d23, type: 2}
+  - {fileID: 11400000, guid: 1d783c5ab6e905047bd29c3b401e4df6, type: 2}
+  - {fileID: 11400000, guid: 8b9a83a4b96f9c4428db40c0f9643b58, type: 2}
+  - {fileID: 11400000, guid: 62c9aeace84498d48a1f714beed46136, type: 2}
+  - {fileID: 11400000, guid: 512e7938e40f67847abc9b6d5389e42a, type: 2}
+  <TerrainTileData>k__BackingField:
+    m_IsBillboard: 0
