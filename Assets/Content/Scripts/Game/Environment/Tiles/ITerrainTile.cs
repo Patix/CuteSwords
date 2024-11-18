@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Tilemaps;
 
 namespace Game.Environment.Tiles
@@ -10,27 +11,36 @@ namespace Game.Environment.Tiles
     
     public static class TerrainTileExtensions
     {
-        public static void ApplyAdditionalTerrainTileSettings<T>(this T tile, bool isBillboard, Vector3Int position, ITilemap tilemap,ref TileData tileData) where T: TileBase
+        public static void SetTileAndApplySettings(this Tilemap tilemap, TileBase tile,Vector3Int position)
         {
-            if (isBillboard && tilemap.IsSceneObject())
+            tilemap.SetTile(position,tile);
+            ApplyAdditionalTerrainTileSettings(tilemap,position);
+        }
+        public static void ApplyAdditionalTerrainTileSettings(this Tilemap tilemap, Vector3Int position)
+        {
+            var tileIsBillboardTerrain = tilemap.GetTile(position) is ITerrainTile { TerrainTileData: { m_IsBillboard: true } };
+            
+            if ( tileIsBillboardTerrain&& tilemap.IsSceneObject())
             {
-                tile.RenderAsBillboard(position,tilemap,ref tileData);
+                tilemap.RenderAsBillboard(position);
+            }
+        }
+        
+        public static void RenderAsBillboard(this Tilemap tilemap, Vector3Int position)
+        {
+            var tilemapTransform = tilemap.transform;
+            
+            if (tilemapTransform && tilemapTransform.eulerAngles.x == 90)
+            {
+                var tileMatrix = tilemap.GetTransformMatrix(position);
+                var newMatrix  = Matrix4x4.TRS(tileMatrix.GetPosition(), Quaternion.Euler(270f, 0, 0), tileMatrix.lossyScale);
+                tilemap.SetTransformMatrix(position, newMatrix);
             }
         }
 
-        public static void RenderAsBillboard<T>(this T tile, Vector3Int position, ITilemap tilemap, ref TileData tileData) where T:TileBase
+        public static bool IsSceneObject(this Tilemap tilemap)
         {
-            var transform = tilemap.GetComponent <Transform>();
-            if (transform && transform.eulerAngles.x == 90)
-            {
-                tileData.transform *= Matrix4x4.Rotate(Quaternion.Euler(270f, 0, 0));
-                tilemap.GetComponent<Tilemap>().SetTransformMatrix(position, tileData.transform);
-            }
-        }
-
-        public static bool IsSceneObject(this ITilemap tilemap)
-        {
-            return tilemap.GetComponent <Transform>().gameObject.scene.path != "";
+            return tilemap.gameObject.scene.path != "";
         }
     }
 }

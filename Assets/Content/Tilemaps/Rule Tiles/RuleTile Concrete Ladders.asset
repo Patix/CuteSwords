@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RuleTile Concrete Ladders
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: -2012239277, guid: af840afffedf39640846feca5817f264, type: 3}
-  m_DefaultGameObject: {fileID: 0}
+  m_DefaultGameObject: {fileID: 7002210945876000124, guid: 5b16e083578aeca4b8b0cd35b6d449fe, type: 3}
   m_DefaultColliderType: 1
   m_TilingRules:
   - m_Id: 15

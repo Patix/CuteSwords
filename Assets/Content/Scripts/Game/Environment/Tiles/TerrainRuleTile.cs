@@ -22,7 +22,7 @@ namespace Game.Environment.Tiles
         public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
         {
            base.GetTileData(position,tilemap,ref tileData);
-           this.ApplyAdditionalTerrainTileSettings(TerrainTileData.m_IsBillboard,position,tilemap,ref tileData);
+           tileData.flags ^= TileFlags.LockTransform;
         }
 
         public override bool RuleMatch(int neighborRule, TileBase other)

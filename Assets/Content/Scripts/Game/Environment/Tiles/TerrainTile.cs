@@ -1,5 +1,6 @@
 using System;
 using Unity.Mathematics;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
@@ -9,14 +10,20 @@ namespace Game.Environment.Tiles
     
     public class TerrainTile : Tile , ITerrainTile
     {
-        [field: SerializeField] public TerrainTileData TerrainTileData  { get; private set; }
+        [field: SerializeField] public TerrainTileData TerrainTileData { get;       private set; }
 
-        public override void GetTileData(Vector3Int position, ITilemap tilemap, ref TileData tileData)
+        public override void RefreshTile(Vector3Int position, ITilemap tilemap)
         {
-            base.GetTileData(position, tilemap, ref tileData);
-            this.ApplyAdditionalTerrainTileSettings(TerrainTileData.m_IsBillboard, position,tilemap, ref tileData);
+            base.RefreshTile(position, tilemap);
+            OnAfterTileRefreshed(position,tilemap);
         }
-        
+
+        public void OnAfterTileRefreshed(Vector3Int position, ITilemap tilemap)
+        {
+            var      tile     = tilemap.GetTile(position);
+            if (tile is null || tile!=this) return;
+            tilemap.GetComponent<Tilemap>().ApplyAdditionalTerrainTileSettings(position);
+        }
     }
 }
 
