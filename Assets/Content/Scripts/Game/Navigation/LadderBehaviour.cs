@@ -3,28 +3,53 @@ using UnityEngine;
 
 public class LadderBehaviour : MonoBehaviour
 {
-    
-    public  float    m_Level;
+    private int         _enteredObjects;
    
-    [SerializeField] private Collider m_TriggerReference;
-    
     private void OnTriggerEnter(Collider other)
     {
-       
-        var RelativePosition = new Vector3(0, m_Level, -m_Level);
+        other.SendMessage("ReceiveMessage","Ladder_On",SendMessageOptions.DontRequireReceiver);
+        CancelOutGravityForce(other);
+        _enteredObjects++;
+    }
+   
+    private void OnTriggerExit(Collider other)
+    {
+        other.SendMessage("ReceiveMessage","Ladder_Off",SendMessageOptions.DontRequireReceiver);
+        PreventJumpWhenFinishedClimbing(other);
+        _enteredObjects--;
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        CancelOutGravityForce(other);
+    }
+
+    private void CancelOutGravityForce(Collider other)
+    {
+        if(!other) return;
         
-        var entranceDirection        = (other.attachedRigidbody.position - m_TriggerReference.bounds.center).normalized;
-     
-        bool isGoingUp = entranceDirection.z < 0;
-        bool canGo     = m_Level > 0 ? isGoingUp : !isGoingUp;
-      
-        //Debug.Log($" { (canGo?"Can":"Can't")} Go {(isGoingUp?"Up":"Down")} : ");
-      
-        if(!canGo) return;
+        var otherRigidbody = other.attachedRigidbody;
         
-        var teleportDestination               = other.attachedRigidbody.position + RelativePosition;
-        
-        other.attachedRigidbody.Move(teleportDestination,other.attachedRigidbody.rotation);
-       
+        if (otherRigidbody && otherRigidbody.useGravity && !otherRigidbody.isKinematic)
+        {
+            otherRigidbody.AddForce(-Physics.gravity  * otherRigidbody.mass, ForceMode.Force); // Cancel Out Gravity
+        }
+    }
+
+    private void PreventJumpWhenFinishedClimbing(Collider other)
+    {
+        var velocity = other.attachedRigidbody.linearVelocity;
+        velocity.y                             = 0;
+        other.attachedRigidbody.linearVelocity = velocity;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (_enteredObjects > 0)
+        {
+            var collider = GetComponent <BoxCollider>();
+            Gizmos.DrawWireCube(transform.TransformPoint(collider.center),Vector3.Scale(transform.lossyScale,collider.size));
+        }
     }
 }
+

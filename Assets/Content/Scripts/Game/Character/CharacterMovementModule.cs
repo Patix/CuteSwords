@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using Data;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,15 +10,19 @@ namespace InventoryAndEquipment
     [Serializable]
     public class CharacterMovementModule
     {
-        [SerializeField] private float       m_MovementSpeed=12;
-        [SerializeField] private Rigidbody   m_RigidBody;
+        [SerializeField] private float           m_MovementSpeed=12;
+        [SerializeField] private Rigidbody       m_RigidBody;
+        [SerializeField] private CapsuleCollider m_CapsuleCollider;
+        [SerializeField] private float           m_GroundCheckDistance = 0.1f;
+        [SerializeField] private  Vector3           m_GroundCheckOrigin = Vector3.zero;
         
-        private                  Character         character;
-        private                  float             currentSpeed;
-        private                  CharacterControls input;
-        private                  Vector3           MovementVector { get; set; }
-
-        public Vector3 Velocity=>m_RigidBody.linearVelocity;
+        private Character         character;
+        private float             currentSpeed;
+        private CharacterControls input;
+        private Vector2           MovementInput { get; set; }
+        private Vector3           MovementInputAddedVelocityLastFrame;
+        public  Vector3           Velocity   =>m_RigidBody.linearVelocity;
+        public  bool              IsOnLadder { get; set; } = false;
         
         public void Initialize(Character character, Rigidbody rigidbody)
         {
@@ -32,20 +37,19 @@ namespace InventoryAndEquipment
 
         private void OnInputCanceled(InputAction.CallbackContext obj)
         {
-            MovementVector = Vector3.zero;
+            MovementInput = Vector3.zero;
         }
 
         private void OnInputEvent(InputAction.CallbackContext inputContext)
         {
-            var inputVector = inputContext.ReadValue <Vector2>();
-            MovementVector = new Vector3(inputVector.x,0,inputVector.y);
+            MovementInput = inputContext.ReadValue <Vector2>();
         }
 
         public void FixedUpdate()
         {
             if (character.State != Character.StateTypes.Interacting)
             {
-                if (MovementVector.magnitude > 0)
+                if (MovementInput.magnitude > 0)
                 {
                     character.State = Character.StateTypes.Moving;
                 }
@@ -53,11 +57,66 @@ namespace InventoryAndEquipment
                 {
                     character.State = Character.StateTypes.Idle;
                 }
-
-                var newVelocity = m_RigidBody.linearVelocity;
-                (newVelocity.x, newVelocity.z) = (m_MovementSpeed*MovementVector.x, m_MovementSpeed* MovementVector.z);
-                m_RigidBody.linearVelocity           = newVelocity;
+                ApplyInputAsForce();
             }
+        }
+
+        private void ApplyInputAsForce()
+        {
+            var verticalInput= MovementInput.y;
+            
+            var movementDirection = new Vector3(MovementInput.x, 0, MovementInput.y);
+            var movementVelocity  = movementDirection * m_MovementSpeed;
+
+            IsTouching(Vector3.forward);
+            IsTouching(Vector3.down);
+            
+      
+            if (IsOnLadder)
+            {
+                if (verticalInput > 0 && IsTouching(Vector3.forward) || verticalInput < 0 && !IsTouching(Vector3.down) &&IsTouching(Vector3.forward))
+                {
+                    movementVelocity.y = movementVelocity.z;
+                    movementVelocity.z = 0; //Isometric Movement Half Forward , Half Up 
+                }
+            }
+            else
+            {
+                if (movementVelocity.y != 0) movementVelocity.z = movementVelocity.y;
+                movementVelocity.y = m_RigidBody.linearVelocity.y; // Original Gravity Affected Y 
+            }
+            
+            m_RigidBody.linearVelocity = movementVelocity;
+        }
+
+        private bool IsTouching(Vector3 direction)
+        { 
+            var  capsuleColliderCenter   = m_RigidBody.transform.TransformPoint(m_CapsuleCollider.center);
+            var  radius                  = m_CapsuleCollider.radius * m_CapsuleCollider.transform.lossyScale.z;
+            var  rayOrigin               = capsuleColliderCenter + m_GroundCheckOrigin*radius;
+        
+          
+            bool isTouching = Physics.Raycast(rayOrigin,direction, m_GroundCheckDistance, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+            Debug.DrawLine(rayOrigin,rayOrigin+direction,isTouching?Color.red:Color.green);
+            return isTouching;
+        }
+        
+        private void ApplyInputAsForce2(Vector3 movementDirection)
+        {
+            var linearVelocityBeforeApplyingInputForce = m_RigidBody.linearVelocity;
+            
+            var inputVelocity = movementDirection * m_MovementSpeed;
+
+            var newVelocity = linearVelocityBeforeApplyingInputForce + inputVelocity;
+            
+            if (linearVelocityBeforeApplyingInputForce.magnitude > MovementInputAddedVelocityLastFrame.magnitude)
+            {
+                newVelocity -= MovementInputAddedVelocityLastFrame;
+            }
+
+            MovementInputAddedVelocityLastFrame = newVelocity - linearVelocityBeforeApplyingInputForce;
+
+            m_RigidBody.linearVelocity = newVelocity;
         }
     }
 }

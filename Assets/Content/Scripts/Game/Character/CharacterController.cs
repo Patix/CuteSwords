@@ -56,6 +56,15 @@ public class CharacterController : SingletonMonoBehaviour <CharacterController>
         }
     }
 
+    public void ReceiveMessage(string argument)
+    {
+        switch (argument)
+        {
+            case "Ladder_On":  movementModule.IsOnLadder = true; break;
+            case "Ladder_Off": movementModule.IsOnLadder = false; break;
+        }
+        
+    }
     public void OnAnimationEvent(AnimationEvent animationEvent) => animationModule.ProcessAnimationMarker(animationEvent);
 
     private void OnEquipmentUpdate()

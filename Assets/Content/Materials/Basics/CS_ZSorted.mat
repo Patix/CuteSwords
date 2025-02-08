@@ -36,8 +36,8 @@ Material:
     RenderType: Transparent
     Zauri: Zauri
   disabledShaderPasses:
-  - DepthOnly
   - MOTIONVECTORS
+  - DepthOnly
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3

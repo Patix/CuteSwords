@@ -57,11 +57,11 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
         //Extract Tiles
         foreach (var tilemap in tilemaps)
         {
-            yield return SampleAll(tilemap,(tileData, coordinates) =>
+            yield return SampleAll(tilemap,(sprite, coordinates) =>
             {
-                var realPosition   = GetSpriteVisualCenter(tilemap, tileData, coordinates);
+                var realPosition   = GetSpriteVisualCenter(tilemap, sprite, coordinates);
                 realPosition   =  Snapping.Snap(realPosition, Vector3.one * 0.1f);
-                ExtractedTiles.Add((tileData.sprite,realPosition,m_BaseElevation));
+                ExtractedTiles.Add((sprite,realPosition,m_BaseElevation));
             });
         }
         
@@ -118,10 +118,10 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
             }
         }
         
+        
+        
         if(MergeOnCreation)
             MergeColliders();
-        
-        
         
     }
     
@@ -138,10 +138,10 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
             }
     }
 
-    Vector3 GetSpriteVisualCenter(Tilemap tilemap,TileData tileData, Vector3Int coordinateInt)
+    Vector3 GetSpriteVisualCenter(Tilemap tilemap,Sprite sprite, Vector3Int coordinateInt)
     {
         Vector3 coordinate  = tilemap.GetCellCenterWorld(coordinateInt);
-        var     pivotOffset = 0.5f - tileData.sprite.pivot.y;
+        var     pivotOffset = 0.5f - sprite.pivot.y;
         coordinate.z+= pivotOffset; // Compensate Sprite Pivot
         return coordinate;
     }
@@ -163,7 +163,8 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     {
         if (col1                   == col2) return false;
         if(col1.transform.rotation !=col2.transform.rotation) return false;
-        if (col1.isTrigger || col2.isTrigger) return false;
+        if (col1.isTrigger               || col2.isTrigger) return false;
+        if (col1.name.Contains("Ladder") || col2.name.Contains("Ladder")) return false;
         
         if (mergeAxis              == SnapAxis.None) return false;
        
@@ -238,33 +239,18 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
         }
     }
    
-    IEnumerator SampleAll(Tilemap tilemap,Action<TileData, Vector3Int> onTileDataFound)
+    IEnumerator SampleAll(Tilemap tilemap,Action <Sprite, Vector3Int> onTileDataFound)
     {
-        for (var x = tilemap.cellBounds.min.x; x <= tilemap.cellBounds.max.x; x++)
+        foreach (Vector3Int position in tilemap.cellBounds.allPositionsWithin)
         {
-            for (var y = tilemap.cellBounds.min.y; y <= tilemap.cellBounds.max.y; y++)
+            var sprite = tilemap.GetSprite(position);
+            if (sprite)
             {
-                var coordinates = new Vector3Int(x, y);
-                var tileData    = Sample(tilemap,coordinates);
-
-                if (tileData.sprite)
-                {
-                    onTileDataFound?.Invoke(tileData,coordinates);
-                }
-
-                if(false) yield return null;
+                onTileDataFound?.Invoke(sprite,position);
             }
+
+            if(false) yield return null;
         }
-    }
-    
-    TileData Sample(Tilemap tilemap,Vector3Int position)
-    {
-        TileData tileData = default;
-        var      tile     = tilemap.GetTile(position);
-        if (tile != default){
-            tile.GetTileData(position, tilemap, ref tileData);
-        }
-        return tileData;
     }
 
     private Vector3 Round(Vector3 vector3, int numberOfDigits = 4)
