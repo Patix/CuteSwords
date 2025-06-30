@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -5249,7 +5250,12 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 905570070
+    uuid:
+      value0: 3604860654
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -690106642
     name: Shadow
     layerFlags: 3
     layerType: 0
@@ -5735,7 +5741,12 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
-    guid: -1029820645
+    uuid:
+      value0: 3383614466
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -911352830
     name: Body
     layerFlags: 3
     layerType: 0
@@ -6221,7 +6232,12 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   - layerIndex: 2
-    guid: 1403077922
+    uuid:
+      value0: 4136223136
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -158744160
     name: Head
     layerFlags: 3
     layerType: 0
@@ -6707,7 +6723,12 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   - layerIndex: 3
-    guid: -468443911
+    uuid:
+      value0: 1502599522
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 1502599522
     name: Bow
     layerFlags: 3
     layerType: 0
@@ -7193,7 +7214,12 @@ ScriptedImporter:
     linkedCells: []
     parentIndex: -1
   - layerIndex: 4
-    guid: 321346945
+    uuid:
+      value0: 22446553
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 22446553
     name: Arrow
     layerFlags: 3
     layerType: 0
@@ -7530,3 +7556,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 192, y: 192}
+  previousTextureSize: {x: 1024, y: 1024}
