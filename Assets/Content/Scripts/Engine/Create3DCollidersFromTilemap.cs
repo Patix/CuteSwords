@@ -87,7 +87,6 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
         //Assign Elevations and change positions
         for (var i = 0; i < ExtractedTiles.Count; i++)
         {
-            continue;
             var tile = ExtractedTiles[i];
             
             if (tile.elevation > 0)
