@@ -84,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -97,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638567703345662300
   textureAssetName: 
@@ -5248,6 +5252,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 469, y: 996}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
     uuid:
@@ -5739,6 +5744,8 @@ ScriptedImporter:
         height: 14
       spriteId: eb3f0585ff8b2ee41b5734baa2e526e6
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
   - layerIndex: 1
     uuid:
@@ -6230,6 +6237,8 @@ ScriptedImporter:
         height: 32
       spriteId: d042777b876d65a44b60a981c7c78150
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
   - layerIndex: 2
     uuid:
@@ -6721,6 +6730,8 @@ ScriptedImporter:
         height: 53
       spriteId: 377c9d74de25ca24d882cffe60b8800a
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
   - layerIndex: 3
     uuid:
@@ -7212,6 +7223,8 @@ ScriptedImporter:
         height: 55
       spriteId: 408f578ab90ba0846bd2f3fbc4daed0b
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
   - layerIndex: 4
     uuid:
@@ -7514,7 +7527,10 @@ ScriptedImporter:
         height: 14
       spriteId: bd10870443827b64f83a627f9eb72cf3
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
