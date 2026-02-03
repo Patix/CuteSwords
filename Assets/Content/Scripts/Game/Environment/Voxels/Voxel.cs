@@ -21,7 +21,11 @@ public class Voxel : MonoBehaviour
     [SerializeField] OptionalSides optionalSides = OptionalSides.None;
 
     Mesh mesh;
-  
+
+    private void Awake()
+    {
+        if(!mesh) BuildVoxel();
+    }
 
     public void SetSides()
     {
