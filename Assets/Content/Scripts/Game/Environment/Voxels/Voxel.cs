@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class Voxel : MonoBehaviour
 {
-    
     [Flags]
     public enum OptionalSides
     {
@@ -22,7 +21,7 @@ public class Voxel : MonoBehaviour
     [SerializeField] OptionalSides optionalSides = OptionalSides.None;
 
     Mesh mesh;
-  
+        
     public void SetSides()
     {
         foreach (var side in Enum.GetNames(typeof(OptionalSides)))
@@ -46,19 +45,26 @@ public class Voxel : MonoBehaviour
         
         if (forceCreateNewMesh) 
             mesh= new Mesh { name = gameObject.name };
+        
+        int faceCount =2; //Front +Top Always
 
-        Vector3[] vertices = new Vector3[24]; // max possible, can shrink if needed
-        int[] triangles = new int[36];
-        Vector2[] uvs = new Vector2[24];
+        if ((optionalSides & OptionalSides.Back)  != 0) faceCount++;
+        if ((optionalSides & OptionalSides.Left)  != 0) faceCount++;
+        if ((optionalSides & OptionalSides.Right) != 0) faceCount++;
+        if ((optionalSides & OptionalSides.Bottom) != 0) faceCount++;
 
-        Vector3 p0 = new Vector3(0, 0, 0);
-        Vector3 p1 = new Vector3(1, 0, 0);
-        Vector3 p2 = new Vector3(1, 1, 0);
-        Vector3 p3 = new Vector3(0, 1, 0);
-        Vector3 p4 = new Vector3(0, 0, 1);
-        Vector3 p5 = new Vector3(1, 0, 1);
-        Vector3 p6 = new Vector3(1, 1, 1);
-        Vector3 p7 = new Vector3(0, 1, 1);
+        Vector3[] vertices  = new Vector3[faceCount * 4];
+        Vector2[] uvs       = new Vector2[faceCount * 4];
+        int[]     triangles = new int[faceCount     * 6];
+
+        Vector3 p0 = new(0, 0, 0);
+        Vector3 p1 = new(1, 0, 0);
+        Vector3 p2 = new(1, 1, 0);
+        Vector3 p3 = new(0, 1, 0);
+        Vector3 p4 = new(0, 0, 1);
+        Vector3 p5 = new(1, 0, 1);
+        Vector3 p6 = new(1, 1, 1);
+        Vector3 p7 = new(0, 1, 1);
 
         int faceIndex = 0;
 
