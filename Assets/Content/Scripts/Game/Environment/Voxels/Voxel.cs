@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class Voxel : MonoBehaviour
 {
+    
     [Flags]
     public enum OptionalSides
     {
@@ -21,12 +22,7 @@ public class Voxel : MonoBehaviour
     [SerializeField] OptionalSides optionalSides = OptionalSides.None;
 
     Mesh mesh;
-
-    private void Awake()
-    {
-        if(!mesh) BuildVoxel();
-    }
-
+  
     public void SetSides()
     {
         foreach (var side in Enum.GetNames(typeof(OptionalSides)))
@@ -44,11 +40,12 @@ public class Voxel : MonoBehaviour
     }
     
     [Button]
-    public void BuildVoxel()
+    public void BuildVoxel(bool forceCreateNewMesh = false, bool saveMesh = false)
     {
         SetSides();
-        mesh = new Mesh();
-        mesh.name = "VoxelCube";
+        
+        if (forceCreateNewMesh) 
+            mesh= new Mesh { name = gameObject.name };
 
         Vector3[] vertices = new Vector3[24]; // max possible, can shrink if needed
         int[] triangles = new int[36];
@@ -96,6 +93,9 @@ public class Voxel : MonoBehaviour
 
         GetComponent<MeshFilter>().sharedMesh     = mesh;
         GetComponent <MeshCollider>().sharedMesh = mesh;
+
+        if (saveMesh)
+            SaveMesh(mesh, gameObject.name);
     }
 
     void AddFace(Vector3[] v, int[] t, int face, Vector3 a, Vector3 b, Vector3 c, Vector3 d)
@@ -147,7 +147,7 @@ public class Voxel : MonoBehaviour
         if ((optionalSides & OptionalSides.Bottom) != 0)
             SetFaceUVFromSprite(uvs, faceIndex++, TopSprite);
     }
-
+    
     static void SetFaceUVFromSprite(Vector2[] uvs, int faceIndex, Sprite sprite)
     {
         if (!sprite)
@@ -170,5 +170,14 @@ public class Voxel : MonoBehaviour
         uvs[start + 1] = new Vector2(xMax, yMin);
         uvs[start + 2] = new Vector2(xMax, yMax);
         uvs[start + 3] = new Vector2(xMin, yMax);
+    }
+
+   
+    public static void SaveMesh(Mesh mesh,string name)
+    {
+        #if UNITY_EDITOR
+        UnityEditor.AssetDatabase.CreateAsset(mesh,$"Assets/Content/Meshes/{name}.mesh");
+        UnityEditor.AssetDatabase.SaveAssets();
+        #endif
     }
 }
