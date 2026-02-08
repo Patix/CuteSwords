@@ -32,16 +32,16 @@ public class VoxelPrefabsGenerator : MonoBehaviour
 
             if (_left.Contains(col))
             {
-                voxelComponent.SetSides(Voxel.OptionalSides.Left);
+                voxelComponent.AddSides(Voxel.OptionalSides.Left);
             }
 
             if (right.Contains(col))
             {
-                voxelComponent.SetSides(Voxel.OptionalSides.Right);
+                voxelComponent.AddSides(Voxel.OptionalSides.Right);
             }
             
             if(solowithRoot.Contains(row))
-                voxelComponent.SetSides(Voxel.OptionalSides.Left|Voxel.OptionalSides.Right);
+                voxelComponent.AddSides(Voxel.OptionalSides.Left|Voxel.OptionalSides.Right);
             
             voxelComponent.TopSprite   = spr;
             voxelComponent.FrontSprite = GetRoot(spr);

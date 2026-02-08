@@ -2,118 +2,139 @@ using System;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+[RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider))]
 public class Voxel : MonoBehaviour
 {
     [Flags]
     public enum OptionalSides
     {
-        None = 0,
-        Back = 1 << 0,
-        Left = 1 << 1,
-        Right = 1 << 2,
+        None   = 0,
+        Back   = 1 << 0,
+        Left   = 1 << 1,
+        Right  = 1 << 2,
         Bottom = 1 << 3
     }
 
-    [SerializeField] public Sprite TopSprite;
-    [SerializeField] public Sprite FrontSprite;
- 
+    [PreviewField]
+    public Sprite TopSprite,
+                  FrontSprite;
+
     [SerializeField] OptionalSides optionalSides = OptionalSides.None;
 
     Mesh mesh;
-        
-    public void SetSides()
-    {
-        foreach (var side in Enum.GetNames(typeof(OptionalSides)))
-        {
-            if (TopSprite.name.Contains(side, StringComparison.InvariantCultureIgnoreCase))
-            {
-                optionalSides|= (OptionalSides)Enum.Parse(typeof(OptionalSides), side);
-            }
-        }
-    }
 
-    public void SetSides(OptionalSides sides)
-    {
-        optionalSides |= sides;
-    }
-    
+    // ============================ BUILD ============================
+
     [Button]
     public void BuildVoxel(bool forceCreateNewMesh = false, bool saveMesh = false)
     {
-        SetSides();
-        
-        if (forceCreateNewMesh) 
-            mesh= new Mesh { name = gameObject.name };
-        
-        int faceCount =2; //Front +Top Always
+        if (forceCreateNewMesh || mesh == null)
+            mesh = new Mesh { name = gameObject.name };
 
-        if ((optionalSides & OptionalSides.Back)  != 0) faceCount++;
-        if ((optionalSides & OptionalSides.Left)  != 0) faceCount++;
-        if ((optionalSides & OptionalSides.Right) != 0) faceCount++;
-        if ((optionalSides & OptionalSides.Bottom) != 0) faceCount++;
+        int faceCount = 2;
+        if (Has(OptionalSides.Back))   faceCount++;
+        if (Has(OptionalSides.Left))   faceCount++;
+        if (Has(OptionalSides.Right))  faceCount++;
+        if (Has(OptionalSides.Bottom)) faceCount++;
 
         Vector3[] vertices  = new Vector3[faceCount * 4];
         Vector2[] uvs       = new Vector2[faceCount * 4];
-        int[]     triangles = new int[faceCount     * 6];
+        int[] triangles     = new int[faceCount * 6];
+        Color[] colors      = new Color[faceCount * 4]; // tile index stored here
 
-        Vector3 p0 = new(0, 0, 0);
-        Vector3 p1 = new(1, 0, 0);
-        Vector3 p2 = new(1, 1, 0);
-        Vector3 p3 = new(0, 1, 0);
-        Vector3 p4 = new(0, 0, 1);
-        Vector3 p5 = new(1, 0, 1);
-        Vector3 p6 = new(1, 1, 1);
-        Vector3 p7 = new(0, 1, 1);
+        Vector3 s = Vector3.one * 0.5f;
 
-        int faceIndex = 0;
+        Vector3 p0 = new(-s.x, -s.y, -s.z);
+        Vector3 p1 = new( s.x, -s.y, -s.z);
+        Vector3 p2 = new( s.x,  s.y, -s.z);
+        Vector3 p3 = new(-s.x,  s.y, -s.z);
+        Vector3 p4 = new(-s.x, -s.y,  s.z);
+        Vector3 p5 = new( s.x, -s.y,  s.z);
+        Vector3 p6 = new( s.x,  s.y,  s.z);
+        Vector3 p7 = new(-s.x,  s.y,  s.z);
 
-        // FRONT (always)
-        AddFace(vertices, triangles, faceIndex++, p0, p1, p2, p3);
+        int face = 0;
+
+        int topTile  = GetTileIndexFromSprite(TopSprite);
+        int sideTile = GetTileIndexFromSprite(FrontSprite);
+
+        Debug.Log("Building voxel with " + faceCount + " faces (topTile=" + topTile + ", sideTile=" + sideTile + ")");
+
+        // FRONT
+        AddFace(vertices, triangles, uvs, colors, face++, p0, p1, p2, p3, sideTile);
 
         // BACK
-        if ((optionalSides & OptionalSides.Back) != 0)
-            AddFace(vertices, triangles, faceIndex++, p5, p4, p7, p6);
+        if (Has(OptionalSides.Back))
+            AddFace(vertices, triangles, uvs, colors, face++, p5, p4, p7, p6, sideTile);
 
         // LEFT
-        if ((optionalSides & OptionalSides.Left) != 0)
-            AddFace(vertices, triangles, faceIndex++, p4, p0, p3, p7);
+        if (Has(OptionalSides.Left))
+            AddFace(vertices, triangles, uvs, colors, face++, p4, p0, p3, p7, sideTile);
 
         // RIGHT
-        if ((optionalSides & OptionalSides.Right) != 0)
-            AddFace(vertices, triangles, faceIndex++, p1, p5, p6, p2);
+        if (Has(OptionalSides.Right))
+            AddFace(vertices, triangles, uvs, colors, face++, p1, p5, p6, p2, sideTile);
 
-        // TOP (always)
-        AddFace(vertices, triangles, faceIndex++, p3, p2, p6, p7);
+        // TOP
+        AddFace(vertices, triangles, uvs, colors, face++, p3, p2, p6, p7, topTile);
 
         // BOTTOM
-        if ((optionalSides & OptionalSides.Bottom) != 0)
-            AddFace(vertices, triangles, faceIndex++, p4, p5, p1, p0);
+        if (Has(OptionalSides.Bottom))
+            AddFace(vertices, triangles, uvs, colors, face++, p4, p5, p1, p0, topTile);
 
-        ApplySpriteUVs(uvs, faceIndex);
-
-        mesh.vertices = vertices;
+        mesh.Clear();
+        mesh.vertices  = vertices;
         mesh.triangles = triangles;
-        mesh.uv = uvs;
+        mesh.uv        = uvs;
+        mesh.colors    = colors;
         mesh.RecalculateNormals();
-
-        GetComponent<MeshFilter>().sharedMesh     = mesh;
-        GetComponent <MeshCollider>().sharedMesh = mesh;
+        GetComponent<MeshFilter>().sharedMesh = mesh;
+        GetComponent<MeshCollider>().sharedMesh = mesh;
 
         if (saveMesh)
             SaveMesh(mesh, gameObject.name);
     }
-
-    void AddFace(Vector3[] v, int[] t, int face, Vector3 a, Vector3 b, Vector3 c, Vector3 d)
+    
+    public void AddSides(OptionalSides side)
     {
-        var offset = new Vector3(0.5f, 0.5f, 0.5f); // center pivot
+        optionalSides |= side;
+    }
+
+    [Button]
+    private void SetColor(int index)
+    {
+        var colors = mesh.colors32;
+        for (var i = 0; i < colors.Length; i++)
+        {
+            colors[i].r= (byte)index;
+        }
+        
+        mesh.colors32 = colors;
+    }
+   
+    // ============================ HELPERS ============================
+
+    bool Has(OptionalSides s) => (optionalSides & s) != 0;
+
+    static void AddFace(
+        Vector3[] v,
+        int[] t,
+        Vector2[] uv,
+        Color[] c,
+        int face,
+        Vector3 a,
+        Vector3 b,
+        Vector3 c1,
+        Vector3 d,
+        int tileIndex)
+    {
         int vi = face * 4;
         int ti = face * 6;
 
-        v[vi + 0] = a - offset;
-        v[vi + 1] = b - offset;
-        v[vi + 2] = c - offset;
-        v[vi + 3] = d - offset;
+        v[vi + 0] = a;
+        v[vi + 1] = b;
+        v[vi + 2] = c1;
+        v[vi + 3] = d;
 
         t[ti + 0] = vi + 0;
         t[ti + 1] = vi + 2;
@@ -121,69 +142,38 @@ public class Voxel : MonoBehaviour
         t[ti + 3] = vi + 0;
         t[ti + 4] = vi + 3;
         t[ti + 5] = vi + 2;
+
+        uv[vi + 0] = new(0, 0);
+        uv[vi + 1] = new(1, 0);
+        uv[vi + 2] = new(1, 1);
+        uv[vi + 3] = new(0, 1);
+
+        float encoded = Mathf.Clamp(tileIndex, 0, 255) / 255f;
+        Color col = new(encoded, 0, 0, 1);
+
+        c[vi + 0] = col;
+        c[vi + 1] = col;
+        c[vi + 2] = col;
+        c[vi + 3] = col;
     }
 
-    void ApplySpriteUVs(Vector2[] uvs, int faceCount)
+    int GetTileIndexFromSprite(Sprite sprite)
     {
-        if (FrontSprite == null || TopSprite == null)
-        {
-            string log                  = gameObject.name;
-            if(FrontSprite == null) log = " Front Missing";
-            if(TopSprite == null)   log = " ,Top Missing";
-            Debug.Log(log,gameObject);
-        }
-           
-        int faceIndex = 0;
-
-        // Front (always)
-        SetFaceUVFromSprite(uvs, faceIndex++, FrontSprite);
-
-        // Optional faces
-        if ((optionalSides & OptionalSides.Back) != 0)
-            SetFaceUVFromSprite(uvs, faceIndex++, FrontSprite);
-        if ((optionalSides & OptionalSides.Left) != 0)
-            SetFaceUVFromSprite(uvs, faceIndex++, FrontSprite);
-        if ((optionalSides & OptionalSides.Right) != 0)
-            SetFaceUVFromSprite(uvs, faceIndex++, FrontSprite);
-
-        // Top (always)
-        SetFaceUVFromSprite(uvs, faceIndex++, TopSprite);
-
-        // Bottom (optional)
-        if ((optionalSides & OptionalSides.Bottom) != 0)
-            SetFaceUVFromSprite(uvs, faceIndex++, TopSprite);
-    }
-    
-    static void SetFaceUVFromSprite(Vector2[] uvs, int faceIndex, Sprite sprite)
-    {
-        if (!sprite)
-        {
-           // Debug.LogError("Voxel: Sprites not assigned!");
-            return;
-        }
+        if (!sprite) return 0;
         
-        Texture2D tex = sprite.texture;
-        Rect r = sprite.rect;
+        float row     = (sprite.texture.height-sprite.rect.yMax) / sprite.pixelsPerUnit;
+        float col     = sprite.rect.min.x                        / sprite.pixelsPerUnit;
+        float totalColumns = (sprite.texture.width / sprite.rect.width);
+        return (int) (row * totalColumns + col);
+    }
 
-        int start = faceIndex * 4;
-
-        float xMin = r.xMin / tex.width;
-        float yMin = r.yMin / tex.height;
-        float xMax = r.xMax / tex.width;
-        float yMax = r.yMax / tex.height;
-
-        uvs[start + 0] = new Vector2(xMin, yMin);
-        uvs[start + 1] = new Vector2(xMax, yMin);
-        uvs[start + 2] = new Vector2(xMax, yMax);
-        uvs[start + 3] = new Vector2(xMin, yMax);
+    public static void SaveMesh(Mesh mesh, string name)
+    {
+#if UNITY_EDITOR
+        UnityEditor.AssetDatabase.CreateAsset(mesh, $"Assets/Content/Meshes/{name}.mesh");
+        UnityEditor.AssetDatabase.SaveAssets();
+#endif
     }
 
    
-    public static void SaveMesh(Mesh mesh,string name)
-    {
-        #if UNITY_EDITOR
-        UnityEditor.AssetDatabase.CreateAsset(mesh,$"Assets/Content/Meshes/{name}.mesh");
-        UnityEditor.AssetDatabase.SaveAssets();
-        #endif
-    }
 }
