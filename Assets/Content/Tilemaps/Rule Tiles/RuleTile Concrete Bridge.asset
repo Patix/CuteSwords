@@ -19,7 +19,7 @@ MonoBehaviour:
   - m_Id: 12
     m_Sprites:
     - {fileID: 1256658153, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: ff8227373196dd54c979455720c63104, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -34,7 +34,7 @@ MonoBehaviour:
   - m_Id: 3
     m_Sprites:
     - {fileID: -34517183, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: 0af436b867f5f504dabf2a9b37d43c9a, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -51,7 +51,7 @@ MonoBehaviour:
   - m_Id: 10
     m_Sprites:
     - {fileID: 1862530788, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: 1e49f76cf216fdf4fb138640d963e029, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -68,7 +68,7 @@ MonoBehaviour:
   - m_Id: 11
     m_Sprites:
     - {fileID: -2065529088, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: d0361b9c582335d49a0482fa2e70a4b0, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -84,7 +84,7 @@ MonoBehaviour:
   - m_Id: 13
     m_Sprites:
     - {fileID: -900496028, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: 0c84a02ad9acac8458ac6ca44eb1d9d3, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -98,7 +98,7 @@ MonoBehaviour:
   - m_Id: 7
     m_Sprites:
     - {fileID: 1264750858, guid: bdeb24e991e851340ac3e78d220a6fcf, type: 3}
-    m_GameObject: {fileID: 0}
+    m_GameObject: {fileID: 8920868143070023482, guid: 4c2fe4b0d2a2a4145b60c7e04934e346, type: 3}
     m_MinAnimationSpeed: 1
     m_MaxAnimationSpeed: 1
     m_PerlinScale: 0.5
@@ -112,5 +112,6 @@ MonoBehaviour:
     - {x: -1, y: 0, z: 0}
     - {x: 1, y: 0, z: 0}
     m_RuleTransform: 0
-  isBillboard: 0
   m_FriendTiles: []
+  <TerrainTileData>k__BackingField:
+    m_IsBillboard: 0

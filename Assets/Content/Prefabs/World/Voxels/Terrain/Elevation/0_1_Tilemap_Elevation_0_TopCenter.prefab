@@ -31,7 +31,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -42,7 +42,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3990193759021684890}
-  m_Mesh: {fileID: 4300000, guid: c19ef470f84c55947ba8bab62d3a7c18, type: 2}
+  m_Mesh: {fileID: 4300000, guid: c615a50bc79e1b04aa88ccf4ffc99441, type: 2}
 --- !u!23 &5783533164717196004
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1a0c864a9042bcf458a20318c85831bf, type: 2}
+  - {fileID: 2100000, guid: a4d0c676fe163ed49821662b8e732399, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -90,6 +90,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &6350238464463356204
 MeshCollider:
@@ -112,7 +113,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: c19ef470f84c55947ba8bab62d3a7c18, type: 2}
+  m_Mesh: {fileID: 4300000, guid: c615a50bc79e1b04aa88ccf4ffc99441, type: 2}
 --- !u!114 &4661491517148144838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,4 +128,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Voxel
   TopSprite: {fileID: -280845163, guid: af840afffedf39640846feca5817f264, type: 3}
   FrontSprite: {fileID: 1512245577, guid: af840afffedf39640846feca5817f264, type: 3}
-  optionalSides: 7
+  optionalSides: 15

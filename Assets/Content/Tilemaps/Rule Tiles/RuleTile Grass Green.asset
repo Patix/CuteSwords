@@ -271,6 +271,24 @@ MonoBehaviour:
     - {x: 0, y: -1, z: 0}
     - {x: -1, y: 0, z: 0}
     m_RuleTransform: 0
-  isBillboard: 0
   m_FriendTiles:
   - {fileID: 11400000}
+  - {fileID: 11400000, guid: 4656632f391bc0c49a9255df6402f1ca, type: 2}
+  - {fileID: 11400000, guid: 3e3f6ae74a75ceb4ab2818d26c4e76d3, type: 2}
+  - {fileID: 11400000, guid: c55666b3a106fcc458e87b6fd03e29c8, type: 2}
+  - {fileID: 11400000, guid: c9ae7723eb6ec084c97d6f843232be4c, type: 2}
+  - {fileID: 11400000, guid: 9116d2f974db02244bf0e98fa45cdb0c, type: 2}
+  - {fileID: 11400000, guid: 1988007848d00cb4f82868a95c7be249, type: 2}
+  - {fileID: 11400000, guid: 5d36f2dc93a60ae4ab7a7d330516c216, type: 2}
+  - {fileID: 11400000, guid: d9f33989236eff6489609ac863266019, type: 2}
+  - {fileID: 11400000, guid: d73e115a6063c9e44bf94206652cd3df, type: 2}
+  - {fileID: 11400000, guid: 47bdccae290a02f41a19eafba55cc50d, type: 2}
+  - {fileID: 11400000, guid: 54cff97294753894d85041417ff9fc47, type: 2}
+  - {fileID: 11400000, guid: 501a68fb90d16f84584d6a21d03237b5, type: 2}
+  - {fileID: 11400000, guid: da12318b186f1f94eac2d145b9ef25bf, type: 2}
+  - {fileID: 11400000, guid: 0d45f7213de990f469911c76a4c8f5af, type: 2}
+  - {fileID: 11400000, guid: 2368e9328bb55384bb3655fe151e8090, type: 2}
+  - {fileID: 11400000, guid: 8d9651e5e90931041868e7a43ce91927, type: 2}
+  - {fileID: 11400000, guid: 1ab4dcee01a704941a7512fe4f3a0bd9, type: 2}
+  <TerrainTileData>k__BackingField:
+    m_IsBillboard: 0

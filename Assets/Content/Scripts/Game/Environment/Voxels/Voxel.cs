@@ -1,5 +1,7 @@
 using System;
 using Sirenix.OdinInspector;
+using Sirenix.OdinInspector.Editor;
+using UnityEditor;
 using UnityEngine;
 
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(MeshCollider))]
@@ -24,11 +26,22 @@ public class Voxel : MonoBehaviour
     Mesh mesh;
 
     // ============================ BUILD ============================
-
+    [ShowInInspector] private Vector3 _offset = Vector3.one*0.5f;
+    
     [Button]
-    public void BuildVoxel(bool forceCreateNewMesh = false, bool saveMesh = false)
+    public void BuildVoxel(bool forceCreateNewMesh = false, bool saveMesh = false , bool overwriteExisting = false)
     {
-        if (forceCreateNewMesh || mesh == null)
+        #if UNITY_EDITOR
+        string meshPath = AssetDatabase.GetAssetPath(GetComponent<MeshFilter>()?.sharedMesh);
+        #endif
+
+
+        if (overwriteExisting)
+        {
+            mesh = GetComponent<MeshFilter>()?.sharedMesh;
+        }
+        
+        if ((!overwriteExisting) &&forceCreateNewMesh || mesh == null)
             mesh = new Mesh { name = gameObject.name };
 
         int faceCount = 2;
@@ -42,7 +55,7 @@ public class Voxel : MonoBehaviour
         int[] triangles     = new int[faceCount * 6];
         Color[] colors      = new Color[faceCount * 4]; // tile index stored here
 
-        Vector3 s = Vector3.one * 0.5f;
+        Vector3 s = _offset;
 
         Vector3 p0 = new(-s.x, -s.y, -s.z);
         Vector3 p1 = new( s.x, -s.y, -s.z);
@@ -56,31 +69,37 @@ public class Voxel : MonoBehaviour
         int face = 0;
 
         int topTile  = GetTileIndexFromSprite(TopSprite);
-        int sideTile = GetTileIndexFromSprite(FrontSprite);
 
-        Debug.Log("Building voxel with " + faceCount + " faces (topTile=" + topTile + ", sideTile=" + sideTile + ")");
+        if (FrontSprite)
+        {
+            int sideTile = GetTileIndexFromSprite(FrontSprite);
+           
+            // FRONT
+            AddFace(vertices, triangles, uvs, colors, face++, p0, p1, p2, p3, sideTile);
 
-        // FRONT
-        AddFace(vertices, triangles, uvs, colors, face++, p0, p1, p2, p3, sideTile);
+            // BACK
+            if (Has(OptionalSides.Back))
+                AddFace(vertices, triangles, uvs, colors, face++, p5, p4, p7, p6, sideTile);
 
-        // BACK
-        if (Has(OptionalSides.Back))
-            AddFace(vertices, triangles, uvs, colors, face++, p5, p4, p7, p6, sideTile);
+            // LEFT
+            if (Has(OptionalSides.Left))
+                AddFace(vertices, triangles, uvs, colors, face++, p4, p0, p3, p7, sideTile);
 
-        // LEFT
-        if (Has(OptionalSides.Left))
-            AddFace(vertices, triangles, uvs, colors, face++, p4, p0, p3, p7, sideTile);
+            // RIGHT
+            if (Has(OptionalSides.Right))
+                AddFace(vertices, triangles, uvs, colors, face++, p1, p5, p6, p2, sideTile);
+        }
 
-        // RIGHT
-        if (Has(OptionalSides.Right))
-            AddFace(vertices, triangles, uvs, colors, face++, p1, p5, p6, p2, sideTile);
+        if (TopSprite)
+        {
+            // TOP
+            AddFace(vertices, triangles, uvs, colors, face++, p3, p2, p6, p7, topTile);
 
-        // TOP
-        AddFace(vertices, triangles, uvs, colors, face++, p3, p2, p6, p7, topTile);
-
-        // BOTTOM
-        if (Has(OptionalSides.Bottom))
-            AddFace(vertices, triangles, uvs, colors, face++, p4, p5, p1, p0, topTile);
+            // BOTTOM
+            if (Has(OptionalSides.Bottom))
+                AddFace(vertices, triangles, uvs, colors, face++, p4, p5, p1, p0, topTile);
+        }
+       
 
         mesh.Clear();
         mesh.vertices  = vertices;
@@ -91,19 +110,29 @@ public class Voxel : MonoBehaviour
         GetComponent<MeshFilter>().sharedMesh = mesh;
         GetComponent<MeshCollider>().sharedMesh = mesh;
 
+        #if UNITY_EDITOR
+        
         if (saveMesh)
-            SaveMesh(mesh, gameObject.name);
+        {
+            if(!overwriteExisting) SaveMesh(mesh, gameObject.name);
+            else SaveMesh(mesh,gameObject.name, meshPath);
+
+        }
+        #endif
+     
+           
     }
-    
     public void AddSides(OptionalSides side)
     {
         optionalSides |= side;
     }
 
+    
     [Button]
     private void SetColor(int index)
     {
-        var colors = mesh.colors32;
+        if (!mesh) mesh = GetComponent <MeshFilter>().sharedMesh;
+        var colors      = mesh.colors32;
         for (var i = 0; i < colors.Length; i++)
         {
             colors[i].r= (byte)index;
@@ -167,13 +196,54 @@ public class Voxel : MonoBehaviour
         return (int) (row * totalColumns + col);
     }
 
-    public static void SaveMesh(Mesh mesh, string name)
+    [ContextMenu("Name/From Top Sprite")]
+    private void NameFromTopSprite()
     {
-#if UNITY_EDITOR
-        UnityEditor.AssetDatabase.CreateAsset(mesh, $"Assets/Content/Meshes/{name}.mesh");
-        UnityEditor.AssetDatabase.SaveAssets();
-#endif
+        Rename(TopSprite.name);
+    }
+    
+    [ContextMenu("Name/From Front Sprite")]
+    private void NameFromFrontSprite()
+    { 
+        Rename(FrontSprite.name);
     }
 
-   
+    private void Rename(string newName)
+    {
+        var oldName = gameObject.name;
+        gameObject.name = TopSprite.name;
+        
+        string path = AssetDatabase.GetAssetPath(gameObject);
+        if(string.IsNullOrEmpty(path)) return;
+        
+        AssetDatabase.RenameAsset(path, path.Replace(oldName, gameObject.name));
+        PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+      
+    }
+
+    public static void SaveMesh(Mesh mesh, string name, string path = null)
+    {
+        #if UNITY_EDITOR
+
+        if (string.IsNullOrEmpty(path)) path = $"Assets/Content/Meshes/{name}.mesh";
+
+        // If an asset exists at the path, update it in-place. Otherwise, create a new asset.
+        var existing = AssetDatabase.LoadAssetAtPath<Mesh>(path);
+        if (existing != null)
+        {
+            // Copy all serialized data from the provided mesh into the existing asset.
+            EditorUtility.CopySerialized(mesh, existing);
+            EditorUtility.SetDirty(existing);
+            AssetDatabase.SaveAssets();
+        }
+        else
+        {
+            // Create a new asset when none exists at the given path.
+            UnityEditor.AssetDatabase.CreateAsset(mesh, path);
+            UnityEditor.AssetDatabase.SaveAssets();
+        }
+        #endif
+    }
+
+
 }

@@ -2,9 +2,8 @@ Shader "Voxel/WorldPosition"
 {
     Properties
     {
-        _Atlas ("Texture Atlas", 2D) = "white" {}     
-        _TilesX ("Atlas Tiles X", Float) = 16
-        _TilesY ("Atlas Tiles Y", Float) = 16
+        _Atlas ("Texture Atlas", 2D) = "white" {}
+        _TileSize ("Tile Size (pixels)", Float) = 64
     }
 
     SubShader
@@ -22,10 +21,10 @@ Shader "Voxel/WorldPosition"
             #pragma fragment frag
             #include "UnityCG.cginc"
 
-            sampler2D _Atlas;          
-            float _TilesX;
-            float _TilesY;
-
+            sampler2D _Atlas;
+            float4 _Atlas_TexelSize; // x=1/width, y=1/height, z=width, w=height
+            float _TileSize; // configurable tile size in pixels
+            
             struct appdata
             {
                 float4 vertex : POSITION;
@@ -54,11 +53,14 @@ Shader "Voxel/WorldPosition"
 
             float2 AtlasUV(float2 uv, float index)
             {
-                float tileW = 1.0 / _TilesX;
-                float tileH = 1.0 / _TilesY;
+                // Derive tiles across from texture size: TilesX = width/_TileSize, TilesY = height/_TileSize
+                // Therefore, per-tile UV size is _TileSize/width and _TileSize/height
+                float tileW = _TileSize / _Atlas_TexelSize.z;
+                float tileH = _TileSize / _Atlas_TexelSize.w;
 
-                float x = fmod(index, _TilesX);
-                float y = floor(index / _TilesX);
+                float tilesX = _Atlas_TexelSize.z / _TileSize;
+                float x = fmod(index, tilesX);
+                float y = floor(index / tilesX);
 
                 float2 minUV = float2(x * tileW, 1.0 - (y + 1) * tileH);
                 float2 maxUV = minUV + float2(tileW, tileH);

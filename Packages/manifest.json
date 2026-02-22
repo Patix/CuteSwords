@@ -2,7 +2,7 @@
   "dependencies": {
     "com.h8man.2d.navmeshplus": "https://github.com/h8man/NavMeshPlus.git",
     "com.unity.2d.enhancers": "1.0.0",
-    "com.unity.ai.assistant": "1.0.0-pre.12",
+    "com.unity.ai.assistant": "1.6.0-pre.2",
     "com.unity.ai.generators": "1.0.0-pre.20",
     "com.unity.ai.inference": "2.5.0",
     "com.unity.ai.navigation": "2.0.9",

@@ -126,8 +126,6 @@ public class SpritePivotInlineEditor : Editor
       });
    }
 
- 
-
   
 
    private Rect CalculateNonTransparentBounds(Sprite sprite, Rect spriteRect)
