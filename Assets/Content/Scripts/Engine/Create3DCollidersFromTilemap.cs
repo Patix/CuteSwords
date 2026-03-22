@@ -24,9 +24,6 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     [SerializeField,BoxGroup("Colliders")] private bool     CreateEdgeColliders =true;
    
     [SerializeField]                       private bool     AutoUpdateCollidersWhenTilemapsChange = true;
-    
-   
-   
 
     private Coroutine creationCoroutine;
 
@@ -50,8 +47,6 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     IEnumerator CreateCoroutine()
     {
         ClearChildren();
-        
-        
         List <(Sprite sprite, Vector3 position, int elevation)> ExtractedTiles = new List <(Sprite sprite, Vector3 position, int elevation)>();
         
         //Extract Tiles
