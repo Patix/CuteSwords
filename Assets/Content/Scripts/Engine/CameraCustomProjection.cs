@@ -18,12 +18,6 @@ public class CameraCustomProjection : MonoBehaviour
         SetCustomProjectionMatrix();
     }
 
-    private void Update()
-    {
-        if(!Application.isPlaying)
-        SetCustomProjectionMatrix();
-    }
-
     void OnDisable()
     {
         if (cam != null) ResetToOriginalMatrix();
