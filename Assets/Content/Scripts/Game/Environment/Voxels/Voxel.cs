@@ -55,16 +55,16 @@ public class Voxel : MonoBehaviour
         int[] triangles     = new int[faceCount * 6];
         Color[] colors      = new Color[faceCount * 4]; // tile index stored here
 
-        Vector3 s = _offset;
+        Vector3 s = Vector3.one * 0.5f;
 
-        Vector3 p0 = new(-s.x, -s.y, -s.z);
-        Vector3 p1 = new( s.x, -s.y, -s.z);
-        Vector3 p2 = new( s.x,  s.y, -s.z);
-        Vector3 p3 = new(-s.x,  s.y, -s.z);
-        Vector3 p4 = new(-s.x, -s.y,  s.z);
-        Vector3 p5 = new( s.x, -s.y,  s.z);
-        Vector3 p6 = new( s.x,  s.y,  s.z);
-        Vector3 p7 = new(-s.x,  s.y,  s.z);
+        Vector3 p0 = new Vector3(-s.x, -s.y, -s.z) + _offset;
+        Vector3 p1 = new Vector3( s.x, -s.y, -s.z) + _offset;
+        Vector3 p2 = new Vector3( s.x,  s.y, -s.z) + _offset;
+        Vector3 p3 = new Vector3(-s.x,  s.y, -s.z) + _offset;
+        Vector3 p4 = new Vector3(-s.x, -s.y,  s.z) + _offset;
+        Vector3 p5 = new Vector3( s.x, -s.y,  s.z) + _offset;
+        Vector3 p6 = new Vector3( s.x,  s.y,  s.z) + _offset;
+        Vector3 p7 = new Vector3(-s.x,  s.y,  s.z) + _offset;
 
         int face = 0;
 

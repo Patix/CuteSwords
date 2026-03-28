@@ -24,7 +24,7 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     [SerializeField,BoxGroup("Colliders")] private bool     CreateEdgeColliders =true;
    
     [SerializeField]                       private bool     AutoUpdateCollidersWhenTilemapsChange = true;
-
+    [SerializeField] private GameObject missing;
     private Coroutine creationCoroutine;
 
     private void OnEnable()
@@ -144,7 +144,13 @@ public class Create3DCollidersFromTilemap : SerializedMonoBehaviour
     {
 
         var prefab      = TileInfoDatabase.GetSurfacePrefab(sprite);
-        if (prefab == null) return default;
+
+        if (prefab == null)
+        {
+            prefab = missing;
+           // Debug.Log($"No prefab found for sprite {sprite.name}");
+            return default;
+        }
 
         var newPosition = position + prefab.transform.position;
         var child       = Instantiate(prefab, newPosition,prefab.transform.rotation);
