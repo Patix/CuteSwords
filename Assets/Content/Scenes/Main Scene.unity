@@ -119,36 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &5516259 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1400626841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5516260 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1400626841}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5516261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5516259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 3}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 5516259}
 --- !u!1001 &14686228
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,41 +179,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 368576857}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &29850119 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1347037745}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &29850120 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1347037745}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &29850121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 29850119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 1, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 29850119}
 --- !u!1001 &33206683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,10 +241,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 802508463}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &36620723
 PrefabInstance:
@@ -637,36 +581,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
---- !u!1 &44818595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 297675186121837187, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
-  m_PrefabInstance: {fileID: 1177772561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &44818596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6492227063988467538, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
   m_PrefabInstance: {fileID: 1177772561}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &44818597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44818595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -1332848612
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 11, y: 0, z: 1}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 44818595}
 --- !u!1 &56605850
 GameObject:
   m_ObjectHideFlags: 0
@@ -925,41 +844,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1523815963}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &87541824 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-  m_PrefabInstance: {fileID: 1953085598}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &87541825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8501825144671886637, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
   m_PrefabInstance: {fileID: 1953085598}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &87541826
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87541824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -73567315
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 11, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 87541824}
 --- !u!1001 &91443918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -971,6 +862,10 @@ PrefabInstance:
     - target: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
       propertyPath: m_Name
       value: 0_3_Tilemap_Elevation_0_VerticalTop
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8075947771275413048, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,10 +910,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2039264204}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
 --- !u!1001 &108050186
 PrefabInstance:
@@ -1075,10 +967,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2142833691}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &135257434
 GameObject:
@@ -1170,10 +1059,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2079961528}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &167845551
 GameObject:
@@ -1558,41 +1444,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 706059296}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &204651454 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8909418723545201429, guid: 2466dbd421ec67b4b9347f7f1433074c, type: 3}
-  m_PrefabInstance: {fileID: 2020722387}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &204651455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6982507524760483751, guid: 2466dbd421ec67b4b9347f7f1433074c, type: 3}
   m_PrefabInstance: {fileID: 2020722387}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &204651456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204651454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -880185093
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 1, z: 5}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 204651454}
 --- !u!1001 &221569644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1648,10 +1506,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1546921948}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1001 &228220609
 PrefabInstance:
@@ -1708,10 +1563,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1543127306}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &229652745
 PrefabInstance:
@@ -1911,10 +1763,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1774586852}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &246705292
 GameObject:
@@ -2062,10 +1911,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1008801086}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!4 &251619844 stripped
 Transform:
@@ -2127,10 +1973,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1038303590}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &256722282
 GameObject:
@@ -2382,7 +2225,7 @@ Tilemap:
       - {fileID: -798722270, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
       - {fileID: -1464198598, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
       - {fileID: -2033847330, guid: 2a45e9960718c394cb81e909cb085f13, type: 3}
-      m_AnimationSpeed: 9.788337
+      m_AnimationSpeed: 9.736032
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -3005,10 +2848,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 297675186121837187, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1782691778}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
 --- !u!1 &309624861
 GameObject:
@@ -3318,36 +3158,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341614402}
   m_CullTransparentMesh: 1
---- !u!1 &342835523 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 555592527405940252, guid: 2f12c2032da945c489c729a4a2728f13, type: 3}
-  m_PrefabInstance: {fileID: 1148500808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &342835524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5926816013682752720, guid: 2f12c2032da945c489c729a4a2728f13, type: 3}
   m_PrefabInstance: {fileID: 1148500808}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &342835525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342835523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -1264985571
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 1, y: 1, z: 5}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 342835523}
 --- !u!1 &347120938
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,41 +3867,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1150211447}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &368576855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 14686228}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &368576856 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 14686228}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &368576857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 368576855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 3, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 368576855}
 --- !u!1 &371502330
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,10 +3971,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1474664245}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &392555906
 GameObject:
@@ -4222,36 +4006,11 @@ Transform:
   - {fileID: 485126646}
   m_Father: {fileID: 785129191}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &403661257 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-  m_PrefabInstance: {fileID: 606025304}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &403661258 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8501825144671886637, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
   m_PrefabInstance: {fileID: 606025304}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &403661259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 403661257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -73567315
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 10, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 403661257}
 --- !u!1001 &406222886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5040,66 +4799,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &499747606 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1336993748}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &499747607 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1336993748}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &499747608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 499747606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 0, z: 1}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 499747606}
---- !u!1 &506947435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1692775252}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &506947436 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1692775252}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &506947437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 506947435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 1}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 506947435}
 --- !u!1001 &511598566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5155,10 +4864,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 597214839}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1001 &574916749
 PrefabInstance:
@@ -5389,36 +5095,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 61acc61462458ea4ebc533c11be7f99c, type: 3}
---- !u!1 &597214837 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 511598566}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &597214838 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 511598566}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &597214839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597214837}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 4}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 597214837}
 --- !u!1 &603062628
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,10 +5598,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 403661259}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
 --- !u!1001 &608055402
 PrefabInstance:
@@ -6068,36 +5746,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 475400951093874457, guid: 381d7e001c50f7e49b26e9de0df22513, type: 3}
   m_PrefabInstance: {fileID: 667429551}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &614809451 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 766753010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &614809452 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 766753010}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &614809453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 614809451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 1, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 614809451}
 --- !u!1 &619498900
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,36 +5864,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &620046801 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1896634877}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &620046802 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1896634877}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &620046803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620046801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 2}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 620046801}
 --- !u!4 &635610726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 61acc61462458ea4ebc533c11be7f99c, type: 3}
@@ -7819,7 +7447,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 8.252912
+      m_AnimationSpeed: 12.377339
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 8, y: -2, z: 0}
@@ -7834,7 +7462,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 7.9374447
+      m_AnimationSpeed: 8.365262
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: -2, z: 0}
@@ -7849,7 +7477,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 9.692417
+      m_AnimationSpeed: 9.770376
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: -2, z: 0}
@@ -7864,7 +7492,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.243122
+      m_AnimationSpeed: 12.195294
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: -1, z: 0}
@@ -7879,7 +7507,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.647671
+      m_AnimationSpeed: 10.537586
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: -1, z: 0}
@@ -7894,7 +7522,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.088888
+      m_AnimationSpeed: 14.371093
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: -1, z: 0}
@@ -7909,7 +7537,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 12.748684
+      m_AnimationSpeed: 14.918787
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 0, z: 0}
@@ -7924,7 +7552,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 8.351714
+      m_AnimationSpeed: 13.185413
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 0, z: 0}
@@ -7939,7 +7567,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 9.363321
+      m_AnimationSpeed: 7.5039625
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 0, z: 0}
@@ -7954,7 +7582,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.64666
+      m_AnimationSpeed: 13.7519045
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 1, z: 0}
@@ -7969,7 +7597,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 11.996477
+      m_AnimationSpeed: 7.0017433
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 1, z: 0}
@@ -7984,7 +7612,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.325096
+      m_AnimationSpeed: 7.201147
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 1, z: 0}
@@ -7999,7 +7627,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 8.312884
+      m_AnimationSpeed: 8.68445
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 2, z: 0}
@@ -8014,7 +7642,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 12.8087225
+      m_AnimationSpeed: 8.42619
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 2, z: 0}
@@ -8029,7 +7657,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 14.897113
+      m_AnimationSpeed: 8.582988
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 2, z: 0}
@@ -8044,7 +7672,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 7.690461
+      m_AnimationSpeed: 12.024062
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 3, z: 0}
@@ -8059,7 +7687,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 11.694211
+      m_AnimationSpeed: 14.81734
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 7, y: 3, z: 0}
@@ -8074,7 +7702,7 @@ Tilemap:
       - {fileID: 1667282517, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: -49396179, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
       - {fileID: 435675673, guid: 0b7c3917b624ea842870b05ca2d60c0e, type: 3}
-      m_AnimationSpeed: 10.222479
+      m_AnimationSpeed: 14.13687
       m_AnimationTimeOffset: 0
       m_Flags: 0
   m_TileAssetArray:
@@ -8320,36 +7948,11 @@ Transform:
   - {fileID: 1972821766}
   m_Father: {fileID: 485126646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &688842682 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8920868143070023482, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
-  m_PrefabInstance: {fileID: 2059909709}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &688842683 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1078004285048764957, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
   m_PrefabInstance: {fileID: 2059909709}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &688842684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 688842682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 1103777095
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 688842682}
 --- !u!1 &704731470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8463,36 +8066,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &706059294 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 202533340}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &706059295 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 202533340}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &706059296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706059294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 6, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 706059294}
 --- !u!1001 &711833783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8548,10 +8126,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1745877373}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &718408616
 PrefabInstance:
@@ -8953,10 +8528,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 614809453}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &772740871
 PrefabInstance:
@@ -9099,36 +8671,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
---- !u!1 &783838800 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4667179486703995155, guid: 168141288df48b74a8bf85f773251572, type: 3}
-  m_PrefabInstance: {fileID: 821901633}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &783838801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 496506550294748040, guid: 168141288df48b74a8bf85f773251572, type: 3}
   m_PrefabInstance: {fileID: 821901633}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &783838802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783838800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 2116439364
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 2, y: 1, z: 5}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 783838800}
 --- !u!1 &785129190
 GameObject:
   m_ObjectHideFlags: 0
@@ -9162,36 +8709,11 @@ Transform:
   - {fileID: 1403129907}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &802508461 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 33206683}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &802508462 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 33206683}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &802508463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 802508461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 4, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 802508461}
 --- !u!1 &804686885
 GameObject:
   m_ObjectHideFlags: 0
@@ -10038,41 +9560,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4667179486703995155, guid: 168141288df48b74a8bf85f773251572, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 783838802}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 168141288df48b74a8bf85f773251572, type: 3}
---- !u!1 &822850472 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1611139478}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &822850473 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1611139478}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &822850474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 822850472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 9, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 822850472}
 --- !u!1 &856237766 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2492148793750598413, guid: 5c354b21f379c0f47a0c536a9e40abe2, type: 3}
@@ -10308,10 +9802,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8875869218083495662, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1144706271}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
 --- !u!1001 &892315436
 PrefabInstance:
@@ -10368,10 +9859,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 504085009234124653, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1587356567}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
 --- !u!1 &919608265
 GameObject:
@@ -10711,36 +10199,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 726481818179866363, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
   m_PrefabInstance: {fileID: 957320863}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &964985907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1523670781}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &964985908 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1523670781}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &964985909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 964985907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 8, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 964985907}
 --- !u!1 &967405254
 GameObject:
   m_ObjectHideFlags: 0
@@ -11248,41 +10711,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1847816728}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
---- !u!1 &1008801084 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 250826961}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1008801085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 250826961}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1008801086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1008801084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 7, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1008801084}
 --- !u!1 &1012640367
 GameObject:
   m_ObjectHideFlags: 0
@@ -11564,71 +10999,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1034920327}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
 --- !u!4 &1034920325 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8075947771275413048, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
   m_PrefabInstance: {fileID: 1034920324}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1034920326 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
-  m_PrefabInstance: {fileID: 1034920324}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1034920327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034920326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -2060577657
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1034920326}
---- !u!1 &1038303588 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 252806468}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1038303589 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 252806468}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1038303590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038303588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 4, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1038303588}
 --- !u!224 &1049254419 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4518618631877760380, guid: 5c354b21f379c0f47a0c536a9e40abe2, type: 3}
@@ -12032,7 +11414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1076995043}
   - component: {fileID: 1076995045}
-  - component: {fileID: 1076995044}
   m_Layer: 6
   m_Name: Base Terrain
   m_TagString: Untagged
@@ -12056,494 +11437,6 @@ Transform:
   - {fileID: 1869262611}
   m_Father: {fileID: 1506221842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1076995044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1076995042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 962878b2c93e50544bf2e4e4c234a454, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_TileLayer
-  LayerName: 
-  _positionOffset: {x: 0.5, y: 0.5, z: 0.5}
-  Group: {fileID: 11400000, guid: 1edde58f529342444af1e40ece72ce29, type: 2}
-  _NodesKeys:
-  - {x: 0, y: 0, z: 2}
-  - {x: 0, y: 0, z: 1}
-  - {x: 5, y: 0, z: 0}
-  - {x: 0, y: 0, z: 4}
-  - {x: 0, y: 1, z: 4}
-  - {x: 0, y: 1, z: 5}
-  - {x: 0, y: 1, z: 6}
-  - {x: 1, y: 1, z: 5}
-  - {x: 2, y: 1, z: 5}
-  - {x: 1, y: 1, z: 4}
-  - {x: 2, y: 1, z: 4}
-  - {x: 4, y: 0, z: 0}
-  - {x: 6, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 3, y: 0, z: 0}
-  - {x: 0, y: 0, z: 3}
-  - {x: 1, y: 0, z: 0}
-  - {x: 1, y: 1, z: 6}
-  - {x: 2, y: 1, z: 6}
-  - {x: 9, y: 1, z: 6}
-  - {x: 8, y: 1, z: 6}
-  - {x: 4, y: 1, z: 6}
-  - {x: 6, y: 1, z: 6}
-  - {x: 7, y: 1, z: 6}
-  - {x: 5, y: 1, z: 6}
-  - {x: 7, y: 0, z: 0}
-  - {x: 8, y: 0, z: 0}
-  - {x: 9, y: 0, z: 0}
-  - {x: 10, y: 0, z: 0}
-  - {x: 11, y: 0, z: 0}
-  - {x: 12, y: 0, z: 0}
-  - {x: 13, y: 0, z: 0}
-  - {x: 14, y: 0, z: 0}
-  - {x: 2, y: 0, z: 0}
-  - {x: 15, y: 0, z: 0}
-  - {x: 16, y: 0, z: 0}
-  - {x: 16, y: 0, z: 1}
-  - {x: 16, y: 0, z: 2}
-  - {x: 16, y: 0, z: 3}
-  - {x: 16, y: 0, z: 4}
-  - {x: 3, y: 1, z: 6}
-  - {x: 16, y: 0, z: 6}
-  - {x: 16, y: 0, z: 5}
-  - {x: 10, y: 0, z: 1}
-  - {x: 11, y: 0, z: 1}
-  _NodesValues:
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 0, z: 2}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1546921948}
-    _instance: {fileID: 1546921946}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 0, z: 1}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 499747608}
-    _instance: {fileID: 499747606}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 5, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2115367292}
-    _instance: {fileID: 2115367290}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 0, z: 4}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2039264204}
-    _instance: {fileID: 2039264202}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -2060577657
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 1, z: 4}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1144706271}
-    _instance: {fileID: 1144706269}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -221270379
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 1, z: 5}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 204651456}
-    _instance: {fileID: 204651454}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -880185093
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 688842684}
-    _instance: {fileID: 688842682}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 1103777095
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 1, y: 1, z: 5}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 342835525}
-    _instance: {fileID: 342835523}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -1264985571
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 2, y: 1, z: 5}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 783838802}
-    _instance: {fileID: 783838800}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 2116439364
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 1, y: 1, z: 4}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1583657099}
-    _instance: {fileID: 1583657097}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -73567315
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 2, y: 1, z: 4}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1587356567}
-    _instance: {fileID: 1587356565}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 1580968923
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 4, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 802508463}
-    _instance: {fileID: 802508461}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 6, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1774586852}
-    _instance: {fileID: 1774586850}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2146906168}
-    _instance: {fileID: 2146906166}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -221270379
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 3, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 368576857}
-    _instance: {fileID: 368576855}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 0, y: 0, z: 3}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1847816728}
-    _instance: {fileID: 1847816726}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 1, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 29850121}
-    _instance: {fileID: 29850119}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 1, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 614809453}
-    _instance: {fileID: 614809451}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 2, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1543127306}
-    _instance: {fileID: 1543127304}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 9, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1782691778}
-    _instance: {fileID: 1782691776}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -1332848612
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 8, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2142833691}
-    _instance: {fileID: 2142833689}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 4, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1038303590}
-    _instance: {fileID: 1038303588}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 6, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 706059296}
-    _instance: {fileID: 706059294}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 7, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1292747053}
-    _instance: {fileID: 1292747051}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 5, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1706253703}
-    _instance: {fileID: 1706253701}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 7, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1008801086}
-    _instance: {fileID: 1008801084}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 8, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 964985909}
-    _instance: {fileID: 964985907}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 9, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 822850474}
-    _instance: {fileID: 822850472}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 10, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 403661259}
-    _instance: {fileID: 403661257}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -73567315
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 11, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 87541826}
-    _instance: {fileID: 87541824}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -73567315
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 12, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1150211447}
-    _instance: {fileID: 1150211445}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 13, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1474664245}
-    _instance: {fileID: 1474664243}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 14, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1523815963}
-    _instance: {fileID: 1523815961}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 2, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1745877373}
-    _instance: {fileID: 1745877371}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 15, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2079961528}
-    _instance: {fileID: 2079961526}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2061751641}
-    _instance: {fileID: 2061751639}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 1580968923
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 1}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 506947437}
-    _instance: {fileID: 506947435}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 2}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 620046803}
-    _instance: {fileID: 620046801}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 3}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 5516261}
-    _instance: {fileID: 5516259}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 4}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 597214839}
-    _instance: {fileID: 597214837}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 3, y: 1, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2096866313}
-    _instance: {fileID: 2096866311}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 560441845
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 6}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1034920327}
-    _instance: {fileID: 1034920326}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -2060577657
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 16, y: 0, z: 5}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 2120778264}
-    _instance: {fileID: 2120778262}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -643698644
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 10, y: 0, z: 1}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 1749757018}
-    _instance: {fileID: 1749757016}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: 1103777095
-  - Layer: {fileID: 1076995044}
-    InternalPosition: {x: 11, y: 0, z: 1}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    _block: {fileID: 44818597}
-    _instance: {fileID: 44818595}
-    _group: A3_Random_Demo
-    _tileName: GR
-    _tileID: -377982618
-    _ruleID: -1332848612
-  _AnchorKeys: 667178e9
-  _AnchorValues:
-  - {fileID: 1869262612}
-  LoadedGroups:
-  - {fileID: 11400000, guid: 1edde58f529342444af1e40ece72ce29, type: 2}
-  - {fileID: 11400000, guid: 086471ca33d4b294b87b2cecdd98e4fd, type: 2}
-  - {fileID: 11400000, guid: 87b8d609771fb4943b46588342cee428, type: 2}
-  HoverPrefabObject: {fileID: 8920868143070023482, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
-  LocalHoverPosition: {x: 10, y: 1, z: 3}
-  PrevLocalHoverPosition: {x: -7, y: 1, z: 5}
-  SearchedInternalPosition: {x: 0, y: 0, z: 0}
-  SearchedInternalNode:
-    Layer: {fileID: 0}
-    InternalPosition: {x: 0, y: 0, z: 0}
-    LocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    _block: {fileID: 0}
-    _instance: {fileID: 0}
-    _group: 
-    _tileName: 
-    _tileID: 0
-    _ruleID: 0
 --- !u!114 &1076995045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12962,36 +11855,11 @@ Transform:
   - {fileID: 174750631}
   m_Father: {fileID: 485126646}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1144706269 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8875869218083495662, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
-  m_PrefabInstance: {fileID: 884352326}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1144706270 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5461497222181128339, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
   m_PrefabInstance: {fileID: 884352326}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1144706271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144706269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -221270379
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 1, z: 4}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1144706269}
 --- !u!4 &1147541467 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 61acc61462458ea4ebc533c11be7f99c, type: 3}
@@ -13057,41 +11925,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 555592527405940252, guid: 2f12c2032da945c489c729a4a2728f13, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 342835525}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f12c2032da945c489c729a4a2728f13, type: 3}
---- !u!1 &1150211445 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 354714955}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1150211446 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 354714955}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1150211447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1150211445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 12, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1150211445}
 --- !u!1001 &1177772561
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13147,10 +11987,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 297675186121837187, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 44818597}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
 --- !u!1 &1187837841
 GameObject:
@@ -13787,10 +12624,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2115367292}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &1237838242
 GameObject:
@@ -14149,36 +12983,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
---- !u!1 &1292747051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1824798624}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1292747052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1824798624}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1292747053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292747051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 7, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1292747051}
 --- !u!4 &1330547197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 726481818179866363, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
@@ -14239,10 +13048,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 499747608}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1001 &1347037745
 PrefabInstance:
@@ -14299,10 +13105,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 29850121}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &1362663568
 PrefabInstance:
@@ -14359,10 +13162,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2120778264}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1 &1367001256
 GameObject:
@@ -15804,10 +14604,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5516261}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1 &1403129906
 GameObject:
@@ -16081,36 +14878,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 726481818179866363, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
   m_PrefabInstance: {fileID: 1403476144}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1474664243 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 383433522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1474664244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 383433522}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1474664245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1474664243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 13, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1474664243}
 --- !u!1 &1477121192
 GameObject:
   m_ObjectHideFlags: 0
@@ -17687,13 +16459,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24923d3a4e93ae34394654345257543c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_Grid
-  GridSize: 0
-  Height: 3
-  Width: 18
-  Unit: 1
-  TileLayers:
-  - {fileID: 1076995044}
-  _LayerIndex: 1
 --- !u!210 &1506221844
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -17831,101 +16596,23 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 964985909}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &1523815961 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 84597215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1523815962 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 84597215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1523815963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523815961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 14, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1523815961}
---- !u!1 &1543127304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 228220609}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1543127305 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 228220609}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1543127306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543127304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 2, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1543127304}
---- !u!1 &1546921946 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 221569644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1546921947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 221569644}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1546921948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546921946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 0, z: 2}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1546921946}
 --- !u!1 &1562138378
 GameObject:
   m_ObjectHideFlags: 0
@@ -18109,66 +16796,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1583657097 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-  m_PrefabInstance: {fileID: 2024204961}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1583657098 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8501825144671886637, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
   m_PrefabInstance: {fileID: 2024204961}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1583657099
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583657097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -73567315
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 1, y: 1, z: 4}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1583657097}
---- !u!1 &1587356565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 504085009234124653, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
-  m_PrefabInstance: {fileID: 892315436}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1587356566 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5041540865508716380, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
   m_PrefabInstance: {fileID: 892315436}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1587356567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587356565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 1580968923
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 2, y: 1, z: 4}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1587356565}
 --- !u!1001 &1611139478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18224,10 +16861,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 822850474}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!4 &1635960194 stripped
 Transform:
@@ -18371,10 +17005,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8875869218083495662, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2146906168}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
 --- !u!1 &1689496263
 GameObject:
@@ -18572,10 +17203,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 506947437}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!1 &1705618248
 GameObject:
@@ -18690,36 +17318,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1706253701 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1795064603}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1706253702 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1795064603}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1706253703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1706253701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 5, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1706253701}
 --- !u!1 &1715482958
 GameObject:
   m_ObjectHideFlags: 0
@@ -18826,71 +17429,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.585652, y: 1, z: 7.413698}
   m_Center: {x: -3.2071738, y: 0, z: 0.77433825}
---- !u!1 &1745877371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 711833783}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1745877372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 711833783}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1745877373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745877371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 2, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1745877371}
 --- !u!1 &1746425857 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8894470948126555180, guid: 5c354b21f379c0f47a0c536a9e40abe2, type: 3}
   m_PrefabInstance: {fileID: 1944778676}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1749757016 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8920868143070023482, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
-  m_PrefabInstance: {fileID: 1887856704}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1749757017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1078004285048764957, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
   m_PrefabInstance: {fileID: 1887856704}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1749757018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1749757016}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 1103777095
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 10, y: 0, z: 1}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1749757016}
 --- !u!1 &1755581914
 GameObject:
   m_ObjectHideFlags: 0
@@ -19071,66 +17624,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1322549068, guid: 5c354b21f379c0f47a0c536a9e40abe2, type: 3}
   m_PrefabInstance: {fileID: 1944778676}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1774586850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 240372151}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1774586851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 240372151}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1774586852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774586850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 6, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1774586850}
---- !u!1 &1782691776 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 297675186121837187, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
-  m_PrefabInstance: {fileID: 306073879}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1782691777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6492227063988467538, guid: 6b0fe41d3545d894d88a7fa407d25cab, type: 3}
   m_PrefabInstance: {fileID: 306073879}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1782691778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782691776}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -1332848612
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 9, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1782691776}
 --- !u!43 &1795059657
 Mesh:
   m_ObjectHideFlags: 0
@@ -19364,10 +17867,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1706253703}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1001 &1824798624
 PrefabInstance:
@@ -19424,10 +17924,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1292747053}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
 --- !u!1 &1837034625
 GameObject:
@@ -20418,36 +18915,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2145712535}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1 &1847816726 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1007367803}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1847816727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1007367803}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1847816728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847816726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 0, z: 3}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 1847816726}
 --- !u!1001 &1863259605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20503,10 +18975,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 504085009234124653, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2061751641}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
 --- !u!4 &1869054620 stripped
 Transform:
@@ -20522,7 +18991,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1869262611}
-  - component: {fileID: 1869262612}
   m_Layer: 0
   m_Name: Anchor GR
   m_TagString: Untagged
@@ -20590,22 +19058,6 @@ Transform:
   - {fileID: 1034920325}
   m_Father: {fileID: 1076995043}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1869262612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869262610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2ba00f3f4dfea343bd5339890fa858d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_Anchor
-  _tileID: -377982618
-  BakedParent: {fileID: 0}
-  _childCount: 45
-  _bakeCount: 0
 --- !u!1 &1873732535
 GameObject:
   m_ObjectHideFlags: 0
@@ -20915,10 +19367,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8920868143070023482, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1749757018}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
 --- !u!1001 &1896634877
 PrefabInstance:
@@ -20975,10 +19424,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 620046803}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
 --- !u!95 &1910201223 stripped
 Animator:
@@ -21836,10 +20282,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 87541826}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
 --- !u!1 &1954653669
 GameObject:
@@ -22069,10 +20512,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8909418723545201429, guid: 2466dbd421ec67b4b9347f7f1433074c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 204651456}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2466dbd421ec67b4b9347f7f1433074c, type: 3}
 --- !u!1001 &2024204961
 PrefabInstance:
@@ -22129,10 +20569,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7556928250837035193, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1583657099}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2081603549f4b54fbe177f0a53cbc30, type: 3}
 --- !u!1001 &2037462199
 PrefabInstance:
@@ -22145,6 +20582,10 @@ PrefabInstance:
     - target: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
       propertyPath: m_Name
       value: 0_1_Tilemap_Elevation_0_TopCenter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22189,41 +20630,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2096866313}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
---- !u!1 &2039264202 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6207420081859061198, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
-  m_PrefabInstance: {fileID: 91443918}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2039264203 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8075947771275413048, guid: fcf64c16085bbaf47bafaeb59e196c63, type: 3}
   m_PrefabInstance: {fileID: 91443918}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2039264204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039264202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -2060577657
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 0, z: 4}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2039264202}
 --- !u!4 &2054277769 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 726481818179866363, guid: 297c0394089ff5f4b86a1e9199e577d3, type: 3}
@@ -22317,41 +20730,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8920868143070023482, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 688842684}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c016a0d94289ed4a9ec0eb041c6892e, type: 3}
---- !u!1 &2061751639 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 504085009234124653, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
-  m_PrefabInstance: {fileID: 1863259605}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2061751640 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5041540865508716380, guid: 1e2fa16a8092c814bae21d0368ada29a, type: 3}
   m_PrefabInstance: {fileID: 1863259605}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2061751641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2061751639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 1580968923
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2061751639}
 --- !u!1 &2069490551
 GameObject:
   m_ObjectHideFlags: 0
@@ -27595,36 +25980,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &2079961526 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 143151425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2079961527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 143151425}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2079961528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079961526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 15, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2079961526}
 --- !u!1 &2090810826
 GameObject:
   m_ObjectHideFlags: 0
@@ -27861,36 +26221,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095870715}
   m_CullTransparentMesh: 1
---- !u!1 &2096866311 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 2037462199}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2096866312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 2037462199}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2096866313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096866311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 3, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2096866311}
 --- !u!1 &2101194160
 GameObject:
   m_ObjectHideFlags: 0
@@ -28020,66 +26355,16 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2101194160}
   m_Mesh: {fileID: 4300000, guid: d33c838b075cbc04bb2f7ea770f4b739, type: 2}
---- !u!1 &2115367290 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 1237084215}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2115367291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 1237084215}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2115367292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115367290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 5, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2115367290}
---- !u!1 &2120778262 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8155789458872464146, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
-  m_PrefabInstance: {fileID: 1362663568}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2120778263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5854043780649663116, guid: 44642364cef3ec248a1274868f6bc1ca, type: 3}
   m_PrefabInstance: {fileID: 1362663568}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2120778264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2120778262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -643698644
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 16, y: 0, z: 5}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2120778262}
 --- !u!1 &2135840736
 GameObject:
   m_ObjectHideFlags: 0
@@ -28372,36 +26657,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5445b43606f4474eaf19bf0670b097b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &2142833689 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3990193759021684890, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
-  m_PrefabInstance: {fileID: 108050186}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2142833690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6262292411750253107, guid: 7a27f7672a69bce42803d6e9ed796226, type: 3}
   m_PrefabInstance: {fileID: 108050186}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2142833691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142833689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: 560441845
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 8, y: 1, z: 6}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2142833689}
 --- !u!1 &2145712533
 GameObject:
   m_ObjectHideFlags: 0
@@ -28467,36 +26727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b21720624d3b2754289d4c0687104184, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnhideGameobjects
---- !u!1 &2146906166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8875869218083495662, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
-  m_PrefabInstance: {fileID: 1654862327}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2146906167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5461497222181128339, guid: d5c9786e32d6a0b41a987843ba2acf99, type: 3}
   m_PrefabInstance: {fileID: 1654862327}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2146906168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2146906166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b04309525ffc43d4594a3116dea8b6bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Autotiles3D.Autotiles3D_BlockBehaviour
-  _tileID: -377982618
-  _ruleID: -221270379
-  _tileName: GR
-  _group: A3_Random_Demo
-  _internalPosition: {x: 0, y: 0, z: 0}
-  _localRotation: {x: 0, y: 0, z: 0, w: 1}
-  _isBaked: 0
-  View: {fileID: 2146906166}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
