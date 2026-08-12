@@ -76,7 +76,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -91,7 +91,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 1
     defaultPivotSpace: 0
-    defaultPivotAlignment: 7
+    defaultPivotAlignment: 0
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
     generateIndividualEvents: 1
     generateSpriteAtlas: 1
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 639221517977618958
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -129,7 +129,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Frame_0
     originalName: 
-    pivot: {x: 0.44444448, y: -1.2321429}
+    pivot: {x: 0.44444448, y: 0.48214287}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -150,7 +150,7 @@ ScriptedImporter:
     uvTransform: {x: 212, y: 274}
   - name: Frame_1
     originalName: 
-    pivot: {x: 0.4516129, y: -1.3018868}
+    pivot: {x: 0.4516129, y: 0.509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -171,7 +171,7 @@ ScriptedImporter:
     uvTransform: {x: 310, y: 274}
   - name: Frame_2
     originalName: 
-    pivot: {x: 0.47572812, y: -1.3018868}
+    pivot: {x: 0.47572812, y: 0.509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -192,7 +192,7 @@ ScriptedImporter:
     uvTransform: {x: 181, y: 340}
   - name: Frame_3
     originalName: 
-    pivot: {x: 0.4864865, y: -1.2545455}
+    pivot: {x: 0.4864865, y: 0.4909091}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -213,7 +213,7 @@ ScriptedImporter:
     uvTransform: {x: 322, y: 114}
   - name: Frame_4
     originalName: 
-    pivot: {x: 0.47747752, y: -1.1896552}
+    pivot: {x: 0.47747752, y: 0.46551725}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -234,7 +234,7 @@ ScriptedImporter:
     uvTransform: {x: 95, y: 114}
   - name: Frame_5
     originalName: 
-    pivot: {x: 0.4770642, y: -1.2545455}
+    pivot: {x: 0.4770642, y: 0.4909091}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -255,7 +255,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 211}
   - name: Frame_6
     originalName: 
-    pivot: {x: 0.4489796, y: -1.3018868}
+    pivot: {x: 0.4489796, y: 0.509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -276,7 +276,7 @@ ScriptedImporter:
     uvTransform: {x: 121, y: 211}
   - name: Frame_7
     originalName: 
-    pivot: {x: 0.43956047, y: -1.2321429}
+    pivot: {x: 0.43956047, y: 0.48214287}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -297,7 +297,7 @@ ScriptedImporter:
     uvTransform: {x: 113, y: 274}
   - name: Frame_8
     originalName: 
-    pivot: {x: 0.45544556, y: -1.1896552}
+    pivot: {x: 0.45544556, y: 0.46551725}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -318,7 +318,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 274}
   - name: Frame_9
     originalName: 
-    pivot: {x: 0.46999997, y: -1.1129032}
+    pivot: {x: 0.46999997, y: 0.43548387}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -339,7 +339,7 @@ ScriptedImporter:
     uvTransform: {x: 214, y: 114}
   - name: Frame_10
     originalName: 
-    pivot: {x: 0.4673913, y: -1.15}
+    pivot: {x: 0.4673913, y: 0.45000002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -360,7 +360,7 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 340}
   - name: Frame_11
     originalName: 
-    pivot: {x: 0.4623656, y: -1.2105263}
+    pivot: {x: 0.4623656, y: 0.47368422}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -381,7 +381,7 @@ ScriptedImporter:
     uvTransform: {x: 399, y: 340}
   - name: Frame_12
     originalName: 
-    pivot: {x: 0.45054945, y: -1.3018868}
+    pivot: {x: 0.45054945, y: 0.509434}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -402,7 +402,7 @@ ScriptedImporter:
     uvTransform: {x: 411, y: 274}
   - name: Frame_13
     originalName: 
-    pivot: {x: 0.4574468, y: -1.5681819}
+    pivot: {x: 0.4574468, y: 0.6136364}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -423,7 +423,7 @@ ScriptedImporter:
     uvTransform: {x: 331, y: 211}
   - name: Frame_14
     originalName: 
-    pivot: {x: 0.4270833, y: -1.4081633}
+    pivot: {x: 0.4270833, y: 0.5510204}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -444,7 +444,7 @@ ScriptedImporter:
     uvTransform: {x: 227, y: 211}
   - name: Frame_15
     originalName: 
-    pivot: {x: 0.42424244, y: -1.2545455}
+    pivot: {x: 0.42424244, y: 0.4909091}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -465,7 +465,7 @@ ScriptedImporter:
     uvTransform: {x: 292, y: 340}
   - name: Frame_16
     originalName: 
-    pivot: {x: 0.6956522, y: -0.8518519}
+    pivot: {x: 0.6956522, y: 0.33333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -486,7 +486,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 340}
   - name: Frame_17
     originalName: 
-    pivot: {x: 0.72289157, y: -0.7752809}
+    pivot: {x: 0.72289157, y: 0.30337077}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -507,7 +507,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 114}
   - name: Frame_18
     originalName: 
-    pivot: {x: 0.59999996, y: -0.8117647}
+    pivot: {x: 0.59999996, y: 0.31764707}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -528,7 +528,7 @@ ScriptedImporter:
     uvTransform: {x: 270, y: 4}
   - name: Frame_19
     originalName: 
-    pivot: {x: 0.3809524, y: -0.43137255}
+    pivot: {x: 0.3809524, y: 0.5098039}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -549,7 +549,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Frame_20
     originalName: 
-    pivot: {x: 0.37903222, y: -0.41584158}
+    pivot: {x: 0.37903222, y: 0.5346535}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -570,7 +570,7 @@ ScriptedImporter:
     uvTransform: {x: 138, y: 4}
   - name: Frame_21
     originalName: 
-    pivot: {x: 0.384, y: -0.80597013}
+    pivot: {x: 0.384, y: 0.6268657}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -807,7 +807,55 @@ ScriptedImporter:
     tileSetIndex: 0
     parentIndex: -1
   tileSets: []
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: iPhone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
