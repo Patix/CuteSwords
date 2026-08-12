@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 4293343185710087839}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -97,6 +101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Paddle Fish
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 8272f13276b673b4fb648f2a313a6769, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 4460afbf877808b40a2dd8348c03e0b3, type: 2}
     - target: {fileID: 7878350319992209165, guid: 8272f13276b673b4fb648f2a313a6769, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -142,6 +150,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 8272f13276b673b4fb648f2a313a6769, type: 3}
+--- !u!95 &4293343185710087839 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: 8272f13276b673b4fb648f2a313a6769, type: 3}
+  m_PrefabInstance: {fileID: 3138847580477895511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5105649183080238170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 8272f13276b673b4fb648f2a313a6769, type: 3}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NPC_Panda Override Controller
+  m_Controller: {fileID: 9100000, guid: 000c3c0c27a25b44b87368072860c34d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: ffeb031fbde61544b865491aecec555f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c33c5de27a599a54cb144edc4f3400ef, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a762e8305fec8a446965d811b3e5a348, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8ccb8118a50012a4e94faf3f7d3a4ffc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 13becd6a1bac9a8488fe58e733397ba2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 8ccb8118a50012a4e94faf3f7d3a4ffc, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e7202cc801286ce44b1afff554a740c0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 714c6cc4ba1340d40b9da186e5ecb794, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e64af8de57d7b304ea787064c46833ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 9f3cee54738c6614dacd1235e6fd1f4e, type: 2}

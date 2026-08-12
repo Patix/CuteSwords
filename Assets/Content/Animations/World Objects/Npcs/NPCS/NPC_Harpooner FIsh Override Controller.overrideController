@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: NPC_Harpooner FIsh Override Controller
+  m_Controller: {fileID: 9100000, guid: 000c3c0c27a25b44b87368072860c34d, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: e7202cc801286ce44b1afff554a740c0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fa44801cc3db5914684e019589b72fad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e64af8de57d7b304ea787064c46833ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: d3de77ed77b29304fbb35a92a35e484d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 57f9547df5cccf44ea8b370b53a006de, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 888d8c1346a25f74eb5879bb805112e8, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 13becd6a1bac9a8488fe58e733397ba2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a762e8305fec8a446965d811b3e5a348, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ef893b11a14043341b7d4f8b334d0761, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: ce08855effa74bb40a6361d315a088c6, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f37b5879de9a8984b95aa081d97b4607, type: 2}

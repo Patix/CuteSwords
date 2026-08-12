@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 2685487534670596611}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -77,6 +81,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shaman
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: a3bbba1b882a76e4986ec0049d143027, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: a630722a52cccb949b6bce63dc1ad5c6, type: 2}
     - target: {fileID: 7878350319992209165, guid: a3bbba1b882a76e4986ec0049d143027, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -122,6 +130,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: a3bbba1b882a76e4986ec0049d143027, type: 3}
+--- !u!95 &2685487534670596611 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: a3bbba1b882a76e4986ec0049d143027, type: 3}
+  m_PrefabInstance: {fileID: 3845701828866639819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6344209236235581638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: a3bbba1b882a76e4986ec0049d143027, type: 3}

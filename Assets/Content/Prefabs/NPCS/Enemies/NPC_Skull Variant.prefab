@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skull
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 8b54819988111e74588ada24eeb89e83, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 5c33dbcf60cafc6469bc7bdbdbc04366, type: 2}
     - target: {fileID: 7878350319992209165, guid: 8b54819988111e74588ada24eeb89e83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,6 +61,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 8b54819988111e74588ada24eeb89e83, type: 3}
+--- !u!95 &3716150598832167241 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: 8b54819988111e74588ada24eeb89e83, type: 3}
+  m_PrefabInstance: {fileID: 2560299244083893377}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5682847044317358988 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 8b54819988111e74588ada24eeb89e83, type: 3}
@@ -90,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 3716150598832167241}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

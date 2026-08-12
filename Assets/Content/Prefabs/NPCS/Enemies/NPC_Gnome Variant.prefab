@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &143290512395128943
+--- !u!1001 &3783873390413198824
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gnome
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 90c441b5dfd15224cb7a322c2c22c1ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: e29b826344531e048b1a409020a9692d, type: 2}
     - target: {fileID: 7878350319992209165, guid: 90c441b5dfd15224cb7a322c2c22c1ad, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,10 +61,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 90c441b5dfd15224cb7a322c2c22c1ad, type: 3}
---- !u!4 &7829670859584745314 stripped
+--- !u!95 &2637258988861585440 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: 90c441b5dfd15224cb7a322c2c22c1ad, type: 3}
+  m_PrefabInstance: {fileID: 3783873390413198824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6473503433291320037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 90c441b5dfd15224cb7a322c2c22c1ad, type: 3}
-  m_PrefabInstance: {fileID: 143290512395128943}
+  m_PrefabInstance: {fileID: 3783873390413198824}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4215672994765076476
 PrefabInstance:
@@ -86,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.032992713
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 2637258988861585440}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -135,7 +148,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 106315278466686571, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7829670859584745314}
+      addedObject: {fileID: 6473503433291320037}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
 --- !u!4 &4321381338312206743 stripped

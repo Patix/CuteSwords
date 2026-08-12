@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3660602867975658684
+--- !u!1001 &2300126596387194899
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lancer
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: 290588f863cfee54aa111e4417f9d6f7, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 84c6fbba186db724088b57196efaeab4, type: 2}
     - target: {fileID: 7878350319992209165, guid: 290588f863cfee54aa111e4417f9d6f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,10 +61,15 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: 290588f863cfee54aa111e4417f9d6f7, type: 3}
---- !u!4 &6888421888353067953 stripped
+--- !u!95 &1148938166338258395 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: 290588f863cfee54aa111e4417f9d6f7, type: 3}
+  m_PrefabInstance: {fileID: 2300126596387194899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8268104429047002910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: 290588f863cfee54aa111e4417f9d6f7, type: 3}
-  m_PrefabInstance: {fileID: 3660602867975658684}
+  m_PrefabInstance: {fileID: 2300126596387194899}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5181151597274231463
 PrefabInstance:
@@ -90,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 1148938166338258395}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -139,7 +152,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 106315278466686571, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6888421888353067953}
+      addedObject: {fileID: 8268104429047002910}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
 --- !u!4 &5088663800292207820 stripped

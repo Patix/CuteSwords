@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Panda
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: e209d2fb553950a40927ff1fbdb63221, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: ce8009d0f75c865459dd37483be55a34, type: 2}
     - target: {fileID: 7878350319992209165, guid: e209d2fb553950a40927ff1fbdb63221, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -57,6 +61,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: -8435245712485981826, guid: e209d2fb553950a40927ff1fbdb63221, type: 3}
+--- !u!95 &1981582167757929716 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: e209d2fb553950a40927ff1fbdb63221, type: 3}
+  m_PrefabInstance: {fileID: 821229240767279420}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7363405711719566897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: e209d2fb553950a40927ff1fbdb63221, type: 3}
@@ -90,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 1981582167757929716}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Thief
       objectReference: {fileID: 0}
+    - target: {fileID: 1160356261127867848, guid: ce0388f9fcce14647a79cb804af4f7c5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: a3c4946020ece2f499208a4717da71c7, type: 2}
     - target: {fileID: 7878350319992209165, guid: ce0388f9fcce14647a79cb804af4f7c5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -62,6 +66,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7878350319992209165, guid: ce0388f9fcce14647a79cb804af4f7c5, type: 3}
   m_PrefabInstance: {fileID: 5427732256996491046}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &6577863935080870638 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1160356261127867848, guid: ce0388f9fcce14647a79cb804af4f7c5, type: 3}
+  m_PrefabInstance: {fileID: 5427732256996491046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6928123559887363305
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.02405858
       objectReference: {fileID: 0}
+    - target: {fileID: 2927189891828686359, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_animator
+      value: 
+      objectReference: {fileID: 6577863935080870638}
     - target: {fileID: 3533839885695593652, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
