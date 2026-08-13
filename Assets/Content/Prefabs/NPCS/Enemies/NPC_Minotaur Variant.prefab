@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 106315278466686571, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
     - target: {fileID: 2604339704889873730, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
       propertyPath: m_Size.x
       value: 0.96993065
@@ -76,6 +80,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Minotaur Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5494459425671053528, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 6227218306607520763, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: managedReferences[8706789946215366658].m_Animator
+      value: 
+      objectReference: {fileID: 1307867372711215088}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -104,7 +116,19 @@ PrefabInstance:
     - target: {fileID: 1160356261127867848, guid: 8ebe8f1dc7932bd45aea7c88011fef33, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 22100000, guid: 4460afbf877808b40a2dd8348c03e0b3, type: 2}
+      objectReference: {fileID: 22100000, guid: c86fe127472901a45b28db8794827121, type: 2}
+    - target: {fileID: 3626916397498700004, guid: 8ebe8f1dc7932bd45aea7c88011fef33, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 8ebe8f1dc7932bd45aea7c88011fef33, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 8ebe8f1dc7932bd45aea7c88011fef33, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 020d1251608a91441acc7966c3368a3d, type: 2}
     - target: {fileID: 7878350319992209165, guid: 8ebe8f1dc7932bd45aea7c88011fef33, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

@@ -8,4 +8,14 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: NPC_Turtle Override Controller
   m_Controller: {fileID: 9100000, guid: 000c3c0c27a25b44b87368072860c34d, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a762e8305fec8a446965d811b3e5a348, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a2a49a297c5a7114b9da8768a1819540, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 13becd6a1bac9a8488fe58e733397ba2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a2a49a297c5a7114b9da8768a1819540, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e7202cc801286ce44b1afff554a740c0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3256d94a29709b542a8a9a17b7e95fb5, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e64af8de57d7b304ea787064c46833ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ec00b41e97e9ccd4186fc3df9f55fb38, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8b26bad6aaef1ef4cb576ef25a61b804, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: ec00b41e97e9ccd4186fc3df9f55fb38, type: 2}

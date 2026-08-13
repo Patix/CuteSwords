@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC_Turtle Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 6227218306607520763, guid: e45a52c43bd91ba4389b832fd4e7f1fb, type: 3}
+      propertyPath: managedReferences[8706789946215366658].m_Animator
+      value: 
+      objectReference: {fileID: 4171932024110559562}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -105,6 +109,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 22100000, guid: b919403150223414fa3d6374d16528d6, type: 2}
+    - target: {fileID: 3626916397498700004, guid: 67d773f76083b044592d291b1961ff83, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 67d773f76083b044592d291b1961ff83, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 67d773f76083b044592d291b1961ff83, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 020d1251608a91441acc7966c3368a3d, type: 2}
     - target: {fileID: 7878350319992209165, guid: 67d773f76083b044592d291b1961ff83, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

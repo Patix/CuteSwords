@@ -8,4 +8,14 @@ AnimatorOverrideController:
   m_PrefabAsset: {fileID: 0}
   m_Name: NPC_Troll Override Controller
   m_Controller: {fileID: 9100000, guid: 000c3c0c27a25b44b87368072860c34d, type: 2}
-  m_Clips: []
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: a762e8305fec8a446965d811b3e5a348, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 84c377176774be24eba504b4f25d23ac, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 13becd6a1bac9a8488fe58e733397ba2, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 84c377176774be24eba504b4f25d23ac, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f672c1e2f3905ae47ae8032cc841538d, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1b8ce5af660eeda43ab30918e79bb0af, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e64af8de57d7b304ea787064c46833ba, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5171a0ebdca2e2546ad61bd22cbcd6ae, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8b26bad6aaef1ef4cb576ef25a61b804, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 5171a0ebdca2e2546ad61bd22cbcd6ae, type: 2}
